@@ -1,0 +1,506 @@
+{
+  "run_id": "RUN-20261111-052433-7AF432",
+  "claim_id": "CLM-2026-1001",
+  "processed_at": "2026-11-11T05:24:33",
+  "status": "AUTO_APPROVE",
+  "fraud_score": 1.2,
+  "risk_band": "LOW",
+  "risk_label": "Genuine",
+  "recommendation": "Low fraud risk and admissible. Approve for settlement as computed.",
+  "suspicious_reasons": [],
+  "triggered_categories": [],
+  "findings": [],
+  "claim_summary": {
+    "patient_name": "Anil Kumar",
+    "patient_age": 42,
+    "gender": "Male",
+    "policy_number": "POL-HS-240011",
+    "plan": "Family Health Shield - Gold",
+    "hospital_name": "Sunrise Multispeciality Hospital",
+    "hospital_id": "HSP-TG-0101",
+    "hospital_tier": "mid",
+    "network": true,
+    "diagnosis": "Dengue Fever with Thrombocytopenia",
+    "icd10": "A90",
+    "admission_date": "2026-10-14",
+    "discharge_date": "2026-10-18",
+    "los_days": 4,
+    "claim_type": "Reimbursement",
+    "claimed_amount": 38450.0,
+    "billed_total": 38450.0,
+    "bill_no": "SMH/IP/2026/10342",
+    "treating_doctor": "Dr. Srinivas Rao, MD (General Medicine)"
+  },
+  "line_items": [
+    {
+      "sno": 1,
+      "description": "Registration & Admission charges",
+      "category": "MISC",
+      "qty": 1,
+      "rate": 500.0,
+      "amount": 500.0
+    },
+    {
+      "sno": 2,
+      "description": "Semi Private Room Rent",
+      "category": "ROOM",
+      "qty": 4,
+      "rate": 4000.0,
+      "amount": 16000.0
+    },
+    {
+      "sno": 3,
+      "description": "Nursing charges",
+      "category": "NURSING",
+      "qty": 4,
+      "rate": 900.0,
+      "amount": 3600.0
+    },
+    {
+      "sno": 4,
+      "description": "Physician consultation",
+      "category": "CONSULT",
+      "qty": 5,
+      "rate": 800.0,
+      "amount": 4000.0
+    },
+    {
+      "sno": 5,
+      "description": "Dengue NS1 Antigen & IgM",
+      "category": "LAB",
+      "qty": 1,
+      "rate": 1400.0,
+      "amount": 1400.0
+    },
+    {
+      "sno": 6,
+      "description": "Complete Blood Count (CBC)",
+      "category": "LAB",
+      "qty": 4,
+      "rate": 350.0,
+      "amount": 1400.0
+    },
+    {
+      "sno": 7,
+      "description": "Platelet count (serial)",
+      "category": "LAB",
+      "qty": 6,
+      "rate": 250.0,
+      "amount": 1500.0
+    },
+    {
+      "sno": 8,
+      "description": "Liver Function Test (LFT)",
+      "category": "LAB",
+      "qty": 1,
+      "rate": 900.0,
+      "amount": 900.0
+    },
+    {
+      "sno": 9,
+      "description": "Ultrasound Abdomen",
+      "category": "RADIOLOGY",
+      "qty": 1,
+      "rate": 1800.0,
+      "amount": 1800.0
+    },
+    {
+      "sno": 10,
+      "description": "IV Fluids - Normal Saline",
+      "category": "PHARMACY",
+      "qty": 12,
+      "rate": 120.0,
+      "amount": 1440.0
+    },
+    {
+      "sno": 11,
+      "description": "Pharmacy - medicines",
+      "category": "PHARMACY",
+      "qty": 1,
+      "rate": 4910.0,
+      "amount": 4910.0
+    },
+    {
+      "sno": 12,
+      "description": "Medical consumables",
+      "category": "CONSUMABLE",
+      "qty": 1,
+      "rate": 1000.0,
+      "amount": 1000.0
+    }
+  ],
+  "documents": [
+    {
+      "doc_type": "claim_form",
+      "file": "claim_form.pdf",
+      "pages": 1,
+      "confidence": 1.0,
+      "forensic_flags": [],
+      "metadata": {
+        "producer": "ReportLab PDF Library - (opensource)",
+        "creator": "ClaimGuard Insurer Portal",
+        "created": "2026-11-11T04:35:52",
+        "modified": "2026-11-11T04:35:52"
+      }
+    },
+    {
+      "doc_type": "discharge_summary",
+      "file": "discharge_summary.pdf",
+      "pages": 1,
+      "confidence": 1.0,
+      "forensic_flags": [],
+      "metadata": {
+        "producer": "ReportLab PDF Library - (opensource)",
+        "creator": "HIMS Clinical Module v7.2",
+        "created": "2026-11-11T04:35:52",
+        "modified": "2026-11-11T04:35:52"
+      }
+    },
+    {
+      "doc_type": "hospital_bill",
+      "file": "hospital_bill.pdf",
+      "pages": 1,
+      "confidence": 1.0,
+      "forensic_flags": [],
+      "metadata": {
+        "producer": "ReportLab PDF Library - (opensource)",
+        "creator": "HIMS Billing Module v7.2",
+        "created": "2026-11-11T04:35:52",
+        "modified": "2026-11-11T04:35:52"
+      }
+    },
+    {
+      "doc_type": "prescription",
+      "file": "prescription.pdf",
+      "pages": 1,
+      "confidence": 1.0,
+      "forensic_flags": [],
+      "metadata": {
+        "producer": "ReportLab PDF Library - (opensource)",
+        "creator": "HIMS Clinical Module v7.2",
+        "created": "2026-11-11T04:35:52",
+        "modified": "2026-11-11T04:35:52"
+      }
+    }
+  ],
+  "unclassified_files": [],
+  "validation": {
+    "complete": true,
+    "blocking": false,
+    "missing_documents": [],
+    "missing_fields": [],
+    "checks": [
+      {
+        "check": "Mandatory documents present",
+        "passed": true,
+        "detail": "All present"
+      },
+      {
+        "check": "Mandatory fields extracted",
+        "passed": true,
+        "detail": "All extracted"
+      },
+      {
+        "check": "Bill total tallies with line items",
+        "passed": true,
+        "detail": "Grand total \u20b938,450 vs items \u20b938,450"
+      },
+      {
+        "check": "Claimed amount within bill amount",
+        "passed": true,
+        "detail": "Claimed \u20b938,450 vs billed \u20b938,450"
+      },
+      {
+        "check": "Hospital seal & signature on bill",
+        "passed": true,
+        "detail": "Present (Billing Manager)"
+      },
+      {
+        "check": "Seal & signature on discharge summary",
+        "passed": true,
+        "detail": "Present (Dr. Srinivas Rao, MD (General Medicine))"
+      },
+      {
+        "check": "Treating doctor registration number",
+        "passed": true,
+        "detail": "TSMC/2009/14522"
+      },
+      {
+        "check": "Hospital registration number present & consistent",
+        "passed": true,
+        "detail": "TS/HYD/CE/2015/0412"
+      },
+      {
+        "check": "Patient name consistent across documents",
+        "passed": true,
+        "detail": "claim_form: Anil Kumar | discharge_summary: Anil Kumar | hospital_bill: Anil Kumar | prescription: Anil Kumar"
+      },
+      {
+        "check": "Admission date consistent across documents",
+        "passed": true,
+        "detail": "claim_form: 2026-10-14, discharge_summary: 2026-10-14, hospital_bill: 2026-10-14"
+      },
+      {
+        "check": "Discharge date consistent across documents",
+        "passed": true,
+        "detail": "claim_form: 2026-10-18, discharge_summary: 2026-10-18, hospital_bill: 2026-10-18"
+      },
+      {
+        "check": "Claim submitted within 30 days of discharge",
+        "passed": true,
+        "detail": "6 days"
+      },
+      {
+        "check": "PDF forensic check - claim_form",
+        "passed": true,
+        "detail": "clean"
+      },
+      {
+        "check": "PDF forensic check - discharge_summary",
+        "passed": true,
+        "detail": "clean"
+      },
+      {
+        "check": "PDF forensic check - hospital_bill",
+        "passed": true,
+        "detail": "clean"
+      },
+      {
+        "check": "PDF forensic check - prescription",
+        "passed": true,
+        "detail": "clean"
+      }
+    ],
+    "passed": 16,
+    "total": 16
+  },
+  "decision": {
+    "fraud_score": 1.2,
+    "risk_band": "LOW",
+    "risk_label": "Genuine",
+    "status": "AUTO_APPROVE",
+    "recommendation": "Low fraud risk and admissible. Approve for settlement as computed.",
+    "rule_score": 0.0,
+    "ml_score": 2.7,
+    "anomaly_score": 0.0,
+    "weights": {
+      "rules": 0.55,
+      "ml": 0.45
+    },
+    "critical_override": false,
+    "triggered_categories": [],
+    "suspicious_reasons": [],
+    "coverage": {
+      "admissible": true,
+      "issues": [],
+      "days_since_inception": 1292,
+      "accident": false,
+      "sum_insured": 500000,
+      "available_si": 500000
+    }
+  },
+  "ml": {
+    "fraud_probability": 0.0275,
+    "ml_score": 2.7,
+    "anomaly_score": 0.0,
+    "top_drivers": [],
+    "features": {
+      "bill_ratio": 0.45,
+      "max_item_ratio": 0.78,
+      "room_rent_ratio": 0.89,
+      "duplicate_items": 0.0,
+      "los_ratio": 0.67,
+      "unrelated_item_count": 0.0,
+      "opd_manageable": 0.0,
+      "dx_mismatch": 0.0,
+      "hospital_risk": 0.08,
+      "hospital_network": 1.0,
+      "hospital_small_clinic": 0.0,
+      "days_since_inception_log": 7.1647,
+      "undeclared_ped": 0.0,
+      "prior_claims_12m": 0.0,
+      "registry_duplicate": 0.0,
+      "doc_issue_count": 0.0,
+      "claim_amount_log": 10.5571,
+      "is_reimbursement": 1.0,
+      "patient_age": 42.0
+    },
+    "model_version": "gbm-v1",
+    "model_metrics": {
+      "roc_auc": 0.9217,
+      "pr_auc": 0.8245,
+      "precision@0.5": 0.8927,
+      "recall@0.5": 0.7795,
+      "rows": 8000
+    }
+  },
+  "settlement": {
+    "payable": 37950.0,
+    "lines": [
+      {
+        "label": "Amount claimed",
+        "amount": 38450.0
+      },
+      {
+        "label": "Non-payable items (Registration & Admission charges)",
+        "amount": -500.0
+      },
+      {
+        "label": "Net payable",
+        "amount": 37950.0
+      }
+    ],
+    "status": "APPROVED",
+    "notes": [],
+    "deductions": 500.0
+  },
+  "siu": null,
+  "doc_request": null,
+  "agent_trace": [
+    {
+      "node": "intake",
+      "agent": "Claim Intake Agent",
+      "role": "Registers the claim, assigns a run id and collects input documents",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.211",
+      "duration_ms": 0.2,
+      "findings": 0,
+      "summary": "Registered claim CLM-2026-1001 with 4 document(s)."
+    },
+    {
+      "node": "classify",
+      "agent": "Document Classifier Agent",
+      "role": "Reads every file (PDF/TXT/JSON/image) and identifies the document type",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.212",
+      "duration_ms": 316.16,
+      "findings": 0,
+      "summary": "Identified 4 document type(s): claim_form, discharge_summary, hospital_bill, prescription."
+    },
+    {
+      "node": "extract",
+      "agent": "Data Extraction Agent",
+      "role": "Extracts structured fields & bill line items and builds one consolidated claim record",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.531",
+      "duration_ms": 12.55,
+      "findings": 0,
+      "summary": "Extracted 34 claim fields and 12 bill line items (billed \u20b938,450, claimed \u20b938,450)."
+    },
+    {
+      "node": "validate",
+      "agent": "Document Validation Agent",
+      "role": "Checks completeness, cross-document consistency, bill arithmetic & PDF forensics",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.544",
+      "duration_ms": 0.34,
+      "findings": 0,
+      "summary": "16/16 validation checks passed; 0 document issue(s)."
+    },
+    {
+      "node": "knowledge",
+      "agent": "Knowledge Retrieval Agent",
+      "role": "Looks up policy, insured member, provider registry, clinical KB and claim history",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.546",
+      "duration_ms": 3.03,
+      "findings": 0,
+      "summary": "policy found; member verified; hospital HSP-TG-0101; diagnosis -> dengue fever (icd10); 1 past claim(s); 0 registry hit(s)."
+    },
+    {
+      "node": "billing",
+      "agent": "Billing Audit Agent",
+      "role": "Bill amount vs benchmark, single-item rates, room rent and duplicate charges",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.550",
+      "duration_ms": 1.65,
+      "findings": 0,
+      "summary": "Bill \u20b938,450 ratio 0.45x typical; 0 overpriced item(s); 0 duplicate(s)."
+    },
+    {
+      "node": "history",
+      "agent": "Claim History Agent",
+      "role": "Claim frequency, repeated procedures, duplicate bills & multi-insurer claims",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.551",
+      "duration_ms": 0.61,
+      "findings": 0,
+      "summary": "0 claim(s) in last 12 months; 0 registry hit(s)."
+    },
+    {
+      "node": "medical",
+      "agent": "Medical Coherence Agent",
+      "role": "Diagnosis vs treatment consistency, clinically unrelated tests and length-of-stay",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.553",
+      "duration_ms": 0.58,
+      "findings": 0,
+      "summary": "Diagnosis 'dengue fever' (A90); 0 unrelated item(s); LOS 4 vs typical 2-6."
+    },
+    {
+      "node": "policy",
+      "agent": "Policy & Coverage Agent",
+      "role": "Waiting periods, policy validity, sum-insured enhancement and pre-existing disease disclosure",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.553",
+      "duration_ms": 0.38,
+      "findings": 0,
+      "summary": "Admissible; policy 1292 days old; 0 timing/disclosure finding(s)."
+    },
+    {
+      "node": "provider",
+      "agent": "Provider Risk Agent",
+      "role": "Hospital blacklist / watchlist, provider risk index, claim spikes, network status",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.553",
+      "duration_ms": 0.03,
+      "findings": 0,
+      "summary": "Sunrise Multispeciality Hospital (mid, network, risk 0.08); 0 finding(s)."
+    },
+    {
+      "node": "ml_scoring",
+      "agent": "ML Risk Scoring Agent",
+      "role": "Gradient-boosting fraud probability + Isolation-Forest anomaly score on 19 engineered features",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.555",
+      "duration_ms": 107.44,
+      "findings": 0,
+      "summary": "Fraud probability 0.03 (anomaly 0/100); drivers: no strong drivers."
+    },
+    {
+      "node": "decision",
+      "agent": "Fraud Risk Decision Agent",
+      "role": "Fuses rule findings + ML score into the 0-100 fraud score, risk band and routing decision",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.663",
+      "duration_ms": 0.03,
+      "findings": 0,
+      "summary": "Fraud score 1.2 (Genuine) = 0.55x rules 0.0 + 0.45x ML 2.7 -> AUTO_APPROVE."
+    },
+    {
+      "node": "settlement",
+      "agent": "Settlement Agent",
+      "role": "Computes admissible amount: non-payables, room-rent proportionate deduction, co-pay, sum insured",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.664",
+      "duration_ms": 0.1,
+      "findings": 0,
+      "summary": "APPROVED: net payable \u20b937,950 of \u20b938,450 claimed."
+    },
+    {
+      "node": "report",
+      "agent": "Report Agent",
+      "role": "Compiles the explainable decision report, narrative and audit record",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.665",
+      "duration_ms": 6.27,
+      "findings": 0,
+      "summary": "Report ready: status AUTO_APPROVE, score 1.2, payable \u20b937,950."
+    }
+  ],
+  "errors": [],
+  "narrative": "Claim CLM-2026-1001: Anil Kumar, Dengue Fever with Thrombocytopenia at Sunrise Multispeciality Hospital (4 day stay), claimed \u20b938,450. Fraud score 1.2/100 (Genuine); rule engine 0.0, ML model 2.7. Categories triggered: none. Decision: AUTO APPROVE - Low fraud risk and admissible. Approve for settlement as computed.",
+  "narrative_source": "template",
+  "output_text": "Fraud Score: 1 (Low Risk - Genuine)\nSuspicious Reasons:\n- None\nTriggered Categories:\n- None\nDecision: AUTO APPROVE",
+  "engine": "langgraph"
+}

@@ -1,0 +1,580 @@
+{
+  "run_id": "RUN-20261111-052433-AD4599",
+  "claim_id": "CLM-2026-1005",
+  "processed_at": "2026-11-11T05:24:34",
+  "status": "HUMAN_REVIEW",
+  "fraud_score": 33.3,
+  "risk_band": "MEDIUM",
+  "risk_label": "Suspicious",
+  "recommendation": "Route to a senior claims assessor / medical officer for manual review before settlement. Coverage issues: Undeclared pre-existing condition(s) (diabetes, hypertension) within 36-month PED window - refer to underwriting",
+  "suspicious_reasons": [
+    "Discharge summary records diabetes, hypertension for 6 years, but none was declared at proposal; policy is only 245 days old (possible non-disclosure)"
+  ],
+  "triggered_categories": [
+    {
+      "category": "SUSPICIOUS_TIMING",
+      "label": "Suspicious Timing (new policy)",
+      "score": 43.0,
+      "findings": 2,
+      "max_severity": "HIGH"
+    }
+  ],
+  "findings": [
+    {
+      "code": "UNDECLARED_PED",
+      "category": "SUSPICIOUS_TIMING",
+      "category_label": "Suspicious Timing (new policy)",
+      "severity": "HIGH",
+      "points": 40,
+      "reason": "Discharge summary records diabetes, hypertension for 6 years, but none was declared at proposal; policy is only 245 days old (possible non-disclosure)",
+      "evidence": {
+        "conditions": [
+          "diabetes",
+          "hypertension"
+        ],
+        "declared": []
+      },
+      "agent": "Policy & Coverage Agent"
+    },
+    {
+      "code": "FIRST_YEAR_CLAIM",
+      "category": "SUSPICIOUS_TIMING",
+      "category_label": "Suspicious Timing (new policy)",
+      "severity": "LOW",
+      "points": 10,
+      "reason": "High-value claim in the first policy year (245 days after inception)",
+      "evidence": {},
+      "agent": "Policy & Coverage Agent"
+    }
+  ],
+  "claim_summary": {
+    "patient_name": "Lakshmi Prasad",
+    "patient_age": 58,
+    "gender": "Male",
+    "policy_number": "POL-HS-260145",
+    "plan": "Senior Care Plus",
+    "hospital_name": "CityCare Super Speciality Hospital",
+    "hospital_id": "HSP-KA-0207",
+    "hospital_tier": "premium",
+    "network": true,
+    "diagnosis": "Coronary Artery Disease - NSTEMI, Single vessel disease (LAD)",
+    "icd10": "I25.10",
+    "admission_date": "2026-11-01",
+    "discharge_date": "2026-11-05",
+    "los_days": 4,
+    "claim_type": "Cashless",
+    "claimed_amount": 362400.0,
+    "billed_total": 362400.0,
+    "bill_no": "CCSH/IP/2026/35920",
+    "treating_doctor": "Dr. Harish Gowda, DM (Cardiology)"
+  },
+  "line_items": [
+    {
+      "sno": 1,
+      "description": "Registration & Admission charges",
+      "category": "MISC",
+      "qty": 1,
+      "rate": 500.0,
+      "amount": 500.0
+    },
+    {
+      "sno": 2,
+      "description": "CCU / ICU charges",
+      "category": "ICU",
+      "qty": 2,
+      "rate": 22000.0,
+      "amount": 44000.0
+    },
+    {
+      "sno": 3,
+      "description": "Private Room Rent",
+      "category": "ROOM",
+      "qty": 2,
+      "rate": 9000.0,
+      "amount": 18000.0
+    },
+    {
+      "sno": 4,
+      "description": "Nursing charges",
+      "category": "NURSING",
+      "qty": 4,
+      "rate": 1800.0,
+      "amount": 7200.0
+    },
+    {
+      "sno": 5,
+      "description": "Cardiologist consultation",
+      "category": "CONSULT",
+      "qty": 8,
+      "rate": 2000.0,
+      "amount": 16000.0
+    },
+    {
+      "sno": 6,
+      "description": "ECG",
+      "category": "LAB",
+      "qty": 3,
+      "rate": 600.0,
+      "amount": 1800.0
+    },
+    {
+      "sno": 7,
+      "description": "2D Echo",
+      "category": "RADIOLOGY",
+      "qty": 1,
+      "rate": 3200.0,
+      "amount": 3200.0
+    },
+    {
+      "sno": 8,
+      "description": "Troponin I",
+      "category": "LAB",
+      "qty": 2,
+      "rate": 1500.0,
+      "amount": 3000.0
+    },
+    {
+      "sno": 9,
+      "description": "Coronary Angiography",
+      "category": "PROCEDURE",
+      "qty": 1,
+      "rate": 22000.0,
+      "amount": 22000.0
+    },
+    {
+      "sno": 10,
+      "description": "PTCA - Angioplasty procedure",
+      "category": "PROCEDURE",
+      "qty": 1,
+      "rate": 110000.0,
+      "amount": 110000.0
+    },
+    {
+      "sno": 11,
+      "description": "Drug Eluting Stent",
+      "category": "IMPLANT",
+      "qty": 1,
+      "rate": 36000.0,
+      "amount": 36000.0
+    },
+    {
+      "sno": 12,
+      "description": "Cath lab charges",
+      "category": "OT",
+      "qty": 1,
+      "rate": 45000.0,
+      "amount": 45000.0
+    },
+    {
+      "sno": 13,
+      "description": "Pharmacy - medicines",
+      "category": "PHARMACY",
+      "qty": 1,
+      "rate": 38700.0,
+      "amount": 38700.0
+    },
+    {
+      "sno": 14,
+      "description": "Cath lab consumables",
+      "category": "CONSUMABLE",
+      "qty": 1,
+      "rate": 17000.0,
+      "amount": 17000.0
+    }
+  ],
+  "documents": [
+    {
+      "doc_type": "claim_form",
+      "file": "claim_form.pdf",
+      "pages": 1,
+      "confidence": 1.0,
+      "forensic_flags": [],
+      "metadata": {
+        "producer": "ReportLab PDF Library - (opensource)",
+        "creator": "ClaimGuard Insurer Portal",
+        "created": "2026-11-11T04:35:52",
+        "modified": "2026-11-11T04:35:52"
+      }
+    },
+    {
+      "doc_type": "discharge_summary",
+      "file": "discharge_summary.pdf",
+      "pages": 1,
+      "confidence": 1.0,
+      "forensic_flags": [],
+      "metadata": {
+        "producer": "ReportLab PDF Library - (opensource)",
+        "creator": "HIMS Clinical Module v7.2",
+        "created": "2026-11-11T04:35:52",
+        "modified": "2026-11-11T04:35:52"
+      }
+    },
+    {
+      "doc_type": "hospital_bill",
+      "file": "hospital_bill.pdf",
+      "pages": 1,
+      "confidence": 1.0,
+      "forensic_flags": [],
+      "metadata": {
+        "producer": "ReportLab PDF Library - (opensource)",
+        "creator": "HIMS Billing Module v7.2",
+        "created": "2026-11-11T04:35:52",
+        "modified": "2026-11-11T04:35:52"
+      }
+    },
+    {
+      "doc_type": "prescription",
+      "file": "prescription.pdf",
+      "pages": 1,
+      "confidence": 1.0,
+      "forensic_flags": [],
+      "metadata": {
+        "producer": "ReportLab PDF Library - (opensource)",
+        "creator": "HIMS Clinical Module v7.2",
+        "created": "2026-11-11T04:35:52",
+        "modified": "2026-11-11T04:35:52"
+      }
+    }
+  ],
+  "unclassified_files": [],
+  "validation": {
+    "complete": true,
+    "blocking": false,
+    "missing_documents": [],
+    "missing_fields": [],
+    "checks": [
+      {
+        "check": "Mandatory documents present",
+        "passed": true,
+        "detail": "All present"
+      },
+      {
+        "check": "Mandatory fields extracted",
+        "passed": true,
+        "detail": "All extracted"
+      },
+      {
+        "check": "Bill total tallies with line items",
+        "passed": true,
+        "detail": "Grand total \u20b93,62,400 vs items \u20b93,62,400"
+      },
+      {
+        "check": "Claimed amount within bill amount",
+        "passed": true,
+        "detail": "Claimed \u20b93,62,400 vs billed \u20b93,62,400"
+      },
+      {
+        "check": "Hospital seal & signature on bill",
+        "passed": true,
+        "detail": "Present (Billing Manager)"
+      },
+      {
+        "check": "Seal & signature on discharge summary",
+        "passed": true,
+        "detail": "Present (Dr. Harish Gowda, DM (Cardiology))"
+      },
+      {
+        "check": "Treating doctor registration number",
+        "passed": true,
+        "detail": "KMC/2006/51290"
+      },
+      {
+        "check": "Hospital registration number present & consistent",
+        "passed": true,
+        "detail": "KA/BLR/KPME/2011/1187"
+      },
+      {
+        "check": "Patient name consistent across documents",
+        "passed": true,
+        "detail": "claim_form: Lakshmi Prasad | discharge_summary: Lakshmi Prasad | hospital_bill: Lakshmi Prasad | prescription: Lakshmi Prasad"
+      },
+      {
+        "check": "Admission date consistent across documents",
+        "passed": true,
+        "detail": "claim_form: 2026-11-01, discharge_summary: 2026-11-01, hospital_bill: 2026-11-01"
+      },
+      {
+        "check": "Discharge date consistent across documents",
+        "passed": true,
+        "detail": "claim_form: 2026-11-05, discharge_summary: 2026-11-05, hospital_bill: 2026-11-05"
+      },
+      {
+        "check": "Claim submitted within 30 days of discharge",
+        "passed": true,
+        "detail": "0 days"
+      },
+      {
+        "check": "PDF forensic check - claim_form",
+        "passed": true,
+        "detail": "clean"
+      },
+      {
+        "check": "PDF forensic check - discharge_summary",
+        "passed": true,
+        "detail": "clean"
+      },
+      {
+        "check": "PDF forensic check - hospital_bill",
+        "passed": true,
+        "detail": "clean"
+      },
+      {
+        "check": "PDF forensic check - prescription",
+        "passed": true,
+        "detail": "clean"
+      }
+    ],
+    "passed": 16,
+    "total": 16
+  },
+  "decision": {
+    "fraud_score": 33.3,
+    "risk_band": "MEDIUM",
+    "risk_label": "Suspicious",
+    "status": "HUMAN_REVIEW",
+    "recommendation": "Route to a senior claims assessor / medical officer for manual review before settlement. Coverage issues: Undeclared pre-existing condition(s) (diabetes, hypertension) within 36-month PED window - refer to underwriting",
+    "rule_score": 43.0,
+    "ml_score": 21.5,
+    "anomaly_score": 23.8,
+    "weights": {
+      "rules": 0.55,
+      "ml": 0.45
+    },
+    "critical_override": false,
+    "triggered_categories": [
+      {
+        "category": "SUSPICIOUS_TIMING",
+        "label": "Suspicious Timing (new policy)",
+        "score": 43.0,
+        "findings": 2,
+        "max_severity": "HIGH"
+      }
+    ],
+    "suspicious_reasons": [
+      "Discharge summary records diabetes, hypertension for 6 years, but none was declared at proposal; policy is only 245 days old (possible non-disclosure)"
+    ],
+    "coverage": {
+      "admissible": false,
+      "issues": [
+        "Undeclared pre-existing condition(s) (diabetes, hypertension) within 36-month PED window - refer to underwriting"
+      ],
+      "days_since_inception": 245,
+      "accident": false,
+      "sum_insured": 1000000,
+      "available_si": 1000000
+    }
+  },
+  "ml": {
+    "fraud_probability": 0.2153,
+    "ml_score": 21.5,
+    "anomaly_score": 23.8,
+    "top_drivers": [
+      {
+        "feature": "undeclared_ped",
+        "label": "Undeclared pre-existing disease",
+        "value": 1.0,
+        "weight": 0.05
+      }
+    ],
+    "features": {
+      "bill_ratio": 0.5,
+      "max_item_ratio": 0.62,
+      "room_rent_ratio": 0.8,
+      "duplicate_items": 0.0,
+      "los_ratio": 0.57,
+      "unrelated_item_count": 0.0,
+      "opd_manageable": 0.0,
+      "dx_mismatch": 0.0,
+      "hospital_risk": 0.05,
+      "hospital_network": 1.0,
+      "hospital_small_clinic": 0.0,
+      "days_since_inception_log": 5.5053,
+      "undeclared_ped": 1.0,
+      "prior_claims_12m": 0.0,
+      "registry_duplicate": 0.0,
+      "doc_issue_count": 0.0,
+      "claim_amount_log": 12.8005,
+      "is_reimbursement": 0.0,
+      "patient_age": 58.0
+    },
+    "model_version": "gbm-v1",
+    "model_metrics": {
+      "roc_auc": 0.9217,
+      "pr_auc": 0.8245,
+      "precision@0.5": 0.8927,
+      "recall@0.5": 0.7795,
+      "rows": 8000
+    }
+  },
+  "settlement": {
+    "payable": 361900.0,
+    "lines": [
+      {
+        "label": "Amount claimed",
+        "amount": 362400.0
+      },
+      {
+        "label": "Non-payable items (Registration & Admission charges)",
+        "amount": -500.0
+      },
+      {
+        "label": "Net payable",
+        "amount": 361900.0
+      }
+    ],
+    "status": "PROVISIONAL - pending human review",
+    "notes": [
+      "Amount is provisional; a reviewer must confirm before payment is released."
+    ],
+    "deductions": 500.0
+  },
+  "siu": null,
+  "doc_request": null,
+  "agent_trace": [
+    {
+      "node": "intake",
+      "agent": "Claim Intake Agent",
+      "role": "Registers the claim, assigns a run id and collects input documents",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.972",
+      "duration_ms": 0.16,
+      "findings": 0,
+      "summary": "Registered claim CLM-2026-1005 with 4 document(s)."
+    },
+    {
+      "node": "classify",
+      "agent": "Document Classifier Agent",
+      "role": "Reads every file (PDF/TXT/JSON/image) and identifies the document type",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.973",
+      "duration_ms": 68.03,
+      "findings": 0,
+      "summary": "Identified 4 document type(s): claim_form, discharge_summary, hospital_bill, prescription."
+    },
+    {
+      "node": "extract",
+      "agent": "Data Extraction Agent",
+      "role": "Extracts structured fields & bill line items and builds one consolidated claim record",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:34.042",
+      "duration_ms": 2.09,
+      "findings": 0,
+      "summary": "Extracted 35 claim fields and 14 bill line items (billed \u20b93,62,400, claimed \u20b93,62,400)."
+    },
+    {
+      "node": "validate",
+      "agent": "Document Validation Agent",
+      "role": "Checks completeness, cross-document consistency, bill arithmetic & PDF forensics",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:34.044",
+      "duration_ms": 0.17,
+      "findings": 0,
+      "summary": "16/16 validation checks passed; 0 document issue(s)."
+    },
+    {
+      "node": "knowledge",
+      "agent": "Knowledge Retrieval Agent",
+      "role": "Looks up policy, insured member, provider registry, clinical KB and claim history",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:34.045",
+      "duration_ms": 0.43,
+      "findings": 0,
+      "summary": "policy found; member verified; hospital HSP-KA-0207; diagnosis -> coronary artery disease (icd10); 0 past claim(s); 0 registry hit(s)."
+    },
+    {
+      "node": "billing",
+      "agent": "Billing Audit Agent",
+      "role": "Bill amount vs benchmark, single-item rates, room rent and duplicate charges",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:34.046",
+      "duration_ms": 0.23,
+      "findings": 0,
+      "summary": "Bill \u20b93,62,400 ratio 0.5x typical; 0 overpriced item(s); 0 duplicate(s)."
+    },
+    {
+      "node": "history",
+      "agent": "Claim History Agent",
+      "role": "Claim frequency, repeated procedures, duplicate bills & multi-insurer claims",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:34.048",
+      "duration_ms": 0.24,
+      "findings": 0,
+      "summary": "0 claim(s) in last 12 months; 0 registry hit(s)."
+    },
+    {
+      "node": "medical",
+      "agent": "Medical Coherence Agent",
+      "role": "Diagnosis vs treatment consistency, clinically unrelated tests and length-of-stay",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:34.047",
+      "duration_ms": 0.59,
+      "findings": 0,
+      "summary": "Diagnosis 'coronary artery disease' (I25.10); 0 unrelated item(s); LOS 4 vs typical 3-7."
+    },
+    {
+      "node": "policy",
+      "agent": "Policy & Coverage Agent",
+      "role": "Waiting periods, policy validity, sum-insured enhancement and pre-existing disease disclosure",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:34.048",
+      "duration_ms": 0.13,
+      "findings": 2,
+      "summary": "1 coverage issue(s); policy 245 days old; 2 timing/disclosure finding(s)."
+    },
+    {
+      "node": "provider",
+      "agent": "Provider Risk Agent",
+      "role": "Hospital blacklist / watchlist, provider risk index, claim spikes, network status",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:34.048",
+      "duration_ms": 0.03,
+      "findings": 0,
+      "summary": "CityCare Super Speciality Hospital (premium, network, risk 0.05); 0 finding(s)."
+    },
+    {
+      "node": "ml_scoring",
+      "agent": "ML Risk Scoring Agent",
+      "role": "Gradient-boosting fraud probability + Isolation-Forest anomaly score on 19 engineered features",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:34.049",
+      "duration_ms": 14.46,
+      "findings": 0,
+      "summary": "Fraud probability 0.22 (anomaly 24/100); drivers: Undeclared pre-existing disease."
+    },
+    {
+      "node": "decision",
+      "agent": "Fraud Risk Decision Agent",
+      "role": "Fuses rule findings + ML score into the 0-100 fraud score, risk band and routing decision",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:34.064",
+      "duration_ms": 0.06,
+      "findings": 0,
+      "summary": "Fraud score 33.3 (Suspicious) = 0.55x rules 43.0 + 0.45x ML 21.5 -> HUMAN_REVIEW."
+    },
+    {
+      "node": "settlement",
+      "agent": "Settlement Agent",
+      "role": "Computes admissible amount: non-payables, room-rent proportionate deduction, co-pay, sum insured",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:34.065",
+      "duration_ms": 0.05,
+      "findings": 0,
+      "summary": "PROVISIONAL - pending human review: net payable \u20b93,61,900 of \u20b93,62,400 claimed."
+    },
+    {
+      "node": "report",
+      "agent": "Report Agent",
+      "role": "Compiles the explainable decision report, narrative and audit record",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:34.065",
+      "duration_ms": 3.35,
+      "findings": 0,
+      "summary": "Report ready: status HUMAN_REVIEW, score 33.3, payable \u20b93,61,900."
+    }
+  ],
+  "errors": [],
+  "narrative": "Claim CLM-2026-1005: Lakshmi Prasad, Coronary Artery Disease - NSTEMI, Single vessel disease (LAD) at CityCare Super Speciality Hospital (4 day stay), claimed \u20b93,62,400. Fraud score 33.3/100 (Suspicious); rule engine 43.0, ML model 21.5. Categories triggered: Suspicious Timing (new policy). Key concerns: Discharge summary records diabetes, hypertension for 6 years, but none was declared at proposal; policy is only 245 days old (possible non-disclosure). Decision: HUMAN REVIEW - Route to a senior claims assessor / medical officer for manual review before settlement. Coverage issues: Undeclared pre-existing condition(s) (diabetes, hypertension) within 36-month PED window - refer to underwriting",
+  "narrative_source": "template",
+  "output_text": "Fraud Score: 33 (Medium Risk - Suspicious)\nSuspicious Reasons:\n- Discharge summary records diabetes, hypertension for 6 years, but none was declared at proposal; policy is only 245 days old (possible non-disclosure)\nTriggered Categories:\n- Suspicious Timing (new policy)\nDecision: HUMAN REVIEW",
+  "engine": "langgraph"
+}

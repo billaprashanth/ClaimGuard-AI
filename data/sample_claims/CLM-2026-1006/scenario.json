@@ -1,0 +1,13 @@
+{
+  "claim_id": "CLM-2026-1006",
+  "title": "Incomplete - Accident fracture, discharge summary missing, bill unsigned",
+  "expected": "Pending documents (claim paused)",
+  "hospital_id": "HSP-TG-0512",
+  "patient": "Rahul Verma",
+  "diagnosis": "Fracture of right distal radius (road traffic accident)",
+  "claimed_amount": "Rs. 92,200.00",
+  "files": [
+    "claim_form.pdf",
+    "hospital_bill.pdf"
+  ]
+}

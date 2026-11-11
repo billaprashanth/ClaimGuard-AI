@@ -1,0 +1,7 @@
+Fraud Score: 74 (High Risk)
+Suspicious Reasons:
+- Duplicate claim: hospital bill SMC/IP/2026/08812 was already claimed with Other Insurer (simulated registry) (policy OTH-HL-77821) on 2026-10-20 for ₹27,850 - status SETTLED - FULL AMOUNT
+- Claim form declares no other health policy, but the industry registry shows another active policy
+Triggered Categories:
+- Patient Claim History
+Decision: SIU INVESTIGATION

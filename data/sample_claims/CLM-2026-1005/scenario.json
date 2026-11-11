@@ -1,0 +1,15 @@
+{
+  "claim_id": "CLM-2026-1005",
+  "title": "Non-disclosure - Angioplasty 8 months after inception, undeclared diabetes & hypertension",
+  "expected": "MEDIUM/HIGH risk -> review for misrepresentation",
+  "hospital_id": "HSP-KA-0207",
+  "patient": "Lakshmi Prasad",
+  "diagnosis": "Coronary Artery Disease - NSTEMI",
+  "claimed_amount": "Rs. 3,62,400.00",
+  "files": [
+    "claim_form.pdf",
+    "discharge_summary.pdf",
+    "hospital_bill.pdf",
+    "prescription.pdf"
+  ]
+}

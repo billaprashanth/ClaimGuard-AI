@@ -1,0 +1,4 @@
+Status: PENDING DOCUMENTS
+Required:
+- Discharge summary signed by the treating doctor
+- Re-submit: Hospital bill has no seal / authorised signature

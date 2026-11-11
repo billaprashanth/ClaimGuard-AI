@@ -1,0 +1,44 @@
+{
+  "model_version": "gbm-v1",
+  "trained_at": "2026-11-11T04:35:34",
+  "sklearn_version": "1.9.1",
+  "rows": 8000,
+  "fraud_rate": 0.2067,
+  "test_rows": 1600,
+  "roc_auc": 0.9217,
+  "pr_auc": 0.8245,
+  "precision@0.5": 0.8927,
+  "recall@0.5": 0.7795,
+  "f1@0.5": 0.8323,
+  "confusion_matrix@0.5": [
+    [
+      1238,
+      31
+    ],
+    [
+      73,
+      258
+    ]
+  ],
+  "feature_importance": {
+    "bill_ratio": 0.4609,
+    "max_item_ratio": 0.1209,
+    "days_since_inception_log": 0.0871,
+    "room_rent_ratio": 0.074,
+    "hospital_risk": 0.0534,
+    "registry_duplicate": 0.0517,
+    "undeclared_ped": 0.0504,
+    "los_ratio": 0.0265,
+    "unrelated_item_count": 0.0243,
+    "doc_issue_count": 0.0193,
+    "claim_amount_log": 0.0082,
+    "is_reimbursement": 0.0066,
+    "hospital_network": 0.0065,
+    "duplicate_items": 0.0034,
+    "patient_age": 0.0033,
+    "dx_mismatch": 0.0014,
+    "prior_claims_12m": 0.0014,
+    "hospital_small_clinic": 0.0006,
+    "opd_manageable": 0.0002
+  }
+}

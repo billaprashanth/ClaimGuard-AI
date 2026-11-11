@@ -1,0 +1,14 @@
+# Render Blueprint - New > Blueprint > pick this repo. Deploys the Docker image on the free plan.
+services:
+  - type: web
+    name: claimguard-ai
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: CLAIMGUARD_ENGINE
+        value: langgraph
+      - key: LLM_PROVIDER
+        value: none

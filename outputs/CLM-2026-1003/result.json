@@ -1,0 +1,724 @@
+{
+  "run_id": "RUN-20261111-052433-ACFEF6",
+  "claim_id": "CLM-2026-1003",
+  "processed_at": "2026-11-11T05:24:33",
+  "status": "HUMAN_REVIEW",
+  "fraud_score": 49.4,
+  "risk_band": "MEDIUM",
+  "risk_label": "Suspicious",
+  "recommendation": "Route to a senior claims assessor / medical officer for manual review before settlement.",
+  "suspicious_reasons": [
+    "2 previous claims in the last 12 months, all at the same hospital (Greenvalley Hospital): 2026-03-02 Acute gastroenteritis \u20b932,000, 2026-07-15 Viral fever \u20b928,500",
+    "Length of stay 7 days exceeds the typical 3-6 days for typhoid fever",
+    "Clinical notes show recovery by day 4 but patient was kept 3 more day(s)",
+    "Claim 40 days after sum insured was enhanced from \u20b93,00,000 to \u20b95,00,000 at renewal",
+    "Provider risk index 0.38 for Greenvalley Hospital",
+    "Claim volume from Greenvalley Hospital is 2.0x its 90-day baseline (96 vs 48)"
+  ],
+  "triggered_categories": [
+    {
+      "category": "HOSPITAL_RISK",
+      "label": "Hospital Pattern Risk",
+      "score": 32.3,
+      "findings": 3,
+      "max_severity": "MEDIUM"
+    },
+    {
+      "category": "TREATMENT_DURATION",
+      "label": "Treatment Duration Abnormality",
+      "score": 30.6,
+      "findings": 2,
+      "max_severity": "MEDIUM"
+    },
+    {
+      "category": "CLAIM_HISTORY",
+      "label": "Patient Claim History",
+      "score": 22.0,
+      "findings": 1,
+      "max_severity": "MEDIUM"
+    },
+    {
+      "category": "SUSPICIOUS_TIMING",
+      "label": "Suspicious Timing (new policy)",
+      "score": 22.0,
+      "findings": 1,
+      "max_severity": "MEDIUM"
+    }
+  ],
+  "findings": [
+    {
+      "code": "FREQUENT_CLAIMS",
+      "category": "CLAIM_HISTORY",
+      "category_label": "Patient Claim History",
+      "severity": "MEDIUM",
+      "points": 22,
+      "reason": "2 previous claims in the last 12 months, all at the same hospital (Greenvalley Hospital): 2026-03-02 Acute gastroenteritis \u20b932,000, 2026-07-15 Viral fever \u20b928,500",
+      "evidence": {
+        "claims": [
+          {
+            "claim_id": "CLM-2026-0211",
+            "patient": "Suresh Babu",
+            "date": "2026-03-02",
+            "hospital_id": "HSP-TG-0333",
+            "diagnosis": "Acute gastroenteritis",
+            "procedures": [
+              "ct scan"
+            ],
+            "amount": 32000,
+            "status": "SETTLED"
+          },
+          {
+            "claim_id": "CLM-2026-0587",
+            "patient": "Suresh Babu",
+            "date": "2026-07-15",
+            "hospital_id": "HSP-TG-0333",
+            "diagnosis": "Viral fever",
+            "procedures": [
+              "ct scan"
+            ],
+            "amount": 28500,
+            "status": "SETTLED"
+          }
+        ]
+      },
+      "agent": "Claim History Agent"
+    },
+    {
+      "code": "LONG_STAY",
+      "category": "TREATMENT_DURATION",
+      "category_label": "Treatment Duration Abnormality",
+      "severity": "MEDIUM",
+      "points": 22,
+      "reason": "Length of stay 7 days exceeds the typical 3-6 days for typhoid fever",
+      "evidence": {
+        "los": 7,
+        "typical": [
+          3,
+          6
+        ]
+      },
+      "agent": "Medical Coherence Agent"
+    },
+    {
+      "code": "POST_RECOVERY_STAY",
+      "category": "TREATMENT_DURATION",
+      "category_label": "Treatment Duration Abnormality",
+      "severity": "MEDIUM",
+      "points": 22,
+      "reason": "Clinical notes show recovery by day 4 but patient was kept 3 more day(s)",
+      "evidence": {
+        "recovered_day": 4,
+        "los": 7
+      },
+      "agent": "Medical Coherence Agent"
+    },
+    {
+      "code": "SI_ENHANCED",
+      "category": "SUSPICIOUS_TIMING",
+      "category_label": "Suspicious Timing (new policy)",
+      "severity": "MEDIUM",
+      "points": 22,
+      "reason": "Claim 40 days after sum insured was enhanced from \u20b93,00,000 to \u20b95,00,000 at renewal",
+      "evidence": {},
+      "agent": "Policy & Coverage Agent"
+    },
+    {
+      "code": "HOSP_RISKY",
+      "category": "HOSPITAL_RISK",
+      "category_label": "Hospital Pattern Risk",
+      "severity": "MEDIUM",
+      "points": 22,
+      "reason": "Provider risk index 0.38 for Greenvalley Hospital",
+      "evidence": {},
+      "agent": "Provider Risk Agent"
+    },
+    {
+      "code": "HOSP_SPIKE",
+      "category": "HOSPITAL_RISK",
+      "category_label": "Hospital Pattern Risk",
+      "severity": "MEDIUM",
+      "points": 22,
+      "reason": "Claim volume from Greenvalley Hospital is 2.0x its 90-day baseline (96 vs 48)",
+      "evidence": {},
+      "agent": "Provider Risk Agent"
+    },
+    {
+      "code": "NON_NETWORK",
+      "category": "HOSPITAL_RISK",
+      "category_label": "Hospital Pattern Risk",
+      "severity": "LOW",
+      "points": 10,
+      "reason": "Non-network hospital - reimbursement claim (no pre-authorisation)",
+      "evidence": {},
+      "agent": "Provider Risk Agent"
+    }
+  ],
+  "claim_summary": {
+    "patient_name": "Suresh Babu",
+    "patient_age": 51,
+    "gender": "Male",
+    "policy_number": "POL-HS-250789",
+    "plan": "Individual Health Secure",
+    "hospital_name": "Greenvalley Hospital",
+    "hospital_id": "HSP-TG-0333",
+    "hospital_tier": "mid",
+    "network": false,
+    "diagnosis": "Enteric (Typhoid) Fever",
+    "icd10": "A01.0",
+    "admission_date": "2026-10-20",
+    "discharge_date": "2026-10-27",
+    "los_days": 7,
+    "claim_type": "Reimbursement",
+    "claimed_amount": 56050.0,
+    "billed_total": 56050.0,
+    "bill_no": "GVH/2026/4471",
+    "treating_doctor": "Dr. P. Venkatesh, MD"
+  },
+  "line_items": [
+    {
+      "sno": 1,
+      "description": "Registration & Admission charges",
+      "category": "MISC",
+      "qty": 1,
+      "rate": 500.0,
+      "amount": 500.0
+    },
+    {
+      "sno": 2,
+      "description": "Private Room Rent",
+      "category": "ROOM",
+      "qty": 7,
+      "rate": 4000.0,
+      "amount": 28000.0
+    },
+    {
+      "sno": 3,
+      "description": "Nursing charges",
+      "category": "NURSING",
+      "qty": 7,
+      "rate": 800.0,
+      "amount": 5600.0
+    },
+    {
+      "sno": 4,
+      "description": "Physician consultation",
+      "category": "CONSULT",
+      "qty": 8,
+      "rate": 800.0,
+      "amount": 6400.0
+    },
+    {
+      "sno": 5,
+      "description": "Widal test",
+      "category": "LAB",
+      "qty": 1,
+      "rate": 450.0,
+      "amount": 450.0
+    },
+    {
+      "sno": 6,
+      "description": "Typhidot IgM",
+      "category": "LAB",
+      "qty": 1,
+      "rate": 900.0,
+      "amount": 900.0
+    },
+    {
+      "sno": 7,
+      "description": "Blood culture & sensitivity",
+      "category": "LAB",
+      "qty": 1,
+      "rate": 1600.0,
+      "amount": 1600.0
+    },
+    {
+      "sno": 8,
+      "description": "Complete Blood Count (CBC)",
+      "category": "LAB",
+      "qty": 3,
+      "rate": 400.0,
+      "amount": 1200.0
+    },
+    {
+      "sno": 9,
+      "description": "Liver Function Test (LFT)",
+      "category": "LAB",
+      "qty": 1,
+      "rate": 900.0,
+      "amount": 900.0
+    },
+    {
+      "sno": 10,
+      "description": "Ultrasound Abdomen",
+      "category": "RADIOLOGY",
+      "qty": 1,
+      "rate": 2200.0,
+      "amount": 2200.0
+    },
+    {
+      "sno": 11,
+      "description": "Inj. Ceftriaxone 1g",
+      "category": "PHARMACY",
+      "qty": 14,
+      "rate": 250.0,
+      "amount": 3500.0
+    },
+    {
+      "sno": 12,
+      "description": "Pharmacy - medicines",
+      "category": "PHARMACY",
+      "qty": 1,
+      "rate": 3800.0,
+      "amount": 3800.0
+    },
+    {
+      "sno": 13,
+      "description": "Medical consumables",
+      "category": "CONSUMABLE",
+      "qty": 1,
+      "rate": 1000.0,
+      "amount": 1000.0
+    }
+  ],
+  "documents": [
+    {
+      "doc_type": "claim_form",
+      "file": "claim_form.pdf",
+      "pages": 1,
+      "confidence": 1.0,
+      "forensic_flags": [],
+      "metadata": {
+        "producer": "ReportLab PDF Library - (opensource)",
+        "creator": "ClaimGuard Insurer Portal",
+        "created": "2026-11-11T04:35:52",
+        "modified": "2026-11-11T04:35:52"
+      }
+    },
+    {
+      "doc_type": "discharge_summary",
+      "file": "discharge_summary.pdf",
+      "pages": 1,
+      "confidence": 1.0,
+      "forensic_flags": [],
+      "metadata": {
+        "producer": "ReportLab PDF Library - (opensource)",
+        "creator": "HIMS Clinical Module v7.2",
+        "created": "2026-11-11T04:35:52",
+        "modified": "2026-11-11T04:35:52"
+      }
+    },
+    {
+      "doc_type": "hospital_bill",
+      "file": "hospital_bill.pdf",
+      "pages": 1,
+      "confidence": 1.0,
+      "forensic_flags": [],
+      "metadata": {
+        "producer": "ReportLab PDF Library - (opensource)",
+        "creator": "HIMS Billing Module v7.2",
+        "created": "2026-11-11T04:35:52",
+        "modified": "2026-11-11T04:35:52"
+      }
+    },
+    {
+      "doc_type": "prescription",
+      "file": "prescription.pdf",
+      "pages": 1,
+      "confidence": 1.0,
+      "forensic_flags": [],
+      "metadata": {
+        "producer": "ReportLab PDF Library - (opensource)",
+        "creator": "HIMS Clinical Module v7.2",
+        "created": "2026-11-11T04:35:52",
+        "modified": "2026-11-11T04:35:52"
+      }
+    }
+  ],
+  "unclassified_files": [],
+  "validation": {
+    "complete": true,
+    "blocking": false,
+    "missing_documents": [],
+    "missing_fields": [],
+    "checks": [
+      {
+        "check": "Mandatory documents present",
+        "passed": true,
+        "detail": "All present"
+      },
+      {
+        "check": "Mandatory fields extracted",
+        "passed": true,
+        "detail": "All extracted"
+      },
+      {
+        "check": "Bill total tallies with line items",
+        "passed": true,
+        "detail": "Grand total \u20b956,050 vs items \u20b956,050"
+      },
+      {
+        "check": "Claimed amount within bill amount",
+        "passed": true,
+        "detail": "Claimed \u20b956,050 vs billed \u20b956,050"
+      },
+      {
+        "check": "Hospital seal & signature on bill",
+        "passed": true,
+        "detail": "Present (Billing Manager)"
+      },
+      {
+        "check": "Seal & signature on discharge summary",
+        "passed": true,
+        "detail": "Present (Dr. P. Venkatesh, MD)"
+      },
+      {
+        "check": "Treating doctor registration number",
+        "passed": true,
+        "detail": "TSMC/2014/20377"
+      },
+      {
+        "check": "Hospital registration number present & consistent",
+        "passed": true,
+        "detail": "TS/WGL/CE/2018/0091"
+      },
+      {
+        "check": "Patient name consistent across documents",
+        "passed": true,
+        "detail": "claim_form: Suresh Babu | discharge_summary: Suresh Babu | hospital_bill: Suresh Babu | prescription: Suresh Babu"
+      },
+      {
+        "check": "Admission date consistent across documents",
+        "passed": true,
+        "detail": "claim_form: 2026-10-20, discharge_summary: 2026-10-20, hospital_bill: 2026-10-20"
+      },
+      {
+        "check": "Discharge date consistent across documents",
+        "passed": true,
+        "detail": "claim_form: 2026-10-27, discharge_summary: 2026-10-27, hospital_bill: 2026-10-27"
+      },
+      {
+        "check": "Claim submitted within 30 days of discharge",
+        "passed": true,
+        "detail": "7 days"
+      },
+      {
+        "check": "PDF forensic check - claim_form",
+        "passed": true,
+        "detail": "clean"
+      },
+      {
+        "check": "PDF forensic check - discharge_summary",
+        "passed": true,
+        "detail": "clean"
+      },
+      {
+        "check": "PDF forensic check - hospital_bill",
+        "passed": true,
+        "detail": "clean"
+      },
+      {
+        "check": "PDF forensic check - prescription",
+        "passed": true,
+        "detail": "clean"
+      }
+    ],
+    "passed": 16,
+    "total": 16
+  },
+  "decision": {
+    "fraud_score": 49.4,
+    "risk_band": "MEDIUM",
+    "risk_label": "Suspicious",
+    "status": "HUMAN_REVIEW",
+    "recommendation": "Route to a senior claims assessor / medical officer for manual review before settlement.",
+    "rule_score": 71.4,
+    "ml_score": 22.5,
+    "anomaly_score": 39.6,
+    "weights": {
+      "rules": 0.55,
+      "ml": 0.45
+    },
+    "critical_override": false,
+    "triggered_categories": [
+      {
+        "category": "HOSPITAL_RISK",
+        "label": "Hospital Pattern Risk",
+        "score": 32.3,
+        "findings": 3,
+        "max_severity": "MEDIUM"
+      },
+      {
+        "category": "TREATMENT_DURATION",
+        "label": "Treatment Duration Abnormality",
+        "score": 30.6,
+        "findings": 2,
+        "max_severity": "MEDIUM"
+      },
+      {
+        "category": "CLAIM_HISTORY",
+        "label": "Patient Claim History",
+        "score": 22.0,
+        "findings": 1,
+        "max_severity": "MEDIUM"
+      },
+      {
+        "category": "SUSPICIOUS_TIMING",
+        "label": "Suspicious Timing (new policy)",
+        "score": 22.0,
+        "findings": 1,
+        "max_severity": "MEDIUM"
+      }
+    ],
+    "suspicious_reasons": [
+      "2 previous claims in the last 12 months, all at the same hospital (Greenvalley Hospital): 2026-03-02 Acute gastroenteritis \u20b932,000, 2026-07-15 Viral fever \u20b928,500",
+      "Length of stay 7 days exceeds the typical 3-6 days for typhoid fever",
+      "Clinical notes show recovery by day 4 but patient was kept 3 more day(s)",
+      "Claim 40 days after sum insured was enhanced from \u20b93,00,000 to \u20b95,00,000 at renewal",
+      "Provider risk index 0.38 for Greenvalley Hospital",
+      "Claim volume from Greenvalley Hospital is 2.0x its 90-day baseline (96 vs 48)"
+    ],
+    "coverage": {
+      "admissible": true,
+      "issues": [],
+      "days_since_inception": 405,
+      "accident": false,
+      "sum_insured": 500000,
+      "available_si": 500000
+    }
+  },
+  "ml": {
+    "fraud_probability": 0.2255,
+    "ml_score": 22.5,
+    "anomaly_score": 39.6,
+    "top_drivers": [
+      {
+        "feature": "bill_ratio",
+        "label": "Bill vs typical cost",
+        "value": 1.02,
+        "weight": 0.567
+      },
+      {
+        "feature": "max_item_ratio",
+        "label": "Highest item vs tariff",
+        "value": 1.12,
+        "weight": 0.148
+      },
+      {
+        "feature": "hospital_risk",
+        "label": "Provider risk index",
+        "value": 0.38,
+        "weight": 0.112
+      },
+      {
+        "feature": "los_ratio",
+        "label": "Length of stay vs typical",
+        "value": 1.17,
+        "weight": 0.036
+      }
+    ],
+    "features": {
+      "bill_ratio": 1.02,
+      "max_item_ratio": 1.12,
+      "room_rent_ratio": 0.57,
+      "duplicate_items": 0.0,
+      "los_ratio": 1.17,
+      "unrelated_item_count": 0.0,
+      "opd_manageable": 0.0,
+      "dx_mismatch": 0.0,
+      "hospital_risk": 0.38,
+      "hospital_network": 0.0,
+      "hospital_small_clinic": 0.0,
+      "days_since_inception_log": 6.0064,
+      "undeclared_ped": 0.0,
+      "prior_claims_12m": 2.0,
+      "registry_duplicate": 0.0,
+      "doc_issue_count": 0.0,
+      "claim_amount_log": 10.934,
+      "is_reimbursement": 1.0,
+      "patient_age": 51.0
+    },
+    "model_version": "gbm-v1",
+    "model_metrics": {
+      "roc_auc": 0.9217,
+      "pr_auc": 0.8245,
+      "precision@0.5": 0.8927,
+      "recall@0.5": 0.7795,
+      "rows": 8000
+    }
+  },
+  "settlement": {
+    "payable": 49995.0,
+    "lines": [
+      {
+        "label": "Amount claimed",
+        "amount": 56050.0
+      },
+      {
+        "label": "Non-payable items (Registration & Admission charges)",
+        "amount": -500.0
+      },
+      {
+        "label": "Co-payment 10%",
+        "amount": -5555.0
+      },
+      {
+        "label": "Net payable",
+        "amount": 49995.0
+      }
+    ],
+    "status": "PROVISIONAL - pending human review",
+    "notes": [
+      "Amount is provisional; a reviewer must confirm before payment is released."
+    ],
+    "deductions": 6055.0
+  },
+  "siu": null,
+  "doc_request": null,
+  "agent_trace": [
+    {
+      "node": "intake",
+      "agent": "Claim Intake Agent",
+      "role": "Registers the claim, assigns a run id and collects input documents",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.783",
+      "duration_ms": 0.13,
+      "findings": 0,
+      "summary": "Registered claim CLM-2026-1003 with 4 document(s)."
+    },
+    {
+      "node": "classify",
+      "agent": "Document Classifier Agent",
+      "role": "Reads every file (PDF/TXT/JSON/image) and identifies the document type",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.783",
+      "duration_ms": 71.89,
+      "findings": 0,
+      "summary": "Identified 4 document type(s): claim_form, discharge_summary, hospital_bill, prescription."
+    },
+    {
+      "node": "extract",
+      "agent": "Data Extraction Agent",
+      "role": "Extracts structured fields & bill line items and builds one consolidated claim record",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.856",
+      "duration_ms": 2.26,
+      "findings": 0,
+      "summary": "Extracted 34 claim fields and 13 bill line items (billed \u20b956,050, claimed \u20b956,050)."
+    },
+    {
+      "node": "validate",
+      "agent": "Document Validation Agent",
+      "role": "Checks completeness, cross-document consistency, bill arithmetic & PDF forensics",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.859",
+      "duration_ms": 0.22,
+      "findings": 0,
+      "summary": "16/16 validation checks passed; 0 document issue(s)."
+    },
+    {
+      "node": "knowledge",
+      "agent": "Knowledge Retrieval Agent",
+      "role": "Looks up policy, insured member, provider registry, clinical KB and claim history",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.859",
+      "duration_ms": 0.37,
+      "findings": 0,
+      "summary": "policy found; member verified; hospital HSP-TG-0333; diagnosis -> typhoid fever (icd10); 2 past claim(s); 0 registry hit(s)."
+    },
+    {
+      "node": "billing",
+      "agent": "Billing Audit Agent",
+      "role": "Bill amount vs benchmark, single-item rates, room rent and duplicate charges",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.860",
+      "duration_ms": 0.19,
+      "findings": 0,
+      "summary": "Bill \u20b956,050 ratio 1.02x typical; 0 overpriced item(s); 0 duplicate(s)."
+    },
+    {
+      "node": "history",
+      "agent": "Claim History Agent",
+      "role": "Claim frequency, repeated procedures, duplicate bills & multi-insurer claims",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.862",
+      "duration_ms": 0.32,
+      "findings": 1,
+      "summary": "2 claim(s) in last 12 months; 0 registry hit(s)."
+    },
+    {
+      "node": "medical",
+      "agent": "Medical Coherence Agent",
+      "role": "Diagnosis vs treatment consistency, clinically unrelated tests and length-of-stay",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.861",
+      "duration_ms": 0.3,
+      "findings": 2,
+      "summary": "Diagnosis 'typhoid fever' (A01.0); 0 unrelated item(s); LOS 7 vs typical 3-6."
+    },
+    {
+      "node": "policy",
+      "agent": "Policy & Coverage Agent",
+      "role": "Waiting periods, policy validity, sum-insured enhancement and pre-existing disease disclosure",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.863",
+      "duration_ms": 0.16,
+      "findings": 1,
+      "summary": "Admissible; policy 405 days old; 1 timing/disclosure finding(s)."
+    },
+    {
+      "node": "provider",
+      "agent": "Provider Risk Agent",
+      "role": "Hospital blacklist / watchlist, provider risk index, claim spikes, network status",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.863",
+      "duration_ms": 0.06,
+      "findings": 3,
+      "summary": "Greenvalley Hospital (mid, non-network, risk 0.38); 3 finding(s)."
+    },
+    {
+      "node": "ml_scoring",
+      "agent": "ML Risk Scoring Agent",
+      "role": "Gradient-boosting fraud probability + Isolation-Forest anomaly score on 19 engineered features",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.864",
+      "duration_ms": 15.94,
+      "findings": 0,
+      "summary": "Fraud probability 0.23 (anomaly 40/100); drivers: Bill vs typical cost, Highest item vs tariff, Provider risk index."
+    },
+    {
+      "node": "decision",
+      "agent": "Fraud Risk Decision Agent",
+      "role": "Fuses rule findings + ML score into the 0-100 fraud score, risk band and routing decision",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.880",
+      "duration_ms": 0.07,
+      "findings": 0,
+      "summary": "Fraud score 49.4 (Suspicious) = 0.55x rules 71.4 + 0.45x ML 22.5 -> HUMAN_REVIEW."
+    },
+    {
+      "node": "settlement",
+      "agent": "Settlement Agent",
+      "role": "Computes admissible amount: non-payables, room-rent proportionate deduction, co-pay, sum insured",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.881",
+      "duration_ms": 0.07,
+      "findings": 0,
+      "summary": "PROVISIONAL - pending human review: net payable \u20b949,995 of \u20b956,050 claimed."
+    },
+    {
+      "node": "report",
+      "agent": "Report Agent",
+      "role": "Compiles the explainable decision report, narrative and audit record",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.881",
+      "duration_ms": 3.0,
+      "findings": 0,
+      "summary": "Report ready: status HUMAN_REVIEW, score 49.4, payable \u20b949,995."
+    }
+  ],
+  "errors": [],
+  "narrative": "Claim CLM-2026-1003: Suresh Babu, Enteric (Typhoid) Fever at Greenvalley Hospital (7 day stay), claimed \u20b956,050. Fraud score 49.4/100 (Suspicious); rule engine 71.4, ML model 22.5. Categories triggered: Hospital Pattern Risk, Treatment Duration Abnormality, Patient Claim History, Suspicious Timing (new policy). Key concerns: 2 previous claims in the last 12 months, all at the same hospital (Greenvalley Hospital): 2026-03-02 Acute gastroenteritis \u20b932,000, 2026-07-15 Viral fever \u20b928,500 | Length of stay 7 days exceeds the typical 3-6 days for typhoid fever | Clinical notes show recovery by day 4 but patient was kept 3 more day(s). Decision: HUMAN REVIEW - Route to a senior claims assessor / medical officer for manual review before settlement.",
+  "narrative_source": "template",
+  "output_text": "Fraud Score: 49 (Medium Risk - Suspicious)\nSuspicious Reasons:\n- 2 previous claims in the last 12 months, all at the same hospital (Greenvalley Hospital): 2026-03-02 Acute gastroenteritis \u20b932,000, 2026-07-15 Viral fever \u20b928,500\n- Length of stay 7 days exceeds the typical 3-6 days for typhoid fever\n- Clinical notes show recovery by day 4 but patient was kept 3 more day(s)\n- Claim 40 days after sum insured was enhanced from \u20b93,00,000 to \u20b95,00,000 at renewal\n- Provider risk index 0.38 for Greenvalley Hospital\n- Claim volume from Greenvalley Hospital is 2.0x its 90-day baseline (96 vs 48)\nTriggered Categories:\n- Hospital Pattern Risk\n- Treatment Duration Abnormality\n- Patient Claim History\n- Suspicious Timing (new policy)\nDecision: HUMAN REVIEW",
+  "engine": "langgraph"
+}

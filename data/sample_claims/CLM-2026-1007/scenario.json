@@ -1,0 +1,14 @@
+{
+  "claim_id": "CLM-2026-1007",
+  "title": "Duplicate - Same hospital bill already settled by another insurer",
+  "expected": "HIGH risk -> SIU (duplicate billing)",
+  "hospital_id": "HSP-KL-0120",
+  "patient": "Priya Nair",
+  "diagnosis": "Acute Gastroenteritis",
+  "claimed_amount": "Rs. 27,850.00",
+  "files": [
+    "claim_form.pdf",
+    "discharge_summary.pdf",
+    "hospital_bill.pdf"
+  ]
+}

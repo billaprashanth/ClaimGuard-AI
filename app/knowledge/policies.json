@@ -1,0 +1,142 @@
+{
+  "_meta": {
+    "description": "Policy administration extract (FICTIONAL people and policies). room_rent_cap_pct / icu_cap_pct are % of sum insured per day; null = no cap."
+  },
+  "policies": [
+    {
+      "policy_number": "POL-HS-240011",
+      "plan": "Family Health Shield - Gold",
+      "proposer": "Anil Kumar",
+      "status": "ACTIVE",
+      "first_inception_date": "2023-04-01",
+      "period_start": "2026-04-01",
+      "period_end": "2027-03-31",
+      "sum_insured": 500000,
+      "previous_sum_insured": 500000,
+      "sum_insured_utilised": 0,
+      "room_rent_cap_pct": 1.0,
+      "icu_cap_pct": 2.0,
+      "copay_pct": 0,
+      "declared_peds": [],
+      "insured_members": [
+        {"name": "Anil Kumar", "relation": "Self", "dob": "1984-02-11", "gender": "M"},
+        {"name": "Swathi Kumar", "relation": "Spouse", "dob": "1987-07-23", "gender": "F"}
+      ]
+    },
+    {
+      "policy_number": "POL-HS-220457",
+      "plan": "Family Health Shield - Silver",
+      "proposer": "Meena Sharma",
+      "status": "ACTIVE",
+      "first_inception_date": "2022-06-15",
+      "period_start": "2026-06-15",
+      "period_end": "2027-06-14",
+      "sum_insured": 300000,
+      "previous_sum_insured": 300000,
+      "sum_insured_utilised": 0,
+      "room_rent_cap_pct": 1.0,
+      "icu_cap_pct": 2.0,
+      "copay_pct": 0,
+      "declared_peds": [],
+      "insured_members": [
+        {"name": "Meena Sharma", "relation": "Self", "dob": "1978-01-30", "gender": "F"},
+        {"name": "Arjun Sharma", "relation": "Son", "dob": "2007-05-19", "gender": "M"}
+      ]
+    },
+    {
+      "policy_number": "POL-HS-250789",
+      "plan": "Individual Health Secure",
+      "proposer": "Suresh Babu",
+      "status": "ACTIVE",
+      "first_inception_date": "2025-09-10",
+      "period_start": "2026-09-10",
+      "period_end": "2027-09-09",
+      "sum_insured": 500000,
+      "previous_sum_insured": 300000,
+      "sum_insured_utilised": 0,
+      "room_rent_cap_pct": 1.0,
+      "icu_cap_pct": 2.0,
+      "copay_pct": 10,
+      "declared_peds": [],
+      "insured_members": [
+        {"name": "Suresh Babu", "relation": "Self", "dob": "1975-03-08", "gender": "M"}
+      ]
+    },
+    {
+      "policy_number": "POL-HS-260921",
+      "plan": "Individual Health Secure",
+      "proposer": "Kiran Kumar",
+      "status": "ACTIVE",
+      "first_inception_date": "2026-09-28",
+      "period_start": "2026-09-28",
+      "period_end": "2027-09-27",
+      "sum_insured": 200000,
+      "previous_sum_insured": 200000,
+      "sum_insured_utilised": 0,
+      "room_rent_cap_pct": 1.0,
+      "icu_cap_pct": 2.0,
+      "copay_pct": 0,
+      "declared_peds": [],
+      "insured_members": [
+        {"name": "Kiran Kumar", "relation": "Self", "dob": "1992-08-02", "gender": "M"}
+      ]
+    },
+    {
+      "policy_number": "POL-HS-260145",
+      "plan": "Senior Care Plus",
+      "proposer": "Lakshmi Prasad",
+      "status": "ACTIVE",
+      "first_inception_date": "2026-03-01",
+      "period_start": "2026-03-01",
+      "period_end": "2027-02-28",
+      "sum_insured": 1000000,
+      "previous_sum_insured": 1000000,
+      "sum_insured_utilised": 0,
+      "room_rent_cap_pct": null,
+      "icu_cap_pct": null,
+      "copay_pct": 0,
+      "declared_peds": [],
+      "insured_members": [
+        {"name": "Lakshmi Prasad", "relation": "Self", "dob": "1968-06-14", "gender": "M"}
+      ]
+    },
+    {
+      "policy_number": "POL-HS-230612",
+      "plan": "Individual Health Secure",
+      "proposer": "Rahul Verma",
+      "status": "ACTIVE",
+      "first_inception_date": "2023-01-10",
+      "period_start": "2026-01-10",
+      "period_end": "2027-01-09",
+      "sum_insured": 500000,
+      "previous_sum_insured": 500000,
+      "sum_insured_utilised": 0,
+      "room_rent_cap_pct": 1.0,
+      "icu_cap_pct": 2.0,
+      "copay_pct": 0,
+      "declared_peds": [],
+      "insured_members": [
+        {"name": "Rahul Verma", "relation": "Self", "dob": "1997-11-03", "gender": "M"}
+      ]
+    },
+    {
+      "policy_number": "POL-HS-240330",
+      "plan": "Family Health Shield - Gold",
+      "proposer": "Priya Nair",
+      "status": "ACTIVE",
+      "first_inception_date": "2024-02-01",
+      "period_start": "2026-02-01",
+      "period_end": "2027-01-31",
+      "sum_insured": 500000,
+      "previous_sum_insured": 500000,
+      "sum_insured_utilised": 0,
+      "room_rent_cap_pct": 1.0,
+      "icu_cap_pct": 2.0,
+      "copay_pct": 0,
+      "declared_peds": [],
+      "insured_members": [
+        {"name": "Priya Nair", "relation": "Self", "dob": "1990-05-14", "gender": "F"}
+      ]
+    }
+  ]
+}

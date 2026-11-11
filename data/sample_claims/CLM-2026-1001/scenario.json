@@ -1,0 +1,15 @@
+{
+  "claim_id": "CLM-2026-1001",
+  "title": "Genuine - Dengue fever at network hospital",
+  "expected": "LOW risk -> auto-approve",
+  "hospital_id": "HSP-TG-0101",
+  "patient": "Anil Kumar",
+  "diagnosis": "Dengue Fever",
+  "claimed_amount": "Rs. 38,450.00",
+  "files": [
+    "claim_form.pdf",
+    "discharge_summary.pdf",
+    "hospital_bill.pdf",
+    "prescription.pdf"
+  ]
+}

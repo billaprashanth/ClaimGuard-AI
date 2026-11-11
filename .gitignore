@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+env/
+# Secrets - never commit
+.env
+# Runtime data
+data/claimguard.db
+data/uploads/*
+!data/uploads/.gitkeep
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/

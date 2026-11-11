@@ -1,0 +1,22 @@
+{
+  "document_type": "claim_form",
+  "fields": {
+    "claim_no": "CLM-2026-2001",
+    "policy_number": "POL-HS-240011",
+    "proposer_name": "Anil Kumar",
+    "patient_name": "Swathi Kumar",
+    "patient_dob": "23-07-1987",
+    "patient_age": 39,
+    "gender": "Female",
+    "relationship": "Spouse",
+    "hospital_name": "Sunrise Multispeciality Hospital",
+    "admission_date": "02-11-2026",
+    "discharge_date": "05-11-2026",
+    "diagnosis": "Malaria (P. vivax)",
+    "claim_type": "Cashless",
+    "claimed_amount": 25660,
+    "submission_date": "05-11-2026",
+    "accident": "No",
+    "other_policies": "None"
+  }
+}

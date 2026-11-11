@@ -1,0 +1,6 @@
+Fraud Score: 1 (Low Risk - Genuine)
+Suspicious Reasons:
+- None
+Triggered Categories:
+- None
+Decision: AUTO APPROVE

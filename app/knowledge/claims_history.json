@@ -1,0 +1,43 @@
+{
+  "_meta": {
+    "description": "Past claims per policy + a simulated industry-wide claims registry used for duplicate / multi-insurer detection. All records FICTIONAL."
+  },
+  "policy_claims": {
+    "POL-HS-240011": [
+      {"claim_id": "CLM-2024-0418", "patient": "Swathi Kumar", "date": "2024-08-19", "hospital_id": "HSP-TG-0101", "diagnosis": "Acute gastroenteritis", "procedures": [], "amount": 21400, "status": "SETTLED"}
+    ],
+    "POL-HS-220457": [],
+    "POL-HS-250789": [
+      {"claim_id": "CLM-2026-0211", "patient": "Suresh Babu", "date": "2026-03-02", "hospital_id": "HSP-TG-0333", "diagnosis": "Acute gastroenteritis", "procedures": ["ct scan"], "amount": 32000, "status": "SETTLED"},
+      {"claim_id": "CLM-2026-0587", "patient": "Suresh Babu", "date": "2026-07-15", "hospital_id": "HSP-TG-0333", "diagnosis": "Viral fever", "procedures": ["ct scan"], "amount": 28500, "status": "SETTLED"}
+    ],
+    "POL-HS-260921": [],
+    "POL-HS-260145": [],
+    "POL-HS-230612": [],
+    "POL-HS-240330": []
+  },
+  "industry_registry": [
+    {
+      "insurer": "Other Insurer (simulated registry)",
+      "policy_number": "OTH-HL-77821",
+      "patient_name": "Priya Nair",
+      "patient_dob": "1990-05-14",
+      "hospital_id": "HSP-KL-0120",
+      "bill_no": "SMC/IP/2026/08812",
+      "claim_date": "2026-10-20",
+      "amount": 27850,
+      "status": "SETTLED - FULL AMOUNT"
+    },
+    {
+      "insurer": "Other Insurer (simulated registry)",
+      "policy_number": "OTH-HL-50113",
+      "patient_name": "Mohan Das",
+      "patient_dob": "1969-12-01",
+      "hospital_id": "HSP-AP-0099",
+      "bill_no": "LPC/2026/0119",
+      "claim_date": "2026-05-04",
+      "amount": 64000,
+      "status": "REPUDIATED - FRAUD"
+    }
+  ]
+}

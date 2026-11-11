@@ -1,0 +1,6 @@
+Fraud Score: 33 (Medium Risk - Suspicious)
+Suspicious Reasons:
+- Discharge summary records diabetes, hypertension for 6 years, but none was declared at proposal; policy is only 245 days old (possible non-disclosure)
+Triggered Categories:
+- Suspicious Timing (new policy)
+Decision: HUMAN REVIEW

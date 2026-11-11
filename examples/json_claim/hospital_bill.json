@@ -1,0 +1,87 @@
+{
+  "document_type": "hospital_bill",
+  "fields": {
+    "hospital_name": "Sunrise Multispeciality Hospital",
+    "hospital_reg_no": "TS/HYD/CE/2015/0412",
+    "bill_no": "SMH/IP/2026/11120",
+    "bill_date": "05-11-2026",
+    "patient_name": "Swathi Kumar",
+    "admission_date": "02-11-2026",
+    "discharge_date": "05-11-2026",
+    "room_category": "Semi Private",
+    "gross_total": 25660,
+    "seal_signature": "Present (Billing Manager)",
+    "line_items": [
+      {
+        "description": "Registration & Admission charges",
+        "category": "MISC",
+        "qty": 1,
+        "rate": 500,
+        "amount": 500
+      },
+      {
+        "description": "Semi Private Room Rent",
+        "category": "ROOM",
+        "qty": 3,
+        "rate": 4000,
+        "amount": 12000
+      },
+      {
+        "description": "Nursing charges",
+        "category": "NURSING",
+        "qty": 3,
+        "rate": 900,
+        "amount": 2700
+      },
+      {
+        "description": "Physician consultation",
+        "category": "CONSULT",
+        "qty": 4,
+        "rate": 800,
+        "amount": 3200
+      },
+      {
+        "description": "Malaria rapid antigen & smear",
+        "category": "LAB",
+        "qty": 2,
+        "rate": 450,
+        "amount": 900
+      },
+      {
+        "description": "Complete Blood Count (CBC)",
+        "category": "LAB",
+        "qty": 2,
+        "rate": 350,
+        "amount": 700
+      },
+      {
+        "description": "Liver Function Test (LFT)",
+        "category": "LAB",
+        "qty": 1,
+        "rate": 900,
+        "amount": 900
+      },
+      {
+        "description": "Inj. Artesunate",
+        "category": "PHARMACY",
+        "qty": 4,
+        "rate": 420,
+        "amount": 1680
+      },
+      {
+        "description": "Pharmacy - medicines",
+        "category": "PHARMACY",
+        "qty": 1,
+        "rate": 2280,
+        "amount": 2280
+      },
+      {
+        "description": "Medical consumables",
+        "category": "CONSUMABLE",
+        "qty": 1,
+        "rate": 800,
+        "amount": 800
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "claim_id": "CLM-2026-1003",
+  "title": "Suspicious - Typhoid, prolonged stay, repeat claimant at a spiking hospital",
+  "expected": "MEDIUM risk -> human review",
+  "hospital_id": "HSP-TG-0333",
+  "patient": "Suresh Babu",
+  "diagnosis": "Typhoid Fever",
+  "claimed_amount": "Rs. 56,050.00",
+  "files": [
+    "claim_form.pdf",
+    "discharge_summary.pdf",
+    "hospital_bill.pdf",
+    "prescription.pdf"
+  ]
+}

@@ -1,0 +1,952 @@
+{
+  "run_id": "RUN-20261111-052433-F57C73",
+  "claim_id": "CLM-2026-1004",
+  "processed_at": "2026-11-11T05:24:33",
+  "status": "SIU_INVESTIGATION",
+  "fraud_score": 97.5,
+  "risk_band": "HIGH",
+  "risk_label": "High Fraud Risk",
+  "recommendation": "Hold payment. Refer to Special Investigation Unit (SIU) for field verification. Coverage issues: Initial waiting period: illness claim 25 days after inception (< 30 days)",
+  "suspicious_reasons": [
+    "Possible document tampering in hospital_bill.pdf: PDF produced/edited with image-editing software ('photoshop'); PDF modified 5 day(s) after creation (28-Oct-2026 -> 02-Nov-2026)",
+    "Bill does not tally: grand total \u20b91,20,000 but line items add up to \u20b91,23,300 (\u20b93,300 less than the items)",
+    "Total bill \u20b91,20,000 is 4.9x the typical maximum \u20b924,500 for viral fever at a small clinic",
+    "5 item(s) charged above benchmark: Nursing charges \u20b92,500 (benchmark <= \u20b91,575); Physician consultation \u20b92,000 (benchmark <= \u20b91,750); MRI Brain (plain) \u20b918,500 (benchmark <= \u20b910,500); CT Scan Chest \u20b99,500 (benchmark <= \u20b96,125); Upper GI Endoscopy \u20b912,400 (benchmark <= \u20b97,875)",
+    "Treatment does not match diagnosis: MRI Brain (plain), CT Scan Chest, Upper GI Endoscopy (\u20b940,400) not clinically indicated for viral fever",
+    "Length of stay 5 days exceeds the typical 0-3 days for viral fever",
+    "Hospitalised only 25 days after buying the policy (initial 30-day waiting period)",
+    "Shree Sai Clinic & Nursing Home is on the fraud watchlist: 3 SIU-confirmed cases of inflated bills in 2025; diagnostics billed without an in-house MRI/CT facility.",
+    "12-bed clinic billing like a premium hospital (\u20b91,20,000; advanced diagnostics billed: MRI Brain (plain), CT Scan Chest, Upper GI Endoscopy)",
+    "Hospital bill has no seal / authorised signature",
+    "Treating doctor's medical council registration number is missing (Dr. R. Mahesh)",
+    "Deluxe Room Rent at \u20b99,000/day exceeds \u20b97,000/day benchmark for a small clinic"
+  ],
+  "triggered_categories": [
+    {
+      "category": "DOCUMENT_ISSUES",
+      "label": "Document Issues",
+      "score": 81.6,
+      "findings": 4,
+      "max_severity": "CRITICAL"
+    },
+    {
+      "category": "HOSPITAL_RISK",
+      "label": "Hospital Pattern Risk",
+      "score": 55.2,
+      "findings": 4,
+      "max_severity": "HIGH"
+    },
+    {
+      "category": "TREATMENT_DURATION",
+      "label": "Treatment Duration Abnormality",
+      "score": 49.5,
+      "findings": 3,
+      "max_severity": "HIGH"
+    },
+    {
+      "category": "BILL_AMOUNT",
+      "label": "Bill Amount",
+      "score": 40.0,
+      "findings": 1,
+      "max_severity": "HIGH"
+    },
+    {
+      "category": "SINGLE_ITEM",
+      "label": "Single Item Charge",
+      "score": 40.0,
+      "findings": 1,
+      "max_severity": "HIGH"
+    },
+    {
+      "category": "DIAGNOSIS_MISMATCH",
+      "label": "Diagnosis Mismatch",
+      "score": 40.0,
+      "findings": 1,
+      "max_severity": "HIGH"
+    },
+    {
+      "category": "SUSPICIOUS_TIMING",
+      "label": "Suspicious Timing (new policy)",
+      "score": 40.0,
+      "findings": 1,
+      "max_severity": "HIGH"
+    },
+    {
+      "category": "OVERCHARGING",
+      "label": "Room Rent / Procedure Overcharging",
+      "score": 30.6,
+      "findings": 2,
+      "max_severity": "MEDIUM"
+    }
+  ],
+  "findings": [
+    {
+      "code": "DOC_TAMPERED",
+      "category": "DOCUMENT_ISSUES",
+      "category_label": "Document Issues",
+      "severity": "CRITICAL",
+      "points": 75,
+      "reason": "Possible document tampering in hospital_bill.pdf: PDF produced/edited with image-editing software ('photoshop'); PDF modified 5 day(s) after creation (28-Oct-2026 -> 02-Nov-2026)",
+      "evidence": {
+        "file": "hospital_bill.pdf",
+        "metadata": {
+          "producer": "Adobe Photoshop 25.0 (Windows)",
+          "creator": "Adobe Photoshop 25.0 (Windows)",
+          "created": "2026-10-28T10:15:00",
+          "modified": "2026-11-02T21:30:00"
+        }
+      },
+      "agent": "Document Validation Agent"
+    },
+    {
+      "code": "BILL_NOT_TALLY",
+      "category": "DOCUMENT_ISSUES",
+      "category_label": "Document Issues",
+      "severity": "HIGH",
+      "points": 40,
+      "reason": "Bill does not tally: grand total \u20b91,20,000 but line items add up to \u20b91,23,300 (\u20b93,300 less than the items)",
+      "evidence": {
+        "grand_total": 120000.0,
+        "items_total": 123300.0
+      },
+      "agent": "Document Validation Agent"
+    },
+    {
+      "code": "BILL_HIGH",
+      "category": "BILL_AMOUNT",
+      "category_label": "Bill Amount",
+      "severity": "HIGH",
+      "points": 40,
+      "reason": "Total bill \u20b91,20,000 is 4.9x the typical maximum \u20b924,500 for viral fever at a small clinic",
+      "evidence": {
+        "billed": 120000.0,
+        "typical_max": 24500.0,
+        "ratio": 4.9
+      },
+      "agent": "Billing Audit Agent"
+    },
+    {
+      "code": "ITEM_OVERPRICED",
+      "category": "SINGLE_ITEM",
+      "category_label": "Single Item Charge",
+      "severity": "HIGH",
+      "points": 40,
+      "reason": "5 item(s) charged above benchmark: Nursing charges \u20b92,500 (benchmark <= \u20b91,575); Physician consultation \u20b92,000 (benchmark <= \u20b91,750); MRI Brain (plain) \u20b918,500 (benchmark <= \u20b910,500); CT Scan Chest \u20b99,500 (benchmark <= \u20b96,125); Upper GI Endoscopy \u20b912,400 (benchmark <= \u20b97,875)",
+      "evidence": {
+        "items": [
+          {
+            "item": "Nursing charges",
+            "rate": 2500.0,
+            "cap": 1575
+          },
+          {
+            "item": "Physician consultation",
+            "rate": 2000.0,
+            "cap": 1750
+          },
+          {
+            "item": "MRI Brain (plain)",
+            "rate": 18500.0,
+            "cap": 10500
+          },
+          {
+            "item": "CT Scan Chest",
+            "rate": 9500.0,
+            "cap": 6125
+          },
+          {
+            "item": "Upper GI Endoscopy",
+            "rate": 12400.0,
+            "cap": 7875
+          }
+        ]
+      },
+      "agent": "Billing Audit Agent"
+    },
+    {
+      "code": "UNRELATED_TREATMENT",
+      "category": "DIAGNOSIS_MISMATCH",
+      "category_label": "Diagnosis Mismatch",
+      "severity": "HIGH",
+      "points": 40,
+      "reason": "Treatment does not match diagnosis: MRI Brain (plain), CT Scan Chest, Upper GI Endoscopy (\u20b940,400) not clinically indicated for viral fever",
+      "evidence": {
+        "items": [
+          "MRI Brain (plain)",
+          "CT Scan Chest",
+          "Upper GI Endoscopy"
+        ],
+        "amount": 40400.0
+      },
+      "agent": "Medical Coherence Agent"
+    },
+    {
+      "code": "LONG_STAY",
+      "category": "TREATMENT_DURATION",
+      "category_label": "Treatment Duration Abnormality",
+      "severity": "HIGH",
+      "points": 40,
+      "reason": "Length of stay 5 days exceeds the typical 0-3 days for viral fever",
+      "evidence": {
+        "los": 5,
+        "typical": [
+          0,
+          3
+        ]
+      },
+      "agent": "Medical Coherence Agent"
+    },
+    {
+      "code": "INITIAL_WAITING",
+      "category": "SUSPICIOUS_TIMING",
+      "category_label": "Suspicious Timing (new policy)",
+      "severity": "HIGH",
+      "points": 40,
+      "reason": "Hospitalised only 25 days after buying the policy (initial 30-day waiting period)",
+      "evidence": {
+        "inception": "2026-09-28",
+        "admission": "2026-10-23"
+      },
+      "agent": "Policy & Coverage Agent"
+    },
+    {
+      "code": "HOSP_WATCHLIST",
+      "category": "HOSPITAL_RISK",
+      "category_label": "Hospital Pattern Risk",
+      "severity": "HIGH",
+      "points": 40,
+      "reason": "Shree Sai Clinic & Nursing Home is on the fraud watchlist: 3 SIU-confirmed cases of inflated bills in 2025; diagnostics billed without an in-house MRI/CT facility.",
+      "evidence": {},
+      "agent": "Provider Risk Agent"
+    },
+    {
+      "code": "SMALL_CLINIC_PREMIUM",
+      "category": "HOSPITAL_RISK",
+      "category_label": "Hospital Pattern Risk",
+      "severity": "HIGH",
+      "points": 40,
+      "reason": "12-bed clinic billing like a premium hospital (\u20b91,20,000; advanced diagnostics billed: MRI Brain (plain), CT Scan Chest, Upper GI Endoscopy)",
+      "evidence": {},
+      "agent": "Provider Risk Agent"
+    },
+    {
+      "code": "BILL_NO_SEAL",
+      "category": "DOCUMENT_ISSUES",
+      "category_label": "Document Issues",
+      "severity": "MEDIUM",
+      "points": 22,
+      "reason": "Hospital bill has no seal / authorised signature",
+      "evidence": {},
+      "agent": "Document Validation Agent"
+    },
+    {
+      "code": "NO_DOCTOR_REG",
+      "category": "DOCUMENT_ISSUES",
+      "category_label": "Document Issues",
+      "severity": "MEDIUM",
+      "points": 22,
+      "reason": "Treating doctor's medical council registration number is missing (Dr. R. Mahesh)",
+      "evidence": {},
+      "agent": "Document Validation Agent"
+    },
+    {
+      "code": "ROOM_OVERCHARGE",
+      "category": "OVERCHARGING",
+      "category_label": "Room Rent / Procedure Overcharging",
+      "severity": "MEDIUM",
+      "points": 22,
+      "reason": "Deluxe Room Rent at \u20b99,000/day exceeds \u20b97,000/day benchmark for a small clinic",
+      "evidence": {},
+      "agent": "Billing Audit Agent"
+    },
+    {
+      "code": "DUPLICATE_ITEM",
+      "category": "OVERCHARGING",
+      "category_label": "Room Rent / Procedure Overcharging",
+      "severity": "MEDIUM",
+      "points": 22,
+      "reason": "Duplicate charge(s): Complete Blood Count (CBC) \u20b9600",
+      "evidence": {},
+      "agent": "Billing Audit Agent"
+    },
+    {
+      "code": "OPD_AS_IPD",
+      "category": "TREATMENT_DURATION",
+      "category_label": "Treatment Duration Abnormality",
+      "severity": "MEDIUM",
+      "points": 22,
+      "reason": "In-patient claim for viral fever, which is usually managed as OPD (claimed stay 5 days)",
+      "evidence": {},
+      "agent": "Medical Coherence Agent"
+    },
+    {
+      "code": "POST_RECOVERY_STAY",
+      "category": "TREATMENT_DURATION",
+      "category_label": "Treatment Duration Abnormality",
+      "severity": "MEDIUM",
+      "points": 22,
+      "reason": "Clinical notes show recovery by day 1 but patient was kept 4 more day(s)",
+      "evidence": {
+        "recovered_day": 1,
+        "los": 5
+      },
+      "agent": "Medical Coherence Agent"
+    },
+    {
+      "code": "HOSP_SPIKE",
+      "category": "HOSPITAL_RISK",
+      "category_label": "Hospital Pattern Risk",
+      "severity": "MEDIUM",
+      "points": 22,
+      "reason": "Claim volume from Shree Sai Clinic & Nursing Home is 3.7x its 90-day baseline (74 vs 20)",
+      "evidence": {},
+      "agent": "Provider Risk Agent"
+    },
+    {
+      "code": "NON_NETWORK",
+      "category": "HOSPITAL_RISK",
+      "category_label": "Hospital Pattern Risk",
+      "severity": "LOW",
+      "points": 10,
+      "reason": "Non-network hospital - reimbursement claim (no pre-authorisation)",
+      "evidence": {},
+      "agent": "Provider Risk Agent"
+    }
+  ],
+  "claim_summary": {
+    "patient_name": "Kiran Kumar",
+    "patient_age": 34,
+    "gender": "Male",
+    "policy_number": "POL-HS-260921",
+    "plan": "Individual Health Secure",
+    "hospital_name": "Shree Sai Clinic & Nursing Home",
+    "hospital_id": "HSP-TG-0450",
+    "hospital_tier": "small_clinic",
+    "network": false,
+    "diagnosis": "Pyrexia of unknown origin",
+    "icd10": "R50.9",
+    "admission_date": "2026-10-23",
+    "discharge_date": "2026-10-28",
+    "los_days": 5,
+    "claim_type": "Reimbursement",
+    "claimed_amount": 120000.0,
+    "billed_total": 120000.0,
+    "bill_no": "SSC/2026/0981",
+    "treating_doctor": "Dr. R. Mahesh"
+  },
+  "line_items": [
+    {
+      "sno": 1,
+      "description": "Deluxe Room Rent",
+      "category": "ROOM",
+      "qty": 5,
+      "rate": 9000.0,
+      "amount": 45000.0
+    },
+    {
+      "sno": 2,
+      "description": "Nursing charges",
+      "category": "NURSING",
+      "qty": 5,
+      "rate": 2500.0,
+      "amount": 12500.0
+    },
+    {
+      "sno": 3,
+      "description": "Physician consultation",
+      "category": "CONSULT",
+      "qty": 10,
+      "rate": 2000.0,
+      "amount": 20000.0
+    },
+    {
+      "sno": 4,
+      "description": "MRI Brain (plain)",
+      "category": "RADIOLOGY",
+      "qty": 1,
+      "rate": 18500.0,
+      "amount": 18500.0
+    },
+    {
+      "sno": 5,
+      "description": "CT Scan Chest",
+      "category": "RADIOLOGY",
+      "qty": 1,
+      "rate": 9500.0,
+      "amount": 9500.0
+    },
+    {
+      "sno": 6,
+      "description": "Upper GI Endoscopy",
+      "category": "PROCEDURE",
+      "qty": 1,
+      "rate": 12400.0,
+      "amount": 12400.0
+    },
+    {
+      "sno": 7,
+      "description": "Complete Blood Count (CBC)",
+      "category": "LAB",
+      "qty": 1,
+      "rate": 600.0,
+      "amount": 600.0
+    },
+    {
+      "sno": 8,
+      "description": "Complete Blood Count (CBC)",
+      "category": "LAB",
+      "qty": 1,
+      "rate": 600.0,
+      "amount": 600.0
+    },
+    {
+      "sno": 9,
+      "description": "Pharmacy - medicines",
+      "category": "PHARMACY",
+      "qty": 1,
+      "rate": 4200.0,
+      "amount": 4200.0
+    }
+  ],
+  "documents": [
+    {
+      "doc_type": "claim_form",
+      "file": "claim_form.pdf",
+      "pages": 1,
+      "confidence": 1.0,
+      "forensic_flags": [],
+      "metadata": {
+        "producer": "ReportLab PDF Library - (opensource)",
+        "creator": "ClaimGuard Insurer Portal",
+        "created": "2026-11-11T04:35:52",
+        "modified": "2026-11-11T04:35:52"
+      }
+    },
+    {
+      "doc_type": "discharge_summary",
+      "file": "discharge_summary.pdf",
+      "pages": 1,
+      "confidence": 1.0,
+      "forensic_flags": [],
+      "metadata": {
+        "producer": "ReportLab PDF Library - (opensource)",
+        "creator": "HIMS Clinical Module v7.2",
+        "created": "2026-11-11T04:35:52",
+        "modified": "2026-11-11T04:35:52"
+      }
+    },
+    {
+      "doc_type": "hospital_bill",
+      "file": "hospital_bill.pdf",
+      "pages": 1,
+      "confidence": 1.0,
+      "forensic_flags": [
+        "PDF produced/edited with image-editing software ('photoshop')",
+        "PDF modified 5 day(s) after creation (28-Oct-2026 -> 02-Nov-2026)"
+      ],
+      "metadata": {
+        "producer": "Adobe Photoshop 25.0 (Windows)",
+        "creator": "Adobe Photoshop 25.0 (Windows)",
+        "created": "2026-10-28T10:15:00",
+        "modified": "2026-11-02T21:30:00"
+      }
+    }
+  ],
+  "unclassified_files": [],
+  "validation": {
+    "complete": true,
+    "blocking": false,
+    "missing_documents": [],
+    "missing_fields": [],
+    "checks": [
+      {
+        "check": "Mandatory documents present",
+        "passed": true,
+        "detail": "All present"
+      },
+      {
+        "check": "Mandatory fields extracted",
+        "passed": true,
+        "detail": "All extracted"
+      },
+      {
+        "check": "Bill total tallies with line items",
+        "passed": false,
+        "detail": "Grand total \u20b91,20,000 vs items \u20b91,23,300"
+      },
+      {
+        "check": "Claimed amount within bill amount",
+        "passed": true,
+        "detail": "Claimed \u20b91,20,000 vs billed \u20b91,20,000"
+      },
+      {
+        "check": "Hospital seal & signature on bill",
+        "passed": false,
+        "detail": "Not available"
+      },
+      {
+        "check": "Seal & signature on discharge summary",
+        "passed": true,
+        "detail": "Present (Dr. R. Mahesh)"
+      },
+      {
+        "check": "Treating doctor registration number",
+        "passed": false,
+        "detail": "blank"
+      },
+      {
+        "check": "Hospital registration number present & consistent",
+        "passed": true,
+        "detail": "TS/KNR/CE/2019/0217"
+      },
+      {
+        "check": "Patient name consistent across documents",
+        "passed": true,
+        "detail": "claim_form: Kiran Kumar | discharge_summary: Kiran Kumar P | hospital_bill: Kiran Kumar"
+      },
+      {
+        "check": "Admission date consistent across documents",
+        "passed": true,
+        "detail": "claim_form: 2026-10-23, discharge_summary: 2026-10-23, hospital_bill: 2026-10-23"
+      },
+      {
+        "check": "Discharge date consistent across documents",
+        "passed": true,
+        "detail": "claim_form: 2026-10-28, discharge_summary: 2026-10-28, hospital_bill: 2026-10-28"
+      },
+      {
+        "check": "Claim submitted within 30 days of discharge",
+        "passed": true,
+        "detail": "5 days"
+      },
+      {
+        "check": "PDF forensic check - claim_form",
+        "passed": true,
+        "detail": "clean"
+      },
+      {
+        "check": "PDF forensic check - discharge_summary",
+        "passed": true,
+        "detail": "clean"
+      },
+      {
+        "check": "PDF forensic check - hospital_bill",
+        "passed": false,
+        "detail": "PDF produced/edited with image-editing software ('photoshop'); PDF modified 5 day(s) after creation (28-Oct-2026 -> 02-Nov-2026)"
+      }
+    ],
+    "passed": 11,
+    "total": 15
+  },
+  "decision": {
+    "fraud_score": 97.5,
+    "risk_band": "HIGH",
+    "risk_label": "High Fraud Risk",
+    "status": "SIU_INVESTIGATION",
+    "recommendation": "Hold payment. Refer to Special Investigation Unit (SIU) for field verification. Coverage issues: Initial waiting period: illness claim 25 days after inception (< 30 days)",
+    "rule_score": 99.6,
+    "ml_score": 95.0,
+    "anomaly_score": 100.0,
+    "weights": {
+      "rules": 0.55,
+      "ml": 0.45
+    },
+    "critical_override": true,
+    "triggered_categories": [
+      {
+        "category": "DOCUMENT_ISSUES",
+        "label": "Document Issues",
+        "score": 81.6,
+        "findings": 4,
+        "max_severity": "CRITICAL"
+      },
+      {
+        "category": "HOSPITAL_RISK",
+        "label": "Hospital Pattern Risk",
+        "score": 55.2,
+        "findings": 4,
+        "max_severity": "HIGH"
+      },
+      {
+        "category": "TREATMENT_DURATION",
+        "label": "Treatment Duration Abnormality",
+        "score": 49.5,
+        "findings": 3,
+        "max_severity": "HIGH"
+      },
+      {
+        "category": "BILL_AMOUNT",
+        "label": "Bill Amount",
+        "score": 40.0,
+        "findings": 1,
+        "max_severity": "HIGH"
+      },
+      {
+        "category": "SINGLE_ITEM",
+        "label": "Single Item Charge",
+        "score": 40.0,
+        "findings": 1,
+        "max_severity": "HIGH"
+      },
+      {
+        "category": "DIAGNOSIS_MISMATCH",
+        "label": "Diagnosis Mismatch",
+        "score": 40.0,
+        "findings": 1,
+        "max_severity": "HIGH"
+      },
+      {
+        "category": "SUSPICIOUS_TIMING",
+        "label": "Suspicious Timing (new policy)",
+        "score": 40.0,
+        "findings": 1,
+        "max_severity": "HIGH"
+      },
+      {
+        "category": "OVERCHARGING",
+        "label": "Room Rent / Procedure Overcharging",
+        "score": 30.6,
+        "findings": 2,
+        "max_severity": "MEDIUM"
+      }
+    ],
+    "suspicious_reasons": [
+      "Possible document tampering in hospital_bill.pdf: PDF produced/edited with image-editing software ('photoshop'); PDF modified 5 day(s) after creation (28-Oct-2026 -> 02-Nov-2026)",
+      "Bill does not tally: grand total \u20b91,20,000 but line items add up to \u20b91,23,300 (\u20b93,300 less than the items)",
+      "Total bill \u20b91,20,000 is 4.9x the typical maximum \u20b924,500 for viral fever at a small clinic",
+      "5 item(s) charged above benchmark: Nursing charges \u20b92,500 (benchmark <= \u20b91,575); Physician consultation \u20b92,000 (benchmark <= \u20b91,750); MRI Brain (plain) \u20b918,500 (benchmark <= \u20b910,500); CT Scan Chest \u20b99,500 (benchmark <= \u20b96,125); Upper GI Endoscopy \u20b912,400 (benchmark <= \u20b97,875)",
+      "Treatment does not match diagnosis: MRI Brain (plain), CT Scan Chest, Upper GI Endoscopy (\u20b940,400) not clinically indicated for viral fever",
+      "Length of stay 5 days exceeds the typical 0-3 days for viral fever",
+      "Hospitalised only 25 days after buying the policy (initial 30-day waiting period)",
+      "Shree Sai Clinic & Nursing Home is on the fraud watchlist: 3 SIU-confirmed cases of inflated bills in 2025; diagnostics billed without an in-house MRI/CT facility.",
+      "12-bed clinic billing like a premium hospital (\u20b91,20,000; advanced diagnostics billed: MRI Brain (plain), CT Scan Chest, Upper GI Endoscopy)",
+      "Hospital bill has no seal / authorised signature",
+      "Treating doctor's medical council registration number is missing (Dr. R. Mahesh)",
+      "Deluxe Room Rent at \u20b99,000/day exceeds \u20b97,000/day benchmark for a small clinic"
+    ],
+    "coverage": {
+      "admissible": false,
+      "issues": [
+        "Initial waiting period: illness claim 25 days after inception (< 30 days)"
+      ],
+      "days_since_inception": 25,
+      "accident": false,
+      "sum_insured": 200000,
+      "available_si": 200000
+    }
+  },
+  "ml": {
+    "fraud_probability": 0.9505,
+    "ml_score": 95.0,
+    "anomaly_score": 100.0,
+    "top_drivers": [
+      {
+        "feature": "bill_ratio",
+        "label": "Bill vs typical cost",
+        "value": 4.9,
+        "weight": 5.608
+      },
+      {
+        "feature": "max_item_ratio",
+        "label": "Highest item vs tariff",
+        "value": 2.2,
+        "weight": 0.534
+      },
+      {
+        "feature": "hospital_risk",
+        "label": "Provider risk index",
+        "value": 0.82,
+        "weight": 0.306
+      },
+      {
+        "feature": "room_rent_ratio",
+        "label": "Room rent vs benchmark",
+        "value": 1.29,
+        "weight": 0.127
+      },
+      {
+        "feature": "days_since_inception_log",
+        "label": "Policy age",
+        "value": 3.258,
+        "weight": 0.082
+      }
+    ],
+    "features": {
+      "bill_ratio": 4.9,
+      "max_item_ratio": 2.2,
+      "room_rent_ratio": 1.29,
+      "duplicate_items": 1.0,
+      "los_ratio": 1.67,
+      "unrelated_item_count": 3.0,
+      "opd_manageable": 1.0,
+      "dx_mismatch": 0.0,
+      "hospital_risk": 0.82,
+      "hospital_network": 0.0,
+      "hospital_small_clinic": 1.0,
+      "days_since_inception_log": 3.2581,
+      "undeclared_ped": 0.0,
+      "prior_claims_12m": 0.0,
+      "registry_duplicate": 0.0,
+      "doc_issue_count": 4.0,
+      "claim_amount_log": 11.6953,
+      "is_reimbursement": 1.0,
+      "patient_age": 34.0
+    },
+    "model_version": "gbm-v1",
+    "model_metrics": {
+      "roc_auc": 0.9217,
+      "pr_auc": 0.8245,
+      "precision@0.5": 0.8927,
+      "recall@0.5": 0.7795,
+      "rows": 8000
+    }
+  },
+  "settlement": null,
+  "siu": {
+    "case_id": "SIU-CLM-2026-1004",
+    "priority": "P1 - Critical",
+    "due_by": "2026-11-16",
+    "payment_hold": true,
+    "exposure": 120000.0,
+    "tasks": [
+      {
+        "task": "Call the hospital to confirm admission, treating doctor and bill number",
+        "status": "OPEN"
+      },
+      {
+        "task": "Verify Dr. registration (not provided) with the State Medical Council",
+        "status": "OPEN"
+      },
+      {
+        "task": "Verify document authenticity with hospital records department; obtain original signed & sealed copies",
+        "status": "OPEN"
+      },
+      {
+        "task": "Field visit to hospital: verify bed count, ICU/diagnostic facilities, in-patient register for admission dates",
+        "status": "OPEN"
+      },
+      {
+        "task": "Check nursing notes & vitals charts for the full stay to confirm need for hospitalisation",
+        "status": "OPEN"
+      },
+      {
+        "task": "Obtain itemised indoor case papers and compare with treatment actually given",
+        "status": "OPEN"
+      },
+      {
+        "task": "Collect original pharmacy & diagnostic invoices; verify rates against hospital tariff card",
+        "status": "OPEN"
+      },
+      {
+        "task": "Medical officer to review clinical justification; obtain MRI/CT/endoscopy films and reports with timestamps",
+        "status": "OPEN"
+      },
+      {
+        "task": "Verify prior medical history with family physician / pharmacy records (pre-policy consultations)",
+        "status": "OPEN"
+      },
+      {
+        "task": "Reconcile room-days and charges with hospital admission/discharge register",
+        "status": "OPEN"
+      },
+      {
+        "task": "Interview patient / family on symptoms, admission and payments made",
+        "status": "OPEN"
+      },
+      {
+        "task": "Compare signatures on claim form, bill and discharge summary",
+        "status": "OPEN"
+      }
+    ],
+    "evidence": [
+      {
+        "severity": "CRITICAL",
+        "category": "Document Issues",
+        "reason": "Possible document tampering in hospital_bill.pdf: PDF produced/edited with image-editing software ('photoshop'); PDF modified 5 day(s) after creation (28-Oct-2026 -> 02-Nov-2026)"
+      },
+      {
+        "severity": "HIGH",
+        "category": "Document Issues",
+        "reason": "Bill does not tally: grand total \u20b91,20,000 but line items add up to \u20b91,23,300 (\u20b93,300 less than the items)"
+      },
+      {
+        "severity": "HIGH",
+        "category": "Bill Amount",
+        "reason": "Total bill \u20b91,20,000 is 4.9x the typical maximum \u20b924,500 for viral fever at a small clinic"
+      },
+      {
+        "severity": "HIGH",
+        "category": "Single Item Charge",
+        "reason": "5 item(s) charged above benchmark: Nursing charges \u20b92,500 (benchmark <= \u20b91,575); Physician consultation \u20b92,000 (benchmark <= \u20b91,750); MRI Brain (plain) \u20b918,500 (benchmark <= \u20b910,500); CT Scan Chest \u20b99,500 (benchmark <= \u20b96,125); Upper GI Endoscopy \u20b912,400 (benchmark <= \u20b97,875)"
+      },
+      {
+        "severity": "HIGH",
+        "category": "Diagnosis Mismatch",
+        "reason": "Treatment does not match diagnosis: MRI Brain (plain), CT Scan Chest, Upper GI Endoscopy (\u20b940,400) not clinically indicated for viral fever"
+      },
+      {
+        "severity": "HIGH",
+        "category": "Treatment Duration Abnormality",
+        "reason": "Length of stay 5 days exceeds the typical 0-3 days for viral fever"
+      },
+      {
+        "severity": "HIGH",
+        "category": "Suspicious Timing (new policy)",
+        "reason": "Hospitalised only 25 days after buying the policy (initial 30-day waiting period)"
+      },
+      {
+        "severity": "HIGH",
+        "category": "Hospital Pattern Risk",
+        "reason": "Shree Sai Clinic & Nursing Home is on the fraud watchlist: 3 SIU-confirmed cases of inflated bills in 2025; diagnostics billed without an in-house MRI/CT facility."
+      }
+    ]
+  },
+  "doc_request": null,
+  "agent_trace": [
+    {
+      "node": "intake",
+      "agent": "Claim Intake Agent",
+      "role": "Registers the claim, assigns a run id and collects input documents",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.886",
+      "duration_ms": 0.14,
+      "findings": 0,
+      "summary": "Registered claim CLM-2026-1004 with 3 document(s)."
+    },
+    {
+      "node": "classify",
+      "agent": "Document Classifier Agent",
+      "role": "Reads every file (PDF/TXT/JSON/image) and identifies the document type",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.887",
+      "duration_ms": 52.8,
+      "findings": 0,
+      "summary": "Identified 3 document type(s): claim_form, discharge_summary, hospital_bill."
+    },
+    {
+      "node": "extract",
+      "agent": "Data Extraction Agent",
+      "role": "Extracts structured fields & bill line items and builds one consolidated claim record",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.940",
+      "duration_ms": 1.6,
+      "findings": 0,
+      "summary": "Extracted 33 claim fields and 9 bill line items (billed \u20b91,20,000, claimed \u20b91,20,000)."
+    },
+    {
+      "node": "validate",
+      "agent": "Document Validation Agent",
+      "role": "Checks completeness, cross-document consistency, bill arithmetic & PDF forensics",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.942",
+      "duration_ms": 0.26,
+      "findings": 4,
+      "summary": "11/15 validation checks passed; 4 document issue(s)."
+    },
+    {
+      "node": "knowledge",
+      "agent": "Knowledge Retrieval Agent",
+      "role": "Looks up policy, insured member, provider registry, clinical KB and claim history",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.943",
+      "duration_ms": 0.45,
+      "findings": 0,
+      "summary": "policy found; member verified; hospital HSP-TG-0450; diagnosis -> viral fever (icd10); 0 past claim(s); 0 registry hit(s)."
+    },
+    {
+      "node": "billing",
+      "agent": "Billing Audit Agent",
+      "role": "Bill amount vs benchmark, single-item rates, room rent and duplicate charges",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.945",
+      "duration_ms": 0.18,
+      "findings": 4,
+      "summary": "Bill \u20b91,20,000 ratio 4.9x typical; 5 overpriced item(s); 1 duplicate(s)."
+    },
+    {
+      "node": "history",
+      "agent": "Claim History Agent",
+      "role": "Claim frequency, repeated procedures, duplicate bills & multi-insurer claims",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.946",
+      "duration_ms": 0.19,
+      "findings": 0,
+      "summary": "0 claim(s) in last 12 months; 0 registry hit(s)."
+    },
+    {
+      "node": "medical",
+      "agent": "Medical Coherence Agent",
+      "role": "Diagnosis vs treatment consistency, clinically unrelated tests and length-of-stay",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.946",
+      "duration_ms": 0.28,
+      "findings": 4,
+      "summary": "Diagnosis 'viral fever' (R50.9); 3 unrelated item(s); LOS 5 vs typical 0-3."
+    },
+    {
+      "node": "policy",
+      "agent": "Policy & Coverage Agent",
+      "role": "Waiting periods, policy validity, sum-insured enhancement and pre-existing disease disclosure",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.947",
+      "duration_ms": 0.11,
+      "findings": 1,
+      "summary": "1 coverage issue(s); policy 25 days old; 1 timing/disclosure finding(s)."
+    },
+    {
+      "node": "provider",
+      "agent": "Provider Risk Agent",
+      "role": "Hospital blacklist / watchlist, provider risk index, claim spikes, network status",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.947",
+      "duration_ms": 0.14,
+      "findings": 4,
+      "summary": "Shree Sai Clinic & Nursing Home (small_clinic, non-network, risk 0.82); 4 finding(s)."
+    },
+    {
+      "node": "ml_scoring",
+      "agent": "ML Risk Scoring Agent",
+      "role": "Gradient-boosting fraud probability + Isolation-Forest anomaly score on 19 engineered features",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.948",
+      "duration_ms": 15.49,
+      "findings": 0,
+      "summary": "Fraud probability 0.95 (anomaly 100/100); drivers: Bill vs typical cost, Highest item vs tariff, Provider risk index."
+    },
+    {
+      "node": "decision",
+      "agent": "Fraud Risk Decision Agent",
+      "role": "Fuses rule findings + ML score into the 0-100 fraud score, risk band and routing decision",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.964",
+      "duration_ms": 0.08,
+      "findings": 0,
+      "summary": "Fraud score 97.5 (High Fraud Risk) = 0.55x rules 99.6 + 0.45x ML 95.0 [critical override] -> SIU_INVESTIGATION."
+    },
+    {
+      "node": "siu",
+      "agent": "SIU Investigation Agent",
+      "role": "Builds a prioritised investigation plan & evidence pack for high-risk claims",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.965",
+      "duration_ms": 0.05,
+      "findings": 0,
+      "summary": "Opened P1 - Critical SIU case with 12 task(s); payment of \u20b91,20,000 on hold."
+    },
+    {
+      "node": "report",
+      "agent": "Report Agent",
+      "role": "Compiles the explainable decision report, narrative and audit record",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.965",
+      "duration_ms": 4.72,
+      "findings": 0,
+      "summary": "Report ready: status SIU_INVESTIGATION, score 97.5, payable -."
+    }
+  ],
+  "errors": [],
+  "narrative": "Claim CLM-2026-1004: Kiran Kumar, Pyrexia of unknown origin at Shree Sai Clinic & Nursing Home (5 day stay), claimed \u20b91,20,000. Fraud score 97.5/100 (High Fraud Risk); rule engine 99.6, ML model 95.0. Categories triggered: Document Issues, Hospital Pattern Risk, Treatment Duration Abnormality, Bill Amount. Key concerns: Possible document tampering in hospital_bill.pdf: PDF produced/edited with image-editing software ('photoshop'); PDF modified 5 day(s) after creation (28-Oct-2026 -> 02-Nov-2026) | Bill does not tally: grand total \u20b91,20,000 but line items add up to \u20b91,23,300 (\u20b93,300 less than the items) | Total bill \u20b91,20,000 is 4.9x the typical maximum \u20b924,500 for viral fever at a small clinic. Decision: SIU INVESTIGATION - Hold payment. Refer to Special Investigation Unit (SIU) for field verification. Coverage issues: Initial waiting period: illness claim 25 days after inception (< 30 days)",
+  "narrative_source": "template",
+  "output_text": "Fraud Score: 98 (High Risk)\nSuspicious Reasons:\n- Possible document tampering in hospital_bill.pdf: PDF produced/edited with image-editing software ('photoshop'); PDF modified 5 day(s) after creation (28-Oct-2026 -> 02-Nov-2026)\n- Bill does not tally: grand total \u20b91,20,000 but line items add up to \u20b91,23,300 (\u20b93,300 less than the items)\n- Total bill \u20b91,20,000 is 4.9x the typical maximum \u20b924,500 for viral fever at a small clinic\n- 5 item(s) charged above benchmark: Nursing charges \u20b92,500 (benchmark <= \u20b91,575); Physician consultation \u20b92,000 (benchmark <= \u20b91,750); MRI Brain (plain) \u20b918,500 (benchmark <= \u20b910,500); CT Scan Chest \u20b99,500 (benchmark <= \u20b96,125); Upper GI Endoscopy \u20b912,400 (benchmark <= \u20b97,875)\n- Treatment does not match diagnosis: MRI Brain (plain), CT Scan Chest, Upper GI Endoscopy (\u20b940,400) not clinically indicated for viral fever\n- Length of stay 5 days exceeds the typical 0-3 days for viral fever\n- Hospitalised only 25 days after buying the policy (initial 30-day waiting period)\n- Shree Sai Clinic & Nursing Home is on the fraud watchlist: 3 SIU-confirmed cases of inflated bills in 2025; diagnostics billed without an in-house MRI/CT facility.\n- 12-bed clinic billing like a premium hospital (\u20b91,20,000; advanced diagnostics billed: MRI Brain (plain), CT Scan Chest, Upper GI Endoscopy)\n- Hospital bill has no seal / authorised signature\n- Treating doctor's medical council registration number is missing (Dr. R. Mahesh)\n- Deluxe Room Rent at \u20b99,000/day exceeds \u20b97,000/day benchmark for a small clinic\nTriggered Categories:\n- Document Issues\n- Hospital Pattern Risk\n- Treatment Duration Abnormality\n- Bill Amount\n- Single Item Charge\n- Diagnosis Mismatch\n- Suspicious Timing (new policy)\n- Room Rent / Procedure Overcharging\nDecision: SIU INVESTIGATION",
+  "engine": "langgraph"
+}

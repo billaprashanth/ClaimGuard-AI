@@ -1,0 +1,15 @@
+{
+  "claim_id": "CLM-2026-1002",
+  "title": "Genuine - Laparoscopic appendectomy (room-rent above cap)",
+  "expected": "LOW risk -> approve with proportionate deduction",
+  "hospital_id": "HSP-KA-0207",
+  "patient": "Arjun Sharma",
+  "diagnosis": "Acute Appendicitis",
+  "claimed_amount": "Rs. 1,28,300.00",
+  "files": [
+    "claim_form.pdf",
+    "discharge_summary.pdf",
+    "hospital_bill.pdf",
+    "prescription.pdf"
+  ]
+}

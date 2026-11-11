@@ -1,0 +1,520 @@
+{
+  "run_id": "RUN-20261111-052433-19C89A",
+  "claim_id": "CLM-2026-1002",
+  "processed_at": "2026-11-11T05:24:33",
+  "status": "AUTO_APPROVE",
+  "fraud_score": 0.8,
+  "risk_band": "LOW",
+  "risk_label": "Genuine",
+  "recommendation": "Low fraud risk and admissible. Approve for settlement as computed.",
+  "suspicious_reasons": [],
+  "triggered_categories": [],
+  "findings": [],
+  "claim_summary": {
+    "patient_name": "Arjun Sharma",
+    "patient_age": 19,
+    "gender": "Male",
+    "policy_number": "POL-HS-220457",
+    "plan": "Family Health Shield - Silver",
+    "hospital_name": "CityCare Super Speciality Hospital",
+    "hospital_id": "HSP-KA-0207",
+    "hospital_tier": "premium",
+    "network": true,
+    "diagnosis": "Acute Appendicitis",
+    "icd10": "K35.80",
+    "admission_date": "2026-10-05",
+    "discharge_date": "2026-10-08",
+    "los_days": 3,
+    "claim_type": "Cashless",
+    "claimed_amount": 128300.0,
+    "billed_total": 128300.0,
+    "bill_no": "CCSH/IP/2026/33107",
+    "treating_doctor": "Dr. Kavitha Menon, MS (General Surgery)"
+  },
+  "line_items": [
+    {
+      "sno": 1,
+      "description": "Registration & Admission charges",
+      "category": "MISC",
+      "qty": 1,
+      "rate": 500.0,
+      "amount": 500.0
+    },
+    {
+      "sno": 2,
+      "description": "Private Room Rent",
+      "category": "ROOM",
+      "qty": 3,
+      "rate": 7500.0,
+      "amount": 22500.0
+    },
+    {
+      "sno": 3,
+      "description": "Nursing charges",
+      "category": "NURSING",
+      "qty": 3,
+      "rate": 1500.0,
+      "amount": 4500.0
+    },
+    {
+      "sno": 4,
+      "description": "Surgeon consultation / visits",
+      "category": "CONSULT",
+      "qty": 4,
+      "rate": 1500.0,
+      "amount": 6000.0
+    },
+    {
+      "sno": 5,
+      "description": "Complete Blood Count (CBC)",
+      "category": "LAB",
+      "qty": 1,
+      "rate": 600.0,
+      "amount": 600.0
+    },
+    {
+      "sno": 6,
+      "description": "Ultrasound Abdomen",
+      "category": "RADIOLOGY",
+      "qty": 1,
+      "rate": 2800.0,
+      "amount": 2800.0
+    },
+    {
+      "sno": 7,
+      "description": "CT Scan Abdomen (contrast)",
+      "category": "RADIOLOGY",
+      "qty": 1,
+      "rate": 6500.0,
+      "amount": 6500.0
+    },
+    {
+      "sno": 8,
+      "description": "Laparoscopic Appendectomy - Surgeon fee",
+      "category": "PROCEDURE",
+      "qty": 1,
+      "rate": 38000.0,
+      "amount": 38000.0
+    },
+    {
+      "sno": 9,
+      "description": "OT charges",
+      "category": "OT",
+      "qty": 1,
+      "rate": 18000.0,
+      "amount": 18000.0
+    },
+    {
+      "sno": 10,
+      "description": "Anaesthesia charges",
+      "category": "PROCEDURE",
+      "qty": 1,
+      "rate": 12000.0,
+      "amount": 12000.0
+    },
+    {
+      "sno": 11,
+      "description": "Pharmacy - medicines",
+      "category": "PHARMACY",
+      "qty": 1,
+      "rate": 9800.0,
+      "amount": 9800.0
+    },
+    {
+      "sno": 12,
+      "description": "Surgical consumables",
+      "category": "CONSUMABLE",
+      "qty": 1,
+      "rate": 5600.0,
+      "amount": 5600.0
+    },
+    {
+      "sno": 13,
+      "description": "Histopathology - appendix specimen",
+      "category": "LAB",
+      "qty": 1,
+      "rate": 1500.0,
+      "amount": 1500.0
+    }
+  ],
+  "documents": [
+    {
+      "doc_type": "claim_form",
+      "file": "claim_form.pdf",
+      "pages": 1,
+      "confidence": 1.0,
+      "forensic_flags": [],
+      "metadata": {
+        "producer": "ReportLab PDF Library - (opensource)",
+        "creator": "ClaimGuard Insurer Portal",
+        "created": "2026-11-11T04:35:52",
+        "modified": "2026-11-11T04:35:52"
+      }
+    },
+    {
+      "doc_type": "discharge_summary",
+      "file": "discharge_summary.pdf",
+      "pages": 1,
+      "confidence": 0.89,
+      "forensic_flags": [],
+      "metadata": {
+        "producer": "ReportLab PDF Library - (opensource)",
+        "creator": "HIMS Clinical Module v7.2",
+        "created": "2026-11-11T04:35:52",
+        "modified": "2026-11-11T04:35:52"
+      }
+    },
+    {
+      "doc_type": "hospital_bill",
+      "file": "hospital_bill.pdf",
+      "pages": 1,
+      "confidence": 0.9,
+      "forensic_flags": [],
+      "metadata": {
+        "producer": "ReportLab PDF Library - (opensource)",
+        "creator": "HIMS Billing Module v7.2",
+        "created": "2026-11-11T04:35:52",
+        "modified": "2026-11-11T04:35:52"
+      }
+    },
+    {
+      "doc_type": "prescription",
+      "file": "prescription.pdf",
+      "pages": 1,
+      "confidence": 1.0,
+      "forensic_flags": [],
+      "metadata": {
+        "producer": "ReportLab PDF Library - (opensource)",
+        "creator": "HIMS Clinical Module v7.2",
+        "created": "2026-11-11T04:35:52",
+        "modified": "2026-11-11T04:35:52"
+      }
+    }
+  ],
+  "unclassified_files": [],
+  "validation": {
+    "complete": true,
+    "blocking": false,
+    "missing_documents": [],
+    "missing_fields": [],
+    "checks": [
+      {
+        "check": "Mandatory documents present",
+        "passed": true,
+        "detail": "All present"
+      },
+      {
+        "check": "Mandatory fields extracted",
+        "passed": true,
+        "detail": "All extracted"
+      },
+      {
+        "check": "Bill total tallies with line items",
+        "passed": true,
+        "detail": "Grand total \u20b91,28,300 vs items \u20b91,28,300"
+      },
+      {
+        "check": "Claimed amount within bill amount",
+        "passed": true,
+        "detail": "Claimed \u20b91,28,300 vs billed \u20b91,28,300"
+      },
+      {
+        "check": "Hospital seal & signature on bill",
+        "passed": true,
+        "detail": "Present (Billing Manager)"
+      },
+      {
+        "check": "Seal & signature on discharge summary",
+        "passed": true,
+        "detail": "Present (Dr. Kavitha Menon, MS (General Surgery))"
+      },
+      {
+        "check": "Treating doctor registration number",
+        "passed": true,
+        "detail": "KMC/2012/88341"
+      },
+      {
+        "check": "Hospital registration number present & consistent",
+        "passed": true,
+        "detail": "KA/BLR/KPME/2011/1187"
+      },
+      {
+        "check": "Patient name consistent across documents",
+        "passed": true,
+        "detail": "claim_form: Arjun Sharma | discharge_summary: Arjun Sharma | hospital_bill: Arjun Sharma | prescription: Arjun Sharma"
+      },
+      {
+        "check": "Admission date consistent across documents",
+        "passed": true,
+        "detail": "claim_form: 2026-10-05, discharge_summary: 2026-10-05, hospital_bill: 2026-10-05"
+      },
+      {
+        "check": "Discharge date consistent across documents",
+        "passed": true,
+        "detail": "claim_form: 2026-10-08, discharge_summary: 2026-10-08, hospital_bill: 2026-10-08"
+      },
+      {
+        "check": "Claim submitted within 30 days of discharge",
+        "passed": true,
+        "detail": "0 days"
+      },
+      {
+        "check": "PDF forensic check - claim_form",
+        "passed": true,
+        "detail": "clean"
+      },
+      {
+        "check": "PDF forensic check - discharge_summary",
+        "passed": true,
+        "detail": "clean"
+      },
+      {
+        "check": "PDF forensic check - hospital_bill",
+        "passed": true,
+        "detail": "clean"
+      },
+      {
+        "check": "PDF forensic check - prescription",
+        "passed": true,
+        "detail": "clean"
+      }
+    ],
+    "passed": 16,
+    "total": 16
+  },
+  "decision": {
+    "fraud_score": 0.8,
+    "risk_band": "LOW",
+    "risk_label": "Genuine",
+    "status": "AUTO_APPROVE",
+    "recommendation": "Low fraud risk and admissible. Approve for settlement as computed.",
+    "rule_score": 0.0,
+    "ml_score": 1.8,
+    "anomaly_score": 0.0,
+    "weights": {
+      "rules": 0.55,
+      "ml": 0.45
+    },
+    "critical_override": false,
+    "triggered_categories": [],
+    "suspicious_reasons": [],
+    "coverage": {
+      "admissible": true,
+      "issues": [],
+      "days_since_inception": 1573,
+      "accident": false,
+      "sum_insured": 300000,
+      "available_si": 300000
+    }
+  },
+  "ml": {
+    "fraud_probability": 0.0179,
+    "ml_score": 1.8,
+    "anomaly_score": 0.0,
+    "top_drivers": [],
+    "features": {
+      "bill_ratio": 0.49,
+      "max_item_ratio": 0.58,
+      "room_rent_ratio": 0.67,
+      "duplicate_items": 0.0,
+      "los_ratio": 0.6,
+      "unrelated_item_count": 0.0,
+      "opd_manageable": 0.0,
+      "dx_mismatch": 0.0,
+      "hospital_risk": 0.05,
+      "hospital_network": 1.0,
+      "hospital_small_clinic": 0.0,
+      "days_since_inception_log": 7.3614,
+      "undeclared_ped": 0.0,
+      "prior_claims_12m": 0.0,
+      "registry_duplicate": 0.0,
+      "doc_issue_count": 0.0,
+      "claim_amount_log": 11.7621,
+      "is_reimbursement": 0.0,
+      "patient_age": 19.0
+    },
+    "model_version": "gbm-v1",
+    "model_metrics": {
+      "roc_auc": 0.9217,
+      "pr_auc": 0.8245,
+      "precision@0.5": 0.8927,
+      "recall@0.5": 0.7795,
+      "rows": 8000
+    }
+  },
+  "settlement": {
+    "payable": 67200.0,
+    "lines": [
+      {
+        "label": "Amount claimed",
+        "amount": 128300.0
+      },
+      {
+        "label": "Non-payable items (Registration & Admission charges)",
+        "amount": -500.0
+      },
+      {
+        "label": "Proportionate deduction: room \u20b97,500/day vs eligible \u20b93,000/day (40% of associated charges \u20b91,01,000 payable)",
+        "amount": -60600.0
+      },
+      {
+        "label": "Net payable",
+        "amount": 67200.0
+      }
+    ],
+    "status": "APPROVED",
+    "notes": [
+      "Proportionate deduction is not applied to pharmacy, consumables, implants or diagnostics."
+    ],
+    "deductions": 61100.0
+  },
+  "siu": null,
+  "doc_request": null,
+  "agent_trace": [
+    {
+      "node": "intake",
+      "agent": "Claim Intake Agent",
+      "role": "Registers the claim, assigns a run id and collects input documents",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.675",
+      "duration_ms": 0.17,
+      "findings": 0,
+      "summary": "Registered claim CLM-2026-1002 with 4 document(s)."
+    },
+    {
+      "node": "classify",
+      "agent": "Document Classifier Agent",
+      "role": "Reads every file (PDF/TXT/JSON/image) and identifies the document type",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.676",
+      "duration_ms": 73.53,
+      "findings": 0,
+      "summary": "Identified 4 document type(s): claim_form, discharge_summary, hospital_bill, prescription."
+    },
+    {
+      "node": "extract",
+      "agent": "Data Extraction Agent",
+      "role": "Extracts structured fields & bill line items and builds one consolidated claim record",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.750",
+      "duration_ms": 2.94,
+      "findings": 0,
+      "summary": "Extracted 34 claim fields and 13 bill line items (billed \u20b91,28,300, claimed \u20b91,28,300)."
+    },
+    {
+      "node": "validate",
+      "agent": "Document Validation Agent",
+      "role": "Checks completeness, cross-document consistency, bill arithmetic & PDF forensics",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.754",
+      "duration_ms": 0.2,
+      "findings": 0,
+      "summary": "16/16 validation checks passed; 0 document issue(s)."
+    },
+    {
+      "node": "knowledge",
+      "agent": "Knowledge Retrieval Agent",
+      "role": "Looks up policy, insured member, provider registry, clinical KB and claim history",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.754",
+      "duration_ms": 0.45,
+      "findings": 0,
+      "summary": "policy found; member verified; hospital HSP-KA-0207; diagnosis -> acute appendicitis (icd10); 0 past claim(s); 0 registry hit(s)."
+    },
+    {
+      "node": "billing",
+      "agent": "Billing Audit Agent",
+      "role": "Bill amount vs benchmark, single-item rates, room rent and duplicate charges",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.756",
+      "duration_ms": 0.29,
+      "findings": 0,
+      "summary": "Bill \u20b91,28,300 ratio 0.49x typical; 0 overpriced item(s); 0 duplicate(s)."
+    },
+    {
+      "node": "history",
+      "agent": "Claim History Agent",
+      "role": "Claim frequency, repeated procedures, duplicate bills & multi-insurer claims",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.758",
+      "duration_ms": 0.27,
+      "findings": 0,
+      "summary": "0 claim(s) in last 12 months; 0 registry hit(s)."
+    },
+    {
+      "node": "medical",
+      "agent": "Medical Coherence Agent",
+      "role": "Diagnosis vs treatment consistency, clinically unrelated tests and length-of-stay",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.757",
+      "duration_ms": 0.79,
+      "findings": 0,
+      "summary": "Diagnosis 'acute appendicitis' (K35.80); 0 unrelated item(s); LOS 3 vs typical 2-5."
+    },
+    {
+      "node": "policy",
+      "agent": "Policy & Coverage Agent",
+      "role": "Waiting periods, policy validity, sum-insured enhancement and pre-existing disease disclosure",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.759",
+      "duration_ms": 0.13,
+      "findings": 0,
+      "summary": "Admissible; policy 1573 days old; 0 timing/disclosure finding(s)."
+    },
+    {
+      "node": "provider",
+      "agent": "Provider Risk Agent",
+      "role": "Hospital blacklist / watchlist, provider risk index, claim spikes, network status",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.759",
+      "duration_ms": 0.04,
+      "findings": 0,
+      "summary": "CityCare Super Speciality Hospital (premium, network, risk 0.05); 0 finding(s)."
+    },
+    {
+      "node": "ml_scoring",
+      "agent": "ML Risk Scoring Agent",
+      "role": "Gradient-boosting fraud probability + Isolation-Forest anomaly score on 19 engineered features",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.760",
+      "duration_ms": 15.89,
+      "findings": 0,
+      "summary": "Fraud probability 0.02 (anomaly 0/100); drivers: no strong drivers."
+    },
+    {
+      "node": "decision",
+      "agent": "Fraud Risk Decision Agent",
+      "role": "Fuses rule findings + ML score into the 0-100 fraud score, risk band and routing decision",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.776",
+      "duration_ms": 0.03,
+      "findings": 0,
+      "summary": "Fraud score 0.8 (Genuine) = 0.55x rules 0.0 + 0.45x ML 1.8 -> AUTO_APPROVE."
+    },
+    {
+      "node": "settlement",
+      "agent": "Settlement Agent",
+      "role": "Computes admissible amount: non-payables, room-rent proportionate deduction, co-pay, sum insured",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.777",
+      "duration_ms": 0.11,
+      "findings": 0,
+      "summary": "APPROVED: net payable \u20b967,200 of \u20b91,28,300 claimed."
+    },
+    {
+      "node": "report",
+      "agent": "Report Agent",
+      "role": "Compiles the explainable decision report, narrative and audit record",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:33.777",
+      "duration_ms": 3.38,
+      "findings": 0,
+      "summary": "Report ready: status AUTO_APPROVE, score 0.8, payable \u20b967,200."
+    }
+  ],
+  "errors": [],
+  "narrative": "Claim CLM-2026-1002: Arjun Sharma, Acute Appendicitis at CityCare Super Speciality Hospital (3 day stay), claimed \u20b91,28,300. Fraud score 0.8/100 (Genuine); rule engine 0.0, ML model 1.8. Categories triggered: none. Decision: AUTO APPROVE - Low fraud risk and admissible. Approve for settlement as computed.",
+  "narrative_source": "template",
+  "output_text": "Fraud Score: 1 (Low Risk - Genuine)\nSuspicious Reasons:\n- None\nTriggered Categories:\n- None\nDecision: AUTO APPROVE",
+  "engine": "langgraph"
+}

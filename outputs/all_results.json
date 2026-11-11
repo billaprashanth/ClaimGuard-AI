@@ -1,0 +1,4188 @@
+[
+  {
+    "run_id": "RUN-20261111-052433-7AF432",
+    "claim_id": "CLM-2026-1001",
+    "processed_at": "2026-11-11T05:24:33",
+    "status": "AUTO_APPROVE",
+    "fraud_score": 1.2,
+    "risk_band": "LOW",
+    "risk_label": "Genuine",
+    "recommendation": "Low fraud risk and admissible. Approve for settlement as computed.",
+    "suspicious_reasons": [],
+    "triggered_categories": [],
+    "findings": [],
+    "claim_summary": {
+      "patient_name": "Anil Kumar",
+      "patient_age": 42,
+      "gender": "Male",
+      "policy_number": "POL-HS-240011",
+      "plan": "Family Health Shield - Gold",
+      "hospital_name": "Sunrise Multispeciality Hospital",
+      "hospital_id": "HSP-TG-0101",
+      "hospital_tier": "mid",
+      "network": true,
+      "diagnosis": "Dengue Fever with Thrombocytopenia",
+      "icd10": "A90",
+      "admission_date": "2026-10-14",
+      "discharge_date": "2026-10-18",
+      "los_days": 4,
+      "claim_type": "Reimbursement",
+      "claimed_amount": 38450.0,
+      "billed_total": 38450.0,
+      "bill_no": "SMH/IP/2026/10342",
+      "treating_doctor": "Dr. Srinivas Rao, MD (General Medicine)"
+    },
+    "line_items": [
+      {
+        "sno": 1,
+        "description": "Registration & Admission charges",
+        "category": "MISC",
+        "qty": 1,
+        "rate": 500.0,
+        "amount": 500.0
+      },
+      {
+        "sno": 2,
+        "description": "Semi Private Room Rent",
+        "category": "ROOM",
+        "qty": 4,
+        "rate": 4000.0,
+        "amount": 16000.0
+      },
+      {
+        "sno": 3,
+        "description": "Nursing charges",
+        "category": "NURSING",
+        "qty": 4,
+        "rate": 900.0,
+        "amount": 3600.0
+      },
+      {
+        "sno": 4,
+        "description": "Physician consultation",
+        "category": "CONSULT",
+        "qty": 5,
+        "rate": 800.0,
+        "amount": 4000.0
+      },
+      {
+        "sno": 5,
+        "description": "Dengue NS1 Antigen & IgM",
+        "category": "LAB",
+        "qty": 1,
+        "rate": 1400.0,
+        "amount": 1400.0
+      },
+      {
+        "sno": 6,
+        "description": "Complete Blood Count (CBC)",
+        "category": "LAB",
+        "qty": 4,
+        "rate": 350.0,
+        "amount": 1400.0
+      },
+      {
+        "sno": 7,
+        "description": "Platelet count (serial)",
+        "category": "LAB",
+        "qty": 6,
+        "rate": 250.0,
+        "amount": 1500.0
+      },
+      {
+        "sno": 8,
+        "description": "Liver Function Test (LFT)",
+        "category": "LAB",
+        "qty": 1,
+        "rate": 900.0,
+        "amount": 900.0
+      },
+      {
+        "sno": 9,
+        "description": "Ultrasound Abdomen",
+        "category": "RADIOLOGY",
+        "qty": 1,
+        "rate": 1800.0,
+        "amount": 1800.0
+      },
+      {
+        "sno": 10,
+        "description": "IV Fluids - Normal Saline",
+        "category": "PHARMACY",
+        "qty": 12,
+        "rate": 120.0,
+        "amount": 1440.0
+      },
+      {
+        "sno": 11,
+        "description": "Pharmacy - medicines",
+        "category": "PHARMACY",
+        "qty": 1,
+        "rate": 4910.0,
+        "amount": 4910.0
+      },
+      {
+        "sno": 12,
+        "description": "Medical consumables",
+        "category": "CONSUMABLE",
+        "qty": 1,
+        "rate": 1000.0,
+        "amount": 1000.0
+      }
+    ],
+    "documents": [
+      {
+        "doc_type": "claim_form",
+        "file": "claim_form.pdf",
+        "pages": 1,
+        "confidence": 1.0,
+        "forensic_flags": [],
+        "metadata": {
+          "producer": "ReportLab PDF Library - (opensource)",
+          "creator": "ClaimGuard Insurer Portal",
+          "created": "2026-11-11T04:35:52",
+          "modified": "2026-11-11T04:35:52"
+        }
+      },
+      {
+        "doc_type": "discharge_summary",
+        "file": "discharge_summary.pdf",
+        "pages": 1,
+        "confidence": 1.0,
+        "forensic_flags": [],
+        "metadata": {
+          "producer": "ReportLab PDF Library - (opensource)",
+          "creator": "HIMS Clinical Module v7.2",
+          "created": "2026-11-11T04:35:52",
+          "modified": "2026-11-11T04:35:52"
+        }
+      },
+      {
+        "doc_type": "hospital_bill",
+        "file": "hospital_bill.pdf",
+        "pages": 1,
+        "confidence": 1.0,
+        "forensic_flags": [],
+        "metadata": {
+          "producer": "ReportLab PDF Library - (opensource)",
+          "creator": "HIMS Billing Module v7.2",
+          "created": "2026-11-11T04:35:52",
+          "modified": "2026-11-11T04:35:52"
+        }
+      },
+      {
+        "doc_type": "prescription",
+        "file": "prescription.pdf",
+        "pages": 1,
+        "confidence": 1.0,
+        "forensic_flags": [],
+        "metadata": {
+          "producer": "ReportLab PDF Library - (opensource)",
+          "creator": "HIMS Clinical Module v7.2",
+          "created": "2026-11-11T04:35:52",
+          "modified": "2026-11-11T04:35:52"
+        }
+      }
+    ],
+    "unclassified_files": [],
+    "validation": {
+      "complete": true,
+      "blocking": false,
+      "missing_documents": [],
+      "missing_fields": [],
+      "checks": [
+        {
+          "check": "Mandatory documents present",
+          "passed": true,
+          "detail": "All present"
+        },
+        {
+          "check": "Mandatory fields extracted",
+          "passed": true,
+          "detail": "All extracted"
+        },
+        {
+          "check": "Bill total tallies with line items",
+          "passed": true,
+          "detail": "Grand total \u20b938,450 vs items \u20b938,450"
+        },
+        {
+          "check": "Claimed amount within bill amount",
+          "passed": true,
+          "detail": "Claimed \u20b938,450 vs billed \u20b938,450"
+        },
+        {
+          "check": "Hospital seal & signature on bill",
+          "passed": true,
+          "detail": "Present (Billing Manager)"
+        },
+        {
+          "check": "Seal & signature on discharge summary",
+          "passed": true,
+          "detail": "Present (Dr. Srinivas Rao, MD (General Medicine))"
+        },
+        {
+          "check": "Treating doctor registration number",
+          "passed": true,
+          "detail": "TSMC/2009/14522"
+        },
+        {
+          "check": "Hospital registration number present & consistent",
+          "passed": true,
+          "detail": "TS/HYD/CE/2015/0412"
+        },
+        {
+          "check": "Patient name consistent across documents",
+          "passed": true,
+          "detail": "claim_form: Anil Kumar | discharge_summary: Anil Kumar | hospital_bill: Anil Kumar | prescription: Anil Kumar"
+        },
+        {
+          "check": "Admission date consistent across documents",
+          "passed": true,
+          "detail": "claim_form: 2026-10-14, discharge_summary: 2026-10-14, hospital_bill: 2026-10-14"
+        },
+        {
+          "check": "Discharge date consistent across documents",
+          "passed": true,
+          "detail": "claim_form: 2026-10-18, discharge_summary: 2026-10-18, hospital_bill: 2026-10-18"
+        },
+        {
+          "check": "Claim submitted within 30 days of discharge",
+          "passed": true,
+          "detail": "6 days"
+        },
+        {
+          "check": "PDF forensic check - claim_form",
+          "passed": true,
+          "detail": "clean"
+        },
+        {
+          "check": "PDF forensic check - discharge_summary",
+          "passed": true,
+          "detail": "clean"
+        },
+        {
+          "check": "PDF forensic check - hospital_bill",
+          "passed": true,
+          "detail": "clean"
+        },
+        {
+          "check": "PDF forensic check - prescription",
+          "passed": true,
+          "detail": "clean"
+        }
+      ],
+      "passed": 16,
+      "total": 16
+    },
+    "decision": {
+      "fraud_score": 1.2,
+      "risk_band": "LOW",
+      "risk_label": "Genuine",
+      "status": "AUTO_APPROVE",
+      "recommendation": "Low fraud risk and admissible. Approve for settlement as computed.",
+      "rule_score": 0.0,
+      "ml_score": 2.7,
+      "anomaly_score": 0.0,
+      "weights": {
+        "rules": 0.55,
+        "ml": 0.45
+      },
+      "critical_override": false,
+      "triggered_categories": [],
+      "suspicious_reasons": [],
+      "coverage": {
+        "admissible": true,
+        "issues": [],
+        "days_since_inception": 1292,
+        "accident": false,
+        "sum_insured": 500000,
+        "available_si": 500000
+      }
+    },
+    "ml": {
+      "fraud_probability": 0.0275,
+      "ml_score": 2.7,
+      "anomaly_score": 0.0,
+      "top_drivers": [],
+      "features": {
+        "bill_ratio": 0.45,
+        "max_item_ratio": 0.78,
+        "room_rent_ratio": 0.89,
+        "duplicate_items": 0.0,
+        "los_ratio": 0.67,
+        "unrelated_item_count": 0.0,
+        "opd_manageable": 0.0,
+        "dx_mismatch": 0.0,
+        "hospital_risk": 0.08,
+        "hospital_network": 1.0,
+        "hospital_small_clinic": 0.0,
+        "days_since_inception_log": 7.1647,
+        "undeclared_ped": 0.0,
+        "prior_claims_12m": 0.0,
+        "registry_duplicate": 0.0,
+        "doc_issue_count": 0.0,
+        "claim_amount_log": 10.5571,
+        "is_reimbursement": 1.0,
+        "patient_age": 42.0
+      },
+      "model_version": "gbm-v1",
+      "model_metrics": {
+        "roc_auc": 0.9217,
+        "pr_auc": 0.8245,
+        "precision@0.5": 0.8927,
+        "recall@0.5": 0.7795,
+        "rows": 8000
+      }
+    },
+    "settlement": {
+      "payable": 37950.0,
+      "lines": [
+        {
+          "label": "Amount claimed",
+          "amount": 38450.0
+        },
+        {
+          "label": "Non-payable items (Registration & Admission charges)",
+          "amount": -500.0
+        },
+        {
+          "label": "Net payable",
+          "amount": 37950.0
+        }
+      ],
+      "status": "APPROVED",
+      "notes": [],
+      "deductions": 500.0
+    },
+    "siu": null,
+    "doc_request": null,
+    "agent_trace": [
+      {
+        "node": "intake",
+        "agent": "Claim Intake Agent",
+        "role": "Registers the claim, assigns a run id and collects input documents",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.211",
+        "duration_ms": 0.2,
+        "findings": 0,
+        "summary": "Registered claim CLM-2026-1001 with 4 document(s)."
+      },
+      {
+        "node": "classify",
+        "agent": "Document Classifier Agent",
+        "role": "Reads every file (PDF/TXT/JSON/image) and identifies the document type",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.212",
+        "duration_ms": 316.16,
+        "findings": 0,
+        "summary": "Identified 4 document type(s): claim_form, discharge_summary, hospital_bill, prescription."
+      },
+      {
+        "node": "extract",
+        "agent": "Data Extraction Agent",
+        "role": "Extracts structured fields & bill line items and builds one consolidated claim record",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.531",
+        "duration_ms": 12.55,
+        "findings": 0,
+        "summary": "Extracted 34 claim fields and 12 bill line items (billed \u20b938,450, claimed \u20b938,450)."
+      },
+      {
+        "node": "validate",
+        "agent": "Document Validation Agent",
+        "role": "Checks completeness, cross-document consistency, bill arithmetic & PDF forensics",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.544",
+        "duration_ms": 0.34,
+        "findings": 0,
+        "summary": "16/16 validation checks passed; 0 document issue(s)."
+      },
+      {
+        "node": "knowledge",
+        "agent": "Knowledge Retrieval Agent",
+        "role": "Looks up policy, insured member, provider registry, clinical KB and claim history",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.546",
+        "duration_ms": 3.03,
+        "findings": 0,
+        "summary": "policy found; member verified; hospital HSP-TG-0101; diagnosis -> dengue fever (icd10); 1 past claim(s); 0 registry hit(s)."
+      },
+      {
+        "node": "billing",
+        "agent": "Billing Audit Agent",
+        "role": "Bill amount vs benchmark, single-item rates, room rent and duplicate charges",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.550",
+        "duration_ms": 1.65,
+        "findings": 0,
+        "summary": "Bill \u20b938,450 ratio 0.45x typical; 0 overpriced item(s); 0 duplicate(s)."
+      },
+      {
+        "node": "history",
+        "agent": "Claim History Agent",
+        "role": "Claim frequency, repeated procedures, duplicate bills & multi-insurer claims",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.551",
+        "duration_ms": 0.61,
+        "findings": 0,
+        "summary": "0 claim(s) in last 12 months; 0 registry hit(s)."
+      },
+      {
+        "node": "medical",
+        "agent": "Medical Coherence Agent",
+        "role": "Diagnosis vs treatment consistency, clinically unrelated tests and length-of-stay",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.553",
+        "duration_ms": 0.58,
+        "findings": 0,
+        "summary": "Diagnosis 'dengue fever' (A90); 0 unrelated item(s); LOS 4 vs typical 2-6."
+      },
+      {
+        "node": "policy",
+        "agent": "Policy & Coverage Agent",
+        "role": "Waiting periods, policy validity, sum-insured enhancement and pre-existing disease disclosure",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.553",
+        "duration_ms": 0.38,
+        "findings": 0,
+        "summary": "Admissible; policy 1292 days old; 0 timing/disclosure finding(s)."
+      },
+      {
+        "node": "provider",
+        "agent": "Provider Risk Agent",
+        "role": "Hospital blacklist / watchlist, provider risk index, claim spikes, network status",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.553",
+        "duration_ms": 0.03,
+        "findings": 0,
+        "summary": "Sunrise Multispeciality Hospital (mid, network, risk 0.08); 0 finding(s)."
+      },
+      {
+        "node": "ml_scoring",
+        "agent": "ML Risk Scoring Agent",
+        "role": "Gradient-boosting fraud probability + Isolation-Forest anomaly score on 19 engineered features",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.555",
+        "duration_ms": 107.44,
+        "findings": 0,
+        "summary": "Fraud probability 0.03 (anomaly 0/100); drivers: no strong drivers."
+      },
+      {
+        "node": "decision",
+        "agent": "Fraud Risk Decision Agent",
+        "role": "Fuses rule findings + ML score into the 0-100 fraud score, risk band and routing decision",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.663",
+        "duration_ms": 0.03,
+        "findings": 0,
+        "summary": "Fraud score 1.2 (Genuine) = 0.55x rules 0.0 + 0.45x ML 2.7 -> AUTO_APPROVE."
+      },
+      {
+        "node": "settlement",
+        "agent": "Settlement Agent",
+        "role": "Computes admissible amount: non-payables, room-rent proportionate deduction, co-pay, sum insured",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.664",
+        "duration_ms": 0.1,
+        "findings": 0,
+        "summary": "APPROVED: net payable \u20b937,950 of \u20b938,450 claimed."
+      },
+      {
+        "node": "report",
+        "agent": "Report Agent",
+        "role": "Compiles the explainable decision report, narrative and audit record",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.665",
+        "duration_ms": 6.27,
+        "findings": 0,
+        "summary": "Report ready: status AUTO_APPROVE, score 1.2, payable \u20b937,950."
+      }
+    ],
+    "errors": [],
+    "narrative": "Claim CLM-2026-1001: Anil Kumar, Dengue Fever with Thrombocytopenia at Sunrise Multispeciality Hospital (4 day stay), claimed \u20b938,450. Fraud score 1.2/100 (Genuine); rule engine 0.0, ML model 2.7. Categories triggered: none. Decision: AUTO APPROVE - Low fraud risk and admissible. Approve for settlement as computed.",
+    "narrative_source": "template",
+    "output_text": "Fraud Score: 1 (Low Risk - Genuine)\nSuspicious Reasons:\n- None\nTriggered Categories:\n- None\nDecision: AUTO APPROVE",
+    "engine": "langgraph"
+  },
+  {
+    "run_id": "RUN-20261111-052433-19C89A",
+    "claim_id": "CLM-2026-1002",
+    "processed_at": "2026-11-11T05:24:33",
+    "status": "AUTO_APPROVE",
+    "fraud_score": 0.8,
+    "risk_band": "LOW",
+    "risk_label": "Genuine",
+    "recommendation": "Low fraud risk and admissible. Approve for settlement as computed.",
+    "suspicious_reasons": [],
+    "triggered_categories": [],
+    "findings": [],
+    "claim_summary": {
+      "patient_name": "Arjun Sharma",
+      "patient_age": 19,
+      "gender": "Male",
+      "policy_number": "POL-HS-220457",
+      "plan": "Family Health Shield - Silver",
+      "hospital_name": "CityCare Super Speciality Hospital",
+      "hospital_id": "HSP-KA-0207",
+      "hospital_tier": "premium",
+      "network": true,
+      "diagnosis": "Acute Appendicitis",
+      "icd10": "K35.80",
+      "admission_date": "2026-10-05",
+      "discharge_date": "2026-10-08",
+      "los_days": 3,
+      "claim_type": "Cashless",
+      "claimed_amount": 128300.0,
+      "billed_total": 128300.0,
+      "bill_no": "CCSH/IP/2026/33107",
+      "treating_doctor": "Dr. Kavitha Menon, MS (General Surgery)"
+    },
+    "line_items": [
+      {
+        "sno": 1,
+        "description": "Registration & Admission charges",
+        "category": "MISC",
+        "qty": 1,
+        "rate": 500.0,
+        "amount": 500.0
+      },
+      {
+        "sno": 2,
+        "description": "Private Room Rent",
+        "category": "ROOM",
+        "qty": 3,
+        "rate": 7500.0,
+        "amount": 22500.0
+      },
+      {
+        "sno": 3,
+        "description": "Nursing charges",
+        "category": "NURSING",
+        "qty": 3,
+        "rate": 1500.0,
+        "amount": 4500.0
+      },
+      {
+        "sno": 4,
+        "description": "Surgeon consultation / visits",
+        "category": "CONSULT",
+        "qty": 4,
+        "rate": 1500.0,
+        "amount": 6000.0
+      },
+      {
+        "sno": 5,
+        "description": "Complete Blood Count (CBC)",
+        "category": "LAB",
+        "qty": 1,
+        "rate": 600.0,
+        "amount": 600.0
+      },
+      {
+        "sno": 6,
+        "description": "Ultrasound Abdomen",
+        "category": "RADIOLOGY",
+        "qty": 1,
+        "rate": 2800.0,
+        "amount": 2800.0
+      },
+      {
+        "sno": 7,
+        "description": "CT Scan Abdomen (contrast)",
+        "category": "RADIOLOGY",
+        "qty": 1,
+        "rate": 6500.0,
+        "amount": 6500.0
+      },
+      {
+        "sno": 8,
+        "description": "Laparoscopic Appendectomy - Surgeon fee",
+        "category": "PROCEDURE",
+        "qty": 1,
+        "rate": 38000.0,
+        "amount": 38000.0
+      },
+      {
+        "sno": 9,
+        "description": "OT charges",
+        "category": "OT",
+        "qty": 1,
+        "rate": 18000.0,
+        "amount": 18000.0
+      },
+      {
+        "sno": 10,
+        "description": "Anaesthesia charges",
+        "category": "PROCEDURE",
+        "qty": 1,
+        "rate": 12000.0,
+        "amount": 12000.0
+      },
+      {
+        "sno": 11,
+        "description": "Pharmacy - medicines",
+        "category": "PHARMACY",
+        "qty": 1,
+        "rate": 9800.0,
+        "amount": 9800.0
+      },
+      {
+        "sno": 12,
+        "description": "Surgical consumables",
+        "category": "CONSUMABLE",
+        "qty": 1,
+        "rate": 5600.0,
+        "amount": 5600.0
+      },
+      {
+        "sno": 13,
+        "description": "Histopathology - appendix specimen",
+        "category": "LAB",
+        "qty": 1,
+        "rate": 1500.0,
+        "amount": 1500.0
+      }
+    ],
+    "documents": [
+      {
+        "doc_type": "claim_form",
+        "file": "claim_form.pdf",
+        "pages": 1,
+        "confidence": 1.0,
+        "forensic_flags": [],
+        "metadata": {
+          "producer": "ReportLab PDF Library - (opensource)",
+          "creator": "ClaimGuard Insurer Portal",
+          "created": "2026-11-11T04:35:52",
+          "modified": "2026-11-11T04:35:52"
+        }
+      },
+      {
+        "doc_type": "discharge_summary",
+        "file": "discharge_summary.pdf",
+        "pages": 1,
+        "confidence": 0.89,
+        "forensic_flags": [],
+        "metadata": {
+          "producer": "ReportLab PDF Library - (opensource)",
+          "creator": "HIMS Clinical Module v7.2",
+          "created": "2026-11-11T04:35:52",
+          "modified": "2026-11-11T04:35:52"
+        }
+      },
+      {
+        "doc_type": "hospital_bill",
+        "file": "hospital_bill.pdf",
+        "pages": 1,
+        "confidence": 0.9,
+        "forensic_flags": [],
+        "metadata": {
+          "producer": "ReportLab PDF Library - (opensource)",
+          "creator": "HIMS Billing Module v7.2",
+          "created": "2026-11-11T04:35:52",
+          "modified": "2026-11-11T04:35:52"
+        }
+      },
+      {
+        "doc_type": "prescription",
+        "file": "prescription.pdf",
+        "pages": 1,
+        "confidence": 1.0,
+        "forensic_flags": [],
+        "metadata": {
+          "producer": "ReportLab PDF Library - (opensource)",
+          "creator": "HIMS Clinical Module v7.2",
+          "created": "2026-11-11T04:35:52",
+          "modified": "2026-11-11T04:35:52"
+        }
+      }
+    ],
+    "unclassified_files": [],
+    "validation": {
+      "complete": true,
+      "blocking": false,
+      "missing_documents": [],
+      "missing_fields": [],
+      "checks": [
+        {
+          "check": "Mandatory documents present",
+          "passed": true,
+          "detail": "All present"
+        },
+        {
+          "check": "Mandatory fields extracted",
+          "passed": true,
+          "detail": "All extracted"
+        },
+        {
+          "check": "Bill total tallies with line items",
+          "passed": true,
+          "detail": "Grand total \u20b91,28,300 vs items \u20b91,28,300"
+        },
+        {
+          "check": "Claimed amount within bill amount",
+          "passed": true,
+          "detail": "Claimed \u20b91,28,300 vs billed \u20b91,28,300"
+        },
+        {
+          "check": "Hospital seal & signature on bill",
+          "passed": true,
+          "detail": "Present (Billing Manager)"
+        },
+        {
+          "check": "Seal & signature on discharge summary",
+          "passed": true,
+          "detail": "Present (Dr. Kavitha Menon, MS (General Surgery))"
+        },
+        {
+          "check": "Treating doctor registration number",
+          "passed": true,
+          "detail": "KMC/2012/88341"
+        },
+        {
+          "check": "Hospital registration number present & consistent",
+          "passed": true,
+          "detail": "KA/BLR/KPME/2011/1187"
+        },
+        {
+          "check": "Patient name consistent across documents",
+          "passed": true,
+          "detail": "claim_form: Arjun Sharma | discharge_summary: Arjun Sharma | hospital_bill: Arjun Sharma | prescription: Arjun Sharma"
+        },
+        {
+          "check": "Admission date consistent across documents",
+          "passed": true,
+          "detail": "claim_form: 2026-10-05, discharge_summary: 2026-10-05, hospital_bill: 2026-10-05"
+        },
+        {
+          "check": "Discharge date consistent across documents",
+          "passed": true,
+          "detail": "claim_form: 2026-10-08, discharge_summary: 2026-10-08, hospital_bill: 2026-10-08"
+        },
+        {
+          "check": "Claim submitted within 30 days of discharge",
+          "passed": true,
+          "detail": "0 days"
+        },
+        {
+          "check": "PDF forensic check - claim_form",
+          "passed": true,
+          "detail": "clean"
+        },
+        {
+          "check": "PDF forensic check - discharge_summary",
+          "passed": true,
+          "detail": "clean"
+        },
+        {
+          "check": "PDF forensic check - hospital_bill",
+          "passed": true,
+          "detail": "clean"
+        },
+        {
+          "check": "PDF forensic check - prescription",
+          "passed": true,
+          "detail": "clean"
+        }
+      ],
+      "passed": 16,
+      "total": 16
+    },
+    "decision": {
+      "fraud_score": 0.8,
+      "risk_band": "LOW",
+      "risk_label": "Genuine",
+      "status": "AUTO_APPROVE",
+      "recommendation": "Low fraud risk and admissible. Approve for settlement as computed.",
+      "rule_score": 0.0,
+      "ml_score": 1.8,
+      "anomaly_score": 0.0,
+      "weights": {
+        "rules": 0.55,
+        "ml": 0.45
+      },
+      "critical_override": false,
+      "triggered_categories": [],
+      "suspicious_reasons": [],
+      "coverage": {
+        "admissible": true,
+        "issues": [],
+        "days_since_inception": 1573,
+        "accident": false,
+        "sum_insured": 300000,
+        "available_si": 300000
+      }
+    },
+    "ml": {
+      "fraud_probability": 0.0179,
+      "ml_score": 1.8,
+      "anomaly_score": 0.0,
+      "top_drivers": [],
+      "features": {
+        "bill_ratio": 0.49,
+        "max_item_ratio": 0.58,
+        "room_rent_ratio": 0.67,
+        "duplicate_items": 0.0,
+        "los_ratio": 0.6,
+        "unrelated_item_count": 0.0,
+        "opd_manageable": 0.0,
+        "dx_mismatch": 0.0,
+        "hospital_risk": 0.05,
+        "hospital_network": 1.0,
+        "hospital_small_clinic": 0.0,
+        "days_since_inception_log": 7.3614,
+        "undeclared_ped": 0.0,
+        "prior_claims_12m": 0.0,
+        "registry_duplicate": 0.0,
+        "doc_issue_count": 0.0,
+        "claim_amount_log": 11.7621,
+        "is_reimbursement": 0.0,
+        "patient_age": 19.0
+      },
+      "model_version": "gbm-v1",
+      "model_metrics": {
+        "roc_auc": 0.9217,
+        "pr_auc": 0.8245,
+        "precision@0.5": 0.8927,
+        "recall@0.5": 0.7795,
+        "rows": 8000
+      }
+    },
+    "settlement": {
+      "payable": 67200.0,
+      "lines": [
+        {
+          "label": "Amount claimed",
+          "amount": 128300.0
+        },
+        {
+          "label": "Non-payable items (Registration & Admission charges)",
+          "amount": -500.0
+        },
+        {
+          "label": "Proportionate deduction: room \u20b97,500/day vs eligible \u20b93,000/day (40% of associated charges \u20b91,01,000 payable)",
+          "amount": -60600.0
+        },
+        {
+          "label": "Net payable",
+          "amount": 67200.0
+        }
+      ],
+      "status": "APPROVED",
+      "notes": [
+        "Proportionate deduction is not applied to pharmacy, consumables, implants or diagnostics."
+      ],
+      "deductions": 61100.0
+    },
+    "siu": null,
+    "doc_request": null,
+    "agent_trace": [
+      {
+        "node": "intake",
+        "agent": "Claim Intake Agent",
+        "role": "Registers the claim, assigns a run id and collects input documents",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.675",
+        "duration_ms": 0.17,
+        "findings": 0,
+        "summary": "Registered claim CLM-2026-1002 with 4 document(s)."
+      },
+      {
+        "node": "classify",
+        "agent": "Document Classifier Agent",
+        "role": "Reads every file (PDF/TXT/JSON/image) and identifies the document type",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.676",
+        "duration_ms": 73.53,
+        "findings": 0,
+        "summary": "Identified 4 document type(s): claim_form, discharge_summary, hospital_bill, prescription."
+      },
+      {
+        "node": "extract",
+        "agent": "Data Extraction Agent",
+        "role": "Extracts structured fields & bill line items and builds one consolidated claim record",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.750",
+        "duration_ms": 2.94,
+        "findings": 0,
+        "summary": "Extracted 34 claim fields and 13 bill line items (billed \u20b91,28,300, claimed \u20b91,28,300)."
+      },
+      {
+        "node": "validate",
+        "agent": "Document Validation Agent",
+        "role": "Checks completeness, cross-document consistency, bill arithmetic & PDF forensics",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.754",
+        "duration_ms": 0.2,
+        "findings": 0,
+        "summary": "16/16 validation checks passed; 0 document issue(s)."
+      },
+      {
+        "node": "knowledge",
+        "agent": "Knowledge Retrieval Agent",
+        "role": "Looks up policy, insured member, provider registry, clinical KB and claim history",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.754",
+        "duration_ms": 0.45,
+        "findings": 0,
+        "summary": "policy found; member verified; hospital HSP-KA-0207; diagnosis -> acute appendicitis (icd10); 0 past claim(s); 0 registry hit(s)."
+      },
+      {
+        "node": "billing",
+        "agent": "Billing Audit Agent",
+        "role": "Bill amount vs benchmark, single-item rates, room rent and duplicate charges",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.756",
+        "duration_ms": 0.29,
+        "findings": 0,
+        "summary": "Bill \u20b91,28,300 ratio 0.49x typical; 0 overpriced item(s); 0 duplicate(s)."
+      },
+      {
+        "node": "history",
+        "agent": "Claim History Agent",
+        "role": "Claim frequency, repeated procedures, duplicate bills & multi-insurer claims",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.758",
+        "duration_ms": 0.27,
+        "findings": 0,
+        "summary": "0 claim(s) in last 12 months; 0 registry hit(s)."
+      },
+      {
+        "node": "medical",
+        "agent": "Medical Coherence Agent",
+        "role": "Diagnosis vs treatment consistency, clinically unrelated tests and length-of-stay",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.757",
+        "duration_ms": 0.79,
+        "findings": 0,
+        "summary": "Diagnosis 'acute appendicitis' (K35.80); 0 unrelated item(s); LOS 3 vs typical 2-5."
+      },
+      {
+        "node": "policy",
+        "agent": "Policy & Coverage Agent",
+        "role": "Waiting periods, policy validity, sum-insured enhancement and pre-existing disease disclosure",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.759",
+        "duration_ms": 0.13,
+        "findings": 0,
+        "summary": "Admissible; policy 1573 days old; 0 timing/disclosure finding(s)."
+      },
+      {
+        "node": "provider",
+        "agent": "Provider Risk Agent",
+        "role": "Hospital blacklist / watchlist, provider risk index, claim spikes, network status",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.759",
+        "duration_ms": 0.04,
+        "findings": 0,
+        "summary": "CityCare Super Speciality Hospital (premium, network, risk 0.05); 0 finding(s)."
+      },
+      {
+        "node": "ml_scoring",
+        "agent": "ML Risk Scoring Agent",
+        "role": "Gradient-boosting fraud probability + Isolation-Forest anomaly score on 19 engineered features",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.760",
+        "duration_ms": 15.89,
+        "findings": 0,
+        "summary": "Fraud probability 0.02 (anomaly 0/100); drivers: no strong drivers."
+      },
+      {
+        "node": "decision",
+        "agent": "Fraud Risk Decision Agent",
+        "role": "Fuses rule findings + ML score into the 0-100 fraud score, risk band and routing decision",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.776",
+        "duration_ms": 0.03,
+        "findings": 0,
+        "summary": "Fraud score 0.8 (Genuine) = 0.55x rules 0.0 + 0.45x ML 1.8 -> AUTO_APPROVE."
+      },
+      {
+        "node": "settlement",
+        "agent": "Settlement Agent",
+        "role": "Computes admissible amount: non-payables, room-rent proportionate deduction, co-pay, sum insured",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.777",
+        "duration_ms": 0.11,
+        "findings": 0,
+        "summary": "APPROVED: net payable \u20b967,200 of \u20b91,28,300 claimed."
+      },
+      {
+        "node": "report",
+        "agent": "Report Agent",
+        "role": "Compiles the explainable decision report, narrative and audit record",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.777",
+        "duration_ms": 3.38,
+        "findings": 0,
+        "summary": "Report ready: status AUTO_APPROVE, score 0.8, payable \u20b967,200."
+      }
+    ],
+    "errors": [],
+    "narrative": "Claim CLM-2026-1002: Arjun Sharma, Acute Appendicitis at CityCare Super Speciality Hospital (3 day stay), claimed \u20b91,28,300. Fraud score 0.8/100 (Genuine); rule engine 0.0, ML model 1.8. Categories triggered: none. Decision: AUTO APPROVE - Low fraud risk and admissible. Approve for settlement as computed.",
+    "narrative_source": "template",
+    "output_text": "Fraud Score: 1 (Low Risk - Genuine)\nSuspicious Reasons:\n- None\nTriggered Categories:\n- None\nDecision: AUTO APPROVE",
+    "engine": "langgraph"
+  },
+  {
+    "run_id": "RUN-20261111-052433-ACFEF6",
+    "claim_id": "CLM-2026-1003",
+    "processed_at": "2026-11-11T05:24:33",
+    "status": "HUMAN_REVIEW",
+    "fraud_score": 49.4,
+    "risk_band": "MEDIUM",
+    "risk_label": "Suspicious",
+    "recommendation": "Route to a senior claims assessor / medical officer for manual review before settlement.",
+    "suspicious_reasons": [
+      "2 previous claims in the last 12 months, all at the same hospital (Greenvalley Hospital): 2026-03-02 Acute gastroenteritis \u20b932,000, 2026-07-15 Viral fever \u20b928,500",
+      "Length of stay 7 days exceeds the typical 3-6 days for typhoid fever",
+      "Clinical notes show recovery by day 4 but patient was kept 3 more day(s)",
+      "Claim 40 days after sum insured was enhanced from \u20b93,00,000 to \u20b95,00,000 at renewal",
+      "Provider risk index 0.38 for Greenvalley Hospital",
+      "Claim volume from Greenvalley Hospital is 2.0x its 90-day baseline (96 vs 48)"
+    ],
+    "triggered_categories": [
+      {
+        "category": "HOSPITAL_RISK",
+        "label": "Hospital Pattern Risk",
+        "score": 32.3,
+        "findings": 3,
+        "max_severity": "MEDIUM"
+      },
+      {
+        "category": "TREATMENT_DURATION",
+        "label": "Treatment Duration Abnormality",
+        "score": 30.6,
+        "findings": 2,
+        "max_severity": "MEDIUM"
+      },
+      {
+        "category": "CLAIM_HISTORY",
+        "label": "Patient Claim History",
+        "score": 22.0,
+        "findings": 1,
+        "max_severity": "MEDIUM"
+      },
+      {
+        "category": "SUSPICIOUS_TIMING",
+        "label": "Suspicious Timing (new policy)",
+        "score": 22.0,
+        "findings": 1,
+        "max_severity": "MEDIUM"
+      }
+    ],
+    "findings": [
+      {
+        "code": "FREQUENT_CLAIMS",
+        "category": "CLAIM_HISTORY",
+        "category_label": "Patient Claim History",
+        "severity": "MEDIUM",
+        "points": 22,
+        "reason": "2 previous claims in the last 12 months, all at the same hospital (Greenvalley Hospital): 2026-03-02 Acute gastroenteritis \u20b932,000, 2026-07-15 Viral fever \u20b928,500",
+        "evidence": {
+          "claims": [
+            {
+              "claim_id": "CLM-2026-0211",
+              "patient": "Suresh Babu",
+              "date": "2026-03-02",
+              "hospital_id": "HSP-TG-0333",
+              "diagnosis": "Acute gastroenteritis",
+              "procedures": [
+                "ct scan"
+              ],
+              "amount": 32000,
+              "status": "SETTLED"
+            },
+            {
+              "claim_id": "CLM-2026-0587",
+              "patient": "Suresh Babu",
+              "date": "2026-07-15",
+              "hospital_id": "HSP-TG-0333",
+              "diagnosis": "Viral fever",
+              "procedures": [
+                "ct scan"
+              ],
+              "amount": 28500,
+              "status": "SETTLED"
+            }
+          ]
+        },
+        "agent": "Claim History Agent"
+      },
+      {
+        "code": "LONG_STAY",
+        "category": "TREATMENT_DURATION",
+        "category_label": "Treatment Duration Abnormality",
+        "severity": "MEDIUM",
+        "points": 22,
+        "reason": "Length of stay 7 days exceeds the typical 3-6 days for typhoid fever",
+        "evidence": {
+          "los": 7,
+          "typical": [
+            3,
+            6
+          ]
+        },
+        "agent": "Medical Coherence Agent"
+      },
+      {
+        "code": "POST_RECOVERY_STAY",
+        "category": "TREATMENT_DURATION",
+        "category_label": "Treatment Duration Abnormality",
+        "severity": "MEDIUM",
+        "points": 22,
+        "reason": "Clinical notes show recovery by day 4 but patient was kept 3 more day(s)",
+        "evidence": {
+          "recovered_day": 4,
+          "los": 7
+        },
+        "agent": "Medical Coherence Agent"
+      },
+      {
+        "code": "SI_ENHANCED",
+        "category": "SUSPICIOUS_TIMING",
+        "category_label": "Suspicious Timing (new policy)",
+        "severity": "MEDIUM",
+        "points": 22,
+        "reason": "Claim 40 days after sum insured was enhanced from \u20b93,00,000 to \u20b95,00,000 at renewal",
+        "evidence": {},
+        "agent": "Policy & Coverage Agent"
+      },
+      {
+        "code": "HOSP_RISKY",
+        "category": "HOSPITAL_RISK",
+        "category_label": "Hospital Pattern Risk",
+        "severity": "MEDIUM",
+        "points": 22,
+        "reason": "Provider risk index 0.38 for Greenvalley Hospital",
+        "evidence": {},
+        "agent": "Provider Risk Agent"
+      },
+      {
+        "code": "HOSP_SPIKE",
+        "category": "HOSPITAL_RISK",
+        "category_label": "Hospital Pattern Risk",
+        "severity": "MEDIUM",
+        "points": 22,
+        "reason": "Claim volume from Greenvalley Hospital is 2.0x its 90-day baseline (96 vs 48)",
+        "evidence": {},
+        "agent": "Provider Risk Agent"
+      },
+      {
+        "code": "NON_NETWORK",
+        "category": "HOSPITAL_RISK",
+        "category_label": "Hospital Pattern Risk",
+        "severity": "LOW",
+        "points": 10,
+        "reason": "Non-network hospital - reimbursement claim (no pre-authorisation)",
+        "evidence": {},
+        "agent": "Provider Risk Agent"
+      }
+    ],
+    "claim_summary": {
+      "patient_name": "Suresh Babu",
+      "patient_age": 51,
+      "gender": "Male",
+      "policy_number": "POL-HS-250789",
+      "plan": "Individual Health Secure",
+      "hospital_name": "Greenvalley Hospital",
+      "hospital_id": "HSP-TG-0333",
+      "hospital_tier": "mid",
+      "network": false,
+      "diagnosis": "Enteric (Typhoid) Fever",
+      "icd10": "A01.0",
+      "admission_date": "2026-10-20",
+      "discharge_date": "2026-10-27",
+      "los_days": 7,
+      "claim_type": "Reimbursement",
+      "claimed_amount": 56050.0,
+      "billed_total": 56050.0,
+      "bill_no": "GVH/2026/4471",
+      "treating_doctor": "Dr. P. Venkatesh, MD"
+    },
+    "line_items": [
+      {
+        "sno": 1,
+        "description": "Registration & Admission charges",
+        "category": "MISC",
+        "qty": 1,
+        "rate": 500.0,
+        "amount": 500.0
+      },
+      {
+        "sno": 2,
+        "description": "Private Room Rent",
+        "category": "ROOM",
+        "qty": 7,
+        "rate": 4000.0,
+        "amount": 28000.0
+      },
+      {
+        "sno": 3,
+        "description": "Nursing charges",
+        "category": "NURSING",
+        "qty": 7,
+        "rate": 800.0,
+        "amount": 5600.0
+      },
+      {
+        "sno": 4,
+        "description": "Physician consultation",
+        "category": "CONSULT",
+        "qty": 8,
+        "rate": 800.0,
+        "amount": 6400.0
+      },
+      {
+        "sno": 5,
+        "description": "Widal test",
+        "category": "LAB",
+        "qty": 1,
+        "rate": 450.0,
+        "amount": 450.0
+      },
+      {
+        "sno": 6,
+        "description": "Typhidot IgM",
+        "category": "LAB",
+        "qty": 1,
+        "rate": 900.0,
+        "amount": 900.0
+      },
+      {
+        "sno": 7,
+        "description": "Blood culture & sensitivity",
+        "category": "LAB",
+        "qty": 1,
+        "rate": 1600.0,
+        "amount": 1600.0
+      },
+      {
+        "sno": 8,
+        "description": "Complete Blood Count (CBC)",
+        "category": "LAB",
+        "qty": 3,
+        "rate": 400.0,
+        "amount": 1200.0
+      },
+      {
+        "sno": 9,
+        "description": "Liver Function Test (LFT)",
+        "category": "LAB",
+        "qty": 1,
+        "rate": 900.0,
+        "amount": 900.0
+      },
+      {
+        "sno": 10,
+        "description": "Ultrasound Abdomen",
+        "category": "RADIOLOGY",
+        "qty": 1,
+        "rate": 2200.0,
+        "amount": 2200.0
+      },
+      {
+        "sno": 11,
+        "description": "Inj. Ceftriaxone 1g",
+        "category": "PHARMACY",
+        "qty": 14,
+        "rate": 250.0,
+        "amount": 3500.0
+      },
+      {
+        "sno": 12,
+        "description": "Pharmacy - medicines",
+        "category": "PHARMACY",
+        "qty": 1,
+        "rate": 3800.0,
+        "amount": 3800.0
+      },
+      {
+        "sno": 13,
+        "description": "Medical consumables",
+        "category": "CONSUMABLE",
+        "qty": 1,
+        "rate": 1000.0,
+        "amount": 1000.0
+      }
+    ],
+    "documents": [
+      {
+        "doc_type": "claim_form",
+        "file": "claim_form.pdf",
+        "pages": 1,
+        "confidence": 1.0,
+        "forensic_flags": [],
+        "metadata": {
+          "producer": "ReportLab PDF Library - (opensource)",
+          "creator": "ClaimGuard Insurer Portal",
+          "created": "2026-11-11T04:35:52",
+          "modified": "2026-11-11T04:35:52"
+        }
+      },
+      {
+        "doc_type": "discharge_summary",
+        "file": "discharge_summary.pdf",
+        "pages": 1,
+        "confidence": 1.0,
+        "forensic_flags": [],
+        "metadata": {
+          "producer": "ReportLab PDF Library - (opensource)",
+          "creator": "HIMS Clinical Module v7.2",
+          "created": "2026-11-11T04:35:52",
+          "modified": "2026-11-11T04:35:52"
+        }
+      },
+      {
+        "doc_type": "hospital_bill",
+        "file": "hospital_bill.pdf",
+        "pages": 1,
+        "confidence": 1.0,
+        "forensic_flags": [],
+        "metadata": {
+          "producer": "ReportLab PDF Library - (opensource)",
+          "creator": "HIMS Billing Module v7.2",
+          "created": "2026-11-11T04:35:52",
+          "modified": "2026-11-11T04:35:52"
+        }
+      },
+      {
+        "doc_type": "prescription",
+        "file": "prescription.pdf",
+        "pages": 1,
+        "confidence": 1.0,
+        "forensic_flags": [],
+        "metadata": {
+          "producer": "ReportLab PDF Library - (opensource)",
+          "creator": "HIMS Clinical Module v7.2",
+          "created": "2026-11-11T04:35:52",
+          "modified": "2026-11-11T04:35:52"
+        }
+      }
+    ],
+    "unclassified_files": [],
+    "validation": {
+      "complete": true,
+      "blocking": false,
+      "missing_documents": [],
+      "missing_fields": [],
+      "checks": [
+        {
+          "check": "Mandatory documents present",
+          "passed": true,
+          "detail": "All present"
+        },
+        {
+          "check": "Mandatory fields extracted",
+          "passed": true,
+          "detail": "All extracted"
+        },
+        {
+          "check": "Bill total tallies with line items",
+          "passed": true,
+          "detail": "Grand total \u20b956,050 vs items \u20b956,050"
+        },
+        {
+          "check": "Claimed amount within bill amount",
+          "passed": true,
+          "detail": "Claimed \u20b956,050 vs billed \u20b956,050"
+        },
+        {
+          "check": "Hospital seal & signature on bill",
+          "passed": true,
+          "detail": "Present (Billing Manager)"
+        },
+        {
+          "check": "Seal & signature on discharge summary",
+          "passed": true,
+          "detail": "Present (Dr. P. Venkatesh, MD)"
+        },
+        {
+          "check": "Treating doctor registration number",
+          "passed": true,
+          "detail": "TSMC/2014/20377"
+        },
+        {
+          "check": "Hospital registration number present & consistent",
+          "passed": true,
+          "detail": "TS/WGL/CE/2018/0091"
+        },
+        {
+          "check": "Patient name consistent across documents",
+          "passed": true,
+          "detail": "claim_form: Suresh Babu | discharge_summary: Suresh Babu | hospital_bill: Suresh Babu | prescription: Suresh Babu"
+        },
+        {
+          "check": "Admission date consistent across documents",
+          "passed": true,
+          "detail": "claim_form: 2026-10-20, discharge_summary: 2026-10-20, hospital_bill: 2026-10-20"
+        },
+        {
+          "check": "Discharge date consistent across documents",
+          "passed": true,
+          "detail": "claim_form: 2026-10-27, discharge_summary: 2026-10-27, hospital_bill: 2026-10-27"
+        },
+        {
+          "check": "Claim submitted within 30 days of discharge",
+          "passed": true,
+          "detail": "7 days"
+        },
+        {
+          "check": "PDF forensic check - claim_form",
+          "passed": true,
+          "detail": "clean"
+        },
+        {
+          "check": "PDF forensic check - discharge_summary",
+          "passed": true,
+          "detail": "clean"
+        },
+        {
+          "check": "PDF forensic check - hospital_bill",
+          "passed": true,
+          "detail": "clean"
+        },
+        {
+          "check": "PDF forensic check - prescription",
+          "passed": true,
+          "detail": "clean"
+        }
+      ],
+      "passed": 16,
+      "total": 16
+    },
+    "decision": {
+      "fraud_score": 49.4,
+      "risk_band": "MEDIUM",
+      "risk_label": "Suspicious",
+      "status": "HUMAN_REVIEW",
+      "recommendation": "Route to a senior claims assessor / medical officer for manual review before settlement.",
+      "rule_score": 71.4,
+      "ml_score": 22.5,
+      "anomaly_score": 39.6,
+      "weights": {
+        "rules": 0.55,
+        "ml": 0.45
+      },
+      "critical_override": false,
+      "triggered_categories": [
+        {
+          "category": "HOSPITAL_RISK",
+          "label": "Hospital Pattern Risk",
+          "score": 32.3,
+          "findings": 3,
+          "max_severity": "MEDIUM"
+        },
+        {
+          "category": "TREATMENT_DURATION",
+          "label": "Treatment Duration Abnormality",
+          "score": 30.6,
+          "findings": 2,
+          "max_severity": "MEDIUM"
+        },
+        {
+          "category": "CLAIM_HISTORY",
+          "label": "Patient Claim History",
+          "score": 22.0,
+          "findings": 1,
+          "max_severity": "MEDIUM"
+        },
+        {
+          "category": "SUSPICIOUS_TIMING",
+          "label": "Suspicious Timing (new policy)",
+          "score": 22.0,
+          "findings": 1,
+          "max_severity": "MEDIUM"
+        }
+      ],
+      "suspicious_reasons": [
+        "2 previous claims in the last 12 months, all at the same hospital (Greenvalley Hospital): 2026-03-02 Acute gastroenteritis \u20b932,000, 2026-07-15 Viral fever \u20b928,500",
+        "Length of stay 7 days exceeds the typical 3-6 days for typhoid fever",
+        "Clinical notes show recovery by day 4 but patient was kept 3 more day(s)",
+        "Claim 40 days after sum insured was enhanced from \u20b93,00,000 to \u20b95,00,000 at renewal",
+        "Provider risk index 0.38 for Greenvalley Hospital",
+        "Claim volume from Greenvalley Hospital is 2.0x its 90-day baseline (96 vs 48)"
+      ],
+      "coverage": {
+        "admissible": true,
+        "issues": [],
+        "days_since_inception": 405,
+        "accident": false,
+        "sum_insured": 500000,
+        "available_si": 500000
+      }
+    },
+    "ml": {
+      "fraud_probability": 0.2255,
+      "ml_score": 22.5,
+      "anomaly_score": 39.6,
+      "top_drivers": [
+        {
+          "feature": "bill_ratio",
+          "label": "Bill vs typical cost",
+          "value": 1.02,
+          "weight": 0.567
+        },
+        {
+          "feature": "max_item_ratio",
+          "label": "Highest item vs tariff",
+          "value": 1.12,
+          "weight": 0.148
+        },
+        {
+          "feature": "hospital_risk",
+          "label": "Provider risk index",
+          "value": 0.38,
+          "weight": 0.112
+        },
+        {
+          "feature": "los_ratio",
+          "label": "Length of stay vs typical",
+          "value": 1.17,
+          "weight": 0.036
+        }
+      ],
+      "features": {
+        "bill_ratio": 1.02,
+        "max_item_ratio": 1.12,
+        "room_rent_ratio": 0.57,
+        "duplicate_items": 0.0,
+        "los_ratio": 1.17,
+        "unrelated_item_count": 0.0,
+        "opd_manageable": 0.0,
+        "dx_mismatch": 0.0,
+        "hospital_risk": 0.38,
+        "hospital_network": 0.0,
+        "hospital_small_clinic": 0.0,
+        "days_since_inception_log": 6.0064,
+        "undeclared_ped": 0.0,
+        "prior_claims_12m": 2.0,
+        "registry_duplicate": 0.0,
+        "doc_issue_count": 0.0,
+        "claim_amount_log": 10.934,
+        "is_reimbursement": 1.0,
+        "patient_age": 51.0
+      },
+      "model_version": "gbm-v1",
+      "model_metrics": {
+        "roc_auc": 0.9217,
+        "pr_auc": 0.8245,
+        "precision@0.5": 0.8927,
+        "recall@0.5": 0.7795,
+        "rows": 8000
+      }
+    },
+    "settlement": {
+      "payable": 49995.0,
+      "lines": [
+        {
+          "label": "Amount claimed",
+          "amount": 56050.0
+        },
+        {
+          "label": "Non-payable items (Registration & Admission charges)",
+          "amount": -500.0
+        },
+        {
+          "label": "Co-payment 10%",
+          "amount": -5555.0
+        },
+        {
+          "label": "Net payable",
+          "amount": 49995.0
+        }
+      ],
+      "status": "PROVISIONAL - pending human review",
+      "notes": [
+        "Amount is provisional; a reviewer must confirm before payment is released."
+      ],
+      "deductions": 6055.0
+    },
+    "siu": null,
+    "doc_request": null,
+    "agent_trace": [
+      {
+        "node": "intake",
+        "agent": "Claim Intake Agent",
+        "role": "Registers the claim, assigns a run id and collects input documents",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.783",
+        "duration_ms": 0.13,
+        "findings": 0,
+        "summary": "Registered claim CLM-2026-1003 with 4 document(s)."
+      },
+      {
+        "node": "classify",
+        "agent": "Document Classifier Agent",
+        "role": "Reads every file (PDF/TXT/JSON/image) and identifies the document type",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.783",
+        "duration_ms": 71.89,
+        "findings": 0,
+        "summary": "Identified 4 document type(s): claim_form, discharge_summary, hospital_bill, prescription."
+      },
+      {
+        "node": "extract",
+        "agent": "Data Extraction Agent",
+        "role": "Extracts structured fields & bill line items and builds one consolidated claim record",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.856",
+        "duration_ms": 2.26,
+        "findings": 0,
+        "summary": "Extracted 34 claim fields and 13 bill line items (billed \u20b956,050, claimed \u20b956,050)."
+      },
+      {
+        "node": "validate",
+        "agent": "Document Validation Agent",
+        "role": "Checks completeness, cross-document consistency, bill arithmetic & PDF forensics",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.859",
+        "duration_ms": 0.22,
+        "findings": 0,
+        "summary": "16/16 validation checks passed; 0 document issue(s)."
+      },
+      {
+        "node": "knowledge",
+        "agent": "Knowledge Retrieval Agent",
+        "role": "Looks up policy, insured member, provider registry, clinical KB and claim history",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.859",
+        "duration_ms": 0.37,
+        "findings": 0,
+        "summary": "policy found; member verified; hospital HSP-TG-0333; diagnosis -> typhoid fever (icd10); 2 past claim(s); 0 registry hit(s)."
+      },
+      {
+        "node": "billing",
+        "agent": "Billing Audit Agent",
+        "role": "Bill amount vs benchmark, single-item rates, room rent and duplicate charges",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.860",
+        "duration_ms": 0.19,
+        "findings": 0,
+        "summary": "Bill \u20b956,050 ratio 1.02x typical; 0 overpriced item(s); 0 duplicate(s)."
+      },
+      {
+        "node": "history",
+        "agent": "Claim History Agent",
+        "role": "Claim frequency, repeated procedures, duplicate bills & multi-insurer claims",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.862",
+        "duration_ms": 0.32,
+        "findings": 1,
+        "summary": "2 claim(s) in last 12 months; 0 registry hit(s)."
+      },
+      {
+        "node": "medical",
+        "agent": "Medical Coherence Agent",
+        "role": "Diagnosis vs treatment consistency, clinically unrelated tests and length-of-stay",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.861",
+        "duration_ms": 0.3,
+        "findings": 2,
+        "summary": "Diagnosis 'typhoid fever' (A01.0); 0 unrelated item(s); LOS 7 vs typical 3-6."
+      },
+      {
+        "node": "policy",
+        "agent": "Policy & Coverage Agent",
+        "role": "Waiting periods, policy validity, sum-insured enhancement and pre-existing disease disclosure",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.863",
+        "duration_ms": 0.16,
+        "findings": 1,
+        "summary": "Admissible; policy 405 days old; 1 timing/disclosure finding(s)."
+      },
+      {
+        "node": "provider",
+        "agent": "Provider Risk Agent",
+        "role": "Hospital blacklist / watchlist, provider risk index, claim spikes, network status",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.863",
+        "duration_ms": 0.06,
+        "findings": 3,
+        "summary": "Greenvalley Hospital (mid, non-network, risk 0.38); 3 finding(s)."
+      },
+      {
+        "node": "ml_scoring",
+        "agent": "ML Risk Scoring Agent",
+        "role": "Gradient-boosting fraud probability + Isolation-Forest anomaly score on 19 engineered features",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.864",
+        "duration_ms": 15.94,
+        "findings": 0,
+        "summary": "Fraud probability 0.23 (anomaly 40/100); drivers: Bill vs typical cost, Highest item vs tariff, Provider risk index."
+      },
+      {
+        "node": "decision",
+        "agent": "Fraud Risk Decision Agent",
+        "role": "Fuses rule findings + ML score into the 0-100 fraud score, risk band and routing decision",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.880",
+        "duration_ms": 0.07,
+        "findings": 0,
+        "summary": "Fraud score 49.4 (Suspicious) = 0.55x rules 71.4 + 0.45x ML 22.5 -> HUMAN_REVIEW."
+      },
+      {
+        "node": "settlement",
+        "agent": "Settlement Agent",
+        "role": "Computes admissible amount: non-payables, room-rent proportionate deduction, co-pay, sum insured",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.881",
+        "duration_ms": 0.07,
+        "findings": 0,
+        "summary": "PROVISIONAL - pending human review: net payable \u20b949,995 of \u20b956,050 claimed."
+      },
+      {
+        "node": "report",
+        "agent": "Report Agent",
+        "role": "Compiles the explainable decision report, narrative and audit record",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.881",
+        "duration_ms": 3.0,
+        "findings": 0,
+        "summary": "Report ready: status HUMAN_REVIEW, score 49.4, payable \u20b949,995."
+      }
+    ],
+    "errors": [],
+    "narrative": "Claim CLM-2026-1003: Suresh Babu, Enteric (Typhoid) Fever at Greenvalley Hospital (7 day stay), claimed \u20b956,050. Fraud score 49.4/100 (Suspicious); rule engine 71.4, ML model 22.5. Categories triggered: Hospital Pattern Risk, Treatment Duration Abnormality, Patient Claim History, Suspicious Timing (new policy). Key concerns: 2 previous claims in the last 12 months, all at the same hospital (Greenvalley Hospital): 2026-03-02 Acute gastroenteritis \u20b932,000, 2026-07-15 Viral fever \u20b928,500 | Length of stay 7 days exceeds the typical 3-6 days for typhoid fever | Clinical notes show recovery by day 4 but patient was kept 3 more day(s). Decision: HUMAN REVIEW - Route to a senior claims assessor / medical officer for manual review before settlement.",
+    "narrative_source": "template",
+    "output_text": "Fraud Score: 49 (Medium Risk - Suspicious)\nSuspicious Reasons:\n- 2 previous claims in the last 12 months, all at the same hospital (Greenvalley Hospital): 2026-03-02 Acute gastroenteritis \u20b932,000, 2026-07-15 Viral fever \u20b928,500\n- Length of stay 7 days exceeds the typical 3-6 days for typhoid fever\n- Clinical notes show recovery by day 4 but patient was kept 3 more day(s)\n- Claim 40 days after sum insured was enhanced from \u20b93,00,000 to \u20b95,00,000 at renewal\n- Provider risk index 0.38 for Greenvalley Hospital\n- Claim volume from Greenvalley Hospital is 2.0x its 90-day baseline (96 vs 48)\nTriggered Categories:\n- Hospital Pattern Risk\n- Treatment Duration Abnormality\n- Patient Claim History\n- Suspicious Timing (new policy)\nDecision: HUMAN REVIEW",
+    "engine": "langgraph"
+  },
+  {
+    "run_id": "RUN-20261111-052433-F57C73",
+    "claim_id": "CLM-2026-1004",
+    "processed_at": "2026-11-11T05:24:33",
+    "status": "SIU_INVESTIGATION",
+    "fraud_score": 97.5,
+    "risk_band": "HIGH",
+    "risk_label": "High Fraud Risk",
+    "recommendation": "Hold payment. Refer to Special Investigation Unit (SIU) for field verification. Coverage issues: Initial waiting period: illness claim 25 days after inception (< 30 days)",
+    "suspicious_reasons": [
+      "Possible document tampering in hospital_bill.pdf: PDF produced/edited with image-editing software ('photoshop'); PDF modified 5 day(s) after creation (28-Oct-2026 -> 02-Nov-2026)",
+      "Bill does not tally: grand total \u20b91,20,000 but line items add up to \u20b91,23,300 (\u20b93,300 less than the items)",
+      "Total bill \u20b91,20,000 is 4.9x the typical maximum \u20b924,500 for viral fever at a small clinic",
+      "5 item(s) charged above benchmark: Nursing charges \u20b92,500 (benchmark <= \u20b91,575); Physician consultation \u20b92,000 (benchmark <= \u20b91,750); MRI Brain (plain) \u20b918,500 (benchmark <= \u20b910,500); CT Scan Chest \u20b99,500 (benchmark <= \u20b96,125); Upper GI Endoscopy \u20b912,400 (benchmark <= \u20b97,875)",
+      "Treatment does not match diagnosis: MRI Brain (plain), CT Scan Chest, Upper GI Endoscopy (\u20b940,400) not clinically indicated for viral fever",
+      "Length of stay 5 days exceeds the typical 0-3 days for viral fever",
+      "Hospitalised only 25 days after buying the policy (initial 30-day waiting period)",
+      "Shree Sai Clinic & Nursing Home is on the fraud watchlist: 3 SIU-confirmed cases of inflated bills in 2025; diagnostics billed without an in-house MRI/CT facility.",
+      "12-bed clinic billing like a premium hospital (\u20b91,20,000; advanced diagnostics billed: MRI Brain (plain), CT Scan Chest, Upper GI Endoscopy)",
+      "Hospital bill has no seal / authorised signature",
+      "Treating doctor's medical council registration number is missing (Dr. R. Mahesh)",
+      "Deluxe Room Rent at \u20b99,000/day exceeds \u20b97,000/day benchmark for a small clinic"
+    ],
+    "triggered_categories": [
+      {
+        "category": "DOCUMENT_ISSUES",
+        "label": "Document Issues",
+        "score": 81.6,
+        "findings": 4,
+        "max_severity": "CRITICAL"
+      },
+      {
+        "category": "HOSPITAL_RISK",
+        "label": "Hospital Pattern Risk",
+        "score": 55.2,
+        "findings": 4,
+        "max_severity": "HIGH"
+      },
+      {
+        "category": "TREATMENT_DURATION",
+        "label": "Treatment Duration Abnormality",
+        "score": 49.5,
+        "findings": 3,
+        "max_severity": "HIGH"
+      },
+      {
+        "category": "BILL_AMOUNT",
+        "label": "Bill Amount",
+        "score": 40.0,
+        "findings": 1,
+        "max_severity": "HIGH"
+      },
+      {
+        "category": "SINGLE_ITEM",
+        "label": "Single Item Charge",
+        "score": 40.0,
+        "findings": 1,
+        "max_severity": "HIGH"
+      },
+      {
+        "category": "DIAGNOSIS_MISMATCH",
+        "label": "Diagnosis Mismatch",
+        "score": 40.0,
+        "findings": 1,
+        "max_severity": "HIGH"
+      },
+      {
+        "category": "SUSPICIOUS_TIMING",
+        "label": "Suspicious Timing (new policy)",
+        "score": 40.0,
+        "findings": 1,
+        "max_severity": "HIGH"
+      },
+      {
+        "category": "OVERCHARGING",
+        "label": "Room Rent / Procedure Overcharging",
+        "score": 30.6,
+        "findings": 2,
+        "max_severity": "MEDIUM"
+      }
+    ],
+    "findings": [
+      {
+        "code": "DOC_TAMPERED",
+        "category": "DOCUMENT_ISSUES",
+        "category_label": "Document Issues",
+        "severity": "CRITICAL",
+        "points": 75,
+        "reason": "Possible document tampering in hospital_bill.pdf: PDF produced/edited with image-editing software ('photoshop'); PDF modified 5 day(s) after creation (28-Oct-2026 -> 02-Nov-2026)",
+        "evidence": {
+          "file": "hospital_bill.pdf",
+          "metadata": {
+            "producer": "Adobe Photoshop 25.0 (Windows)",
+            "creator": "Adobe Photoshop 25.0 (Windows)",
+            "created": "2026-10-28T10:15:00",
+            "modified": "2026-11-02T21:30:00"
+          }
+        },
+        "agent": "Document Validation Agent"
+      },
+      {
+        "code": "BILL_NOT_TALLY",
+        "category": "DOCUMENT_ISSUES",
+        "category_label": "Document Issues",
+        "severity": "HIGH",
+        "points": 40,
+        "reason": "Bill does not tally: grand total \u20b91,20,000 but line items add up to \u20b91,23,300 (\u20b93,300 less than the items)",
+        "evidence": {
+          "grand_total": 120000.0,
+          "items_total": 123300.0
+        },
+        "agent": "Document Validation Agent"
+      },
+      {
+        "code": "BILL_HIGH",
+        "category": "BILL_AMOUNT",
+        "category_label": "Bill Amount",
+        "severity": "HIGH",
+        "points": 40,
+        "reason": "Total bill \u20b91,20,000 is 4.9x the typical maximum \u20b924,500 for viral fever at a small clinic",
+        "evidence": {
+          "billed": 120000.0,
+          "typical_max": 24500.0,
+          "ratio": 4.9
+        },
+        "agent": "Billing Audit Agent"
+      },
+      {
+        "code": "ITEM_OVERPRICED",
+        "category": "SINGLE_ITEM",
+        "category_label": "Single Item Charge",
+        "severity": "HIGH",
+        "points": 40,
+        "reason": "5 item(s) charged above benchmark: Nursing charges \u20b92,500 (benchmark <= \u20b91,575); Physician consultation \u20b92,000 (benchmark <= \u20b91,750); MRI Brain (plain) \u20b918,500 (benchmark <= \u20b910,500); CT Scan Chest \u20b99,500 (benchmark <= \u20b96,125); Upper GI Endoscopy \u20b912,400 (benchmark <= \u20b97,875)",
+        "evidence": {
+          "items": [
+            {
+              "item": "Nursing charges",
+              "rate": 2500.0,
+              "cap": 1575
+            },
+            {
+              "item": "Physician consultation",
+              "rate": 2000.0,
+              "cap": 1750
+            },
+            {
+              "item": "MRI Brain (plain)",
+              "rate": 18500.0,
+              "cap": 10500
+            },
+            {
+              "item": "CT Scan Chest",
+              "rate": 9500.0,
+              "cap": 6125
+            },
+            {
+              "item": "Upper GI Endoscopy",
+              "rate": 12400.0,
+              "cap": 7875
+            }
+          ]
+        },
+        "agent": "Billing Audit Agent"
+      },
+      {
+        "code": "UNRELATED_TREATMENT",
+        "category": "DIAGNOSIS_MISMATCH",
+        "category_label": "Diagnosis Mismatch",
+        "severity": "HIGH",
+        "points": 40,
+        "reason": "Treatment does not match diagnosis: MRI Brain (plain), CT Scan Chest, Upper GI Endoscopy (\u20b940,400) not clinically indicated for viral fever",
+        "evidence": {
+          "items": [
+            "MRI Brain (plain)",
+            "CT Scan Chest",
+            "Upper GI Endoscopy"
+          ],
+          "amount": 40400.0
+        },
+        "agent": "Medical Coherence Agent"
+      },
+      {
+        "code": "LONG_STAY",
+        "category": "TREATMENT_DURATION",
+        "category_label": "Treatment Duration Abnormality",
+        "severity": "HIGH",
+        "points": 40,
+        "reason": "Length of stay 5 days exceeds the typical 0-3 days for viral fever",
+        "evidence": {
+          "los": 5,
+          "typical": [
+            0,
+            3
+          ]
+        },
+        "agent": "Medical Coherence Agent"
+      },
+      {
+        "code": "INITIAL_WAITING",
+        "category": "SUSPICIOUS_TIMING",
+        "category_label": "Suspicious Timing (new policy)",
+        "severity": "HIGH",
+        "points": 40,
+        "reason": "Hospitalised only 25 days after buying the policy (initial 30-day waiting period)",
+        "evidence": {
+          "inception": "2026-09-28",
+          "admission": "2026-10-23"
+        },
+        "agent": "Policy & Coverage Agent"
+      },
+      {
+        "code": "HOSP_WATCHLIST",
+        "category": "HOSPITAL_RISK",
+        "category_label": "Hospital Pattern Risk",
+        "severity": "HIGH",
+        "points": 40,
+        "reason": "Shree Sai Clinic & Nursing Home is on the fraud watchlist: 3 SIU-confirmed cases of inflated bills in 2025; diagnostics billed without an in-house MRI/CT facility.",
+        "evidence": {},
+        "agent": "Provider Risk Agent"
+      },
+      {
+        "code": "SMALL_CLINIC_PREMIUM",
+        "category": "HOSPITAL_RISK",
+        "category_label": "Hospital Pattern Risk",
+        "severity": "HIGH",
+        "points": 40,
+        "reason": "12-bed clinic billing like a premium hospital (\u20b91,20,000; advanced diagnostics billed: MRI Brain (plain), CT Scan Chest, Upper GI Endoscopy)",
+        "evidence": {},
+        "agent": "Provider Risk Agent"
+      },
+      {
+        "code": "BILL_NO_SEAL",
+        "category": "DOCUMENT_ISSUES",
+        "category_label": "Document Issues",
+        "severity": "MEDIUM",
+        "points": 22,
+        "reason": "Hospital bill has no seal / authorised signature",
+        "evidence": {},
+        "agent": "Document Validation Agent"
+      },
+      {
+        "code": "NO_DOCTOR_REG",
+        "category": "DOCUMENT_ISSUES",
+        "category_label": "Document Issues",
+        "severity": "MEDIUM",
+        "points": 22,
+        "reason": "Treating doctor's medical council registration number is missing (Dr. R. Mahesh)",
+        "evidence": {},
+        "agent": "Document Validation Agent"
+      },
+      {
+        "code": "ROOM_OVERCHARGE",
+        "category": "OVERCHARGING",
+        "category_label": "Room Rent / Procedure Overcharging",
+        "severity": "MEDIUM",
+        "points": 22,
+        "reason": "Deluxe Room Rent at \u20b99,000/day exceeds \u20b97,000/day benchmark for a small clinic",
+        "evidence": {},
+        "agent": "Billing Audit Agent"
+      },
+      {
+        "code": "DUPLICATE_ITEM",
+        "category": "OVERCHARGING",
+        "category_label": "Room Rent / Procedure Overcharging",
+        "severity": "MEDIUM",
+        "points": 22,
+        "reason": "Duplicate charge(s): Complete Blood Count (CBC) \u20b9600",
+        "evidence": {},
+        "agent": "Billing Audit Agent"
+      },
+      {
+        "code": "OPD_AS_IPD",
+        "category": "TREATMENT_DURATION",
+        "category_label": "Treatment Duration Abnormality",
+        "severity": "MEDIUM",
+        "points": 22,
+        "reason": "In-patient claim for viral fever, which is usually managed as OPD (claimed stay 5 days)",
+        "evidence": {},
+        "agent": "Medical Coherence Agent"
+      },
+      {
+        "code": "POST_RECOVERY_STAY",
+        "category": "TREATMENT_DURATION",
+        "category_label": "Treatment Duration Abnormality",
+        "severity": "MEDIUM",
+        "points": 22,
+        "reason": "Clinical notes show recovery by day 1 but patient was kept 4 more day(s)",
+        "evidence": {
+          "recovered_day": 1,
+          "los": 5
+        },
+        "agent": "Medical Coherence Agent"
+      },
+      {
+        "code": "HOSP_SPIKE",
+        "category": "HOSPITAL_RISK",
+        "category_label": "Hospital Pattern Risk",
+        "severity": "MEDIUM",
+        "points": 22,
+        "reason": "Claim volume from Shree Sai Clinic & Nursing Home is 3.7x its 90-day baseline (74 vs 20)",
+        "evidence": {},
+        "agent": "Provider Risk Agent"
+      },
+      {
+        "code": "NON_NETWORK",
+        "category": "HOSPITAL_RISK",
+        "category_label": "Hospital Pattern Risk",
+        "severity": "LOW",
+        "points": 10,
+        "reason": "Non-network hospital - reimbursement claim (no pre-authorisation)",
+        "evidence": {},
+        "agent": "Provider Risk Agent"
+      }
+    ],
+    "claim_summary": {
+      "patient_name": "Kiran Kumar",
+      "patient_age": 34,
+      "gender": "Male",
+      "policy_number": "POL-HS-260921",
+      "plan": "Individual Health Secure",
+      "hospital_name": "Shree Sai Clinic & Nursing Home",
+      "hospital_id": "HSP-TG-0450",
+      "hospital_tier": "small_clinic",
+      "network": false,
+      "diagnosis": "Pyrexia of unknown origin",
+      "icd10": "R50.9",
+      "admission_date": "2026-10-23",
+      "discharge_date": "2026-10-28",
+      "los_days": 5,
+      "claim_type": "Reimbursement",
+      "claimed_amount": 120000.0,
+      "billed_total": 120000.0,
+      "bill_no": "SSC/2026/0981",
+      "treating_doctor": "Dr. R. Mahesh"
+    },
+    "line_items": [
+      {
+        "sno": 1,
+        "description": "Deluxe Room Rent",
+        "category": "ROOM",
+        "qty": 5,
+        "rate": 9000.0,
+        "amount": 45000.0
+      },
+      {
+        "sno": 2,
+        "description": "Nursing charges",
+        "category": "NURSING",
+        "qty": 5,
+        "rate": 2500.0,
+        "amount": 12500.0
+      },
+      {
+        "sno": 3,
+        "description": "Physician consultation",
+        "category": "CONSULT",
+        "qty": 10,
+        "rate": 2000.0,
+        "amount": 20000.0
+      },
+      {
+        "sno": 4,
+        "description": "MRI Brain (plain)",
+        "category": "RADIOLOGY",
+        "qty": 1,
+        "rate": 18500.0,
+        "amount": 18500.0
+      },
+      {
+        "sno": 5,
+        "description": "CT Scan Chest",
+        "category": "RADIOLOGY",
+        "qty": 1,
+        "rate": 9500.0,
+        "amount": 9500.0
+      },
+      {
+        "sno": 6,
+        "description": "Upper GI Endoscopy",
+        "category": "PROCEDURE",
+        "qty": 1,
+        "rate": 12400.0,
+        "amount": 12400.0
+      },
+      {
+        "sno": 7,
+        "description": "Complete Blood Count (CBC)",
+        "category": "LAB",
+        "qty": 1,
+        "rate": 600.0,
+        "amount": 600.0
+      },
+      {
+        "sno": 8,
+        "description": "Complete Blood Count (CBC)",
+        "category": "LAB",
+        "qty": 1,
+        "rate": 600.0,
+        "amount": 600.0
+      },
+      {
+        "sno": 9,
+        "description": "Pharmacy - medicines",
+        "category": "PHARMACY",
+        "qty": 1,
+        "rate": 4200.0,
+        "amount": 4200.0
+      }
+    ],
+    "documents": [
+      {
+        "doc_type": "claim_form",
+        "file": "claim_form.pdf",
+        "pages": 1,
+        "confidence": 1.0,
+        "forensic_flags": [],
+        "metadata": {
+          "producer": "ReportLab PDF Library - (opensource)",
+          "creator": "ClaimGuard Insurer Portal",
+          "created": "2026-11-11T04:35:52",
+          "modified": "2026-11-11T04:35:52"
+        }
+      },
+      {
+        "doc_type": "discharge_summary",
+        "file": "discharge_summary.pdf",
+        "pages": 1,
+        "confidence": 1.0,
+        "forensic_flags": [],
+        "metadata": {
+          "producer": "ReportLab PDF Library - (opensource)",
+          "creator": "HIMS Clinical Module v7.2",
+          "created": "2026-11-11T04:35:52",
+          "modified": "2026-11-11T04:35:52"
+        }
+      },
+      {
+        "doc_type": "hospital_bill",
+        "file": "hospital_bill.pdf",
+        "pages": 1,
+        "confidence": 1.0,
+        "forensic_flags": [
+          "PDF produced/edited with image-editing software ('photoshop')",
+          "PDF modified 5 day(s) after creation (28-Oct-2026 -> 02-Nov-2026)"
+        ],
+        "metadata": {
+          "producer": "Adobe Photoshop 25.0 (Windows)",
+          "creator": "Adobe Photoshop 25.0 (Windows)",
+          "created": "2026-10-28T10:15:00",
+          "modified": "2026-11-02T21:30:00"
+        }
+      }
+    ],
+    "unclassified_files": [],
+    "validation": {
+      "complete": true,
+      "blocking": false,
+      "missing_documents": [],
+      "missing_fields": [],
+      "checks": [
+        {
+          "check": "Mandatory documents present",
+          "passed": true,
+          "detail": "All present"
+        },
+        {
+          "check": "Mandatory fields extracted",
+          "passed": true,
+          "detail": "All extracted"
+        },
+        {
+          "check": "Bill total tallies with line items",
+          "passed": false,
+          "detail": "Grand total \u20b91,20,000 vs items \u20b91,23,300"
+        },
+        {
+          "check": "Claimed amount within bill amount",
+          "passed": true,
+          "detail": "Claimed \u20b91,20,000 vs billed \u20b91,20,000"
+        },
+        {
+          "check": "Hospital seal & signature on bill",
+          "passed": false,
+          "detail": "Not available"
+        },
+        {
+          "check": "Seal & signature on discharge summary",
+          "passed": true,
+          "detail": "Present (Dr. R. Mahesh)"
+        },
+        {
+          "check": "Treating doctor registration number",
+          "passed": false,
+          "detail": "blank"
+        },
+        {
+          "check": "Hospital registration number present & consistent",
+          "passed": true,
+          "detail": "TS/KNR/CE/2019/0217"
+        },
+        {
+          "check": "Patient name consistent across documents",
+          "passed": true,
+          "detail": "claim_form: Kiran Kumar | discharge_summary: Kiran Kumar P | hospital_bill: Kiran Kumar"
+        },
+        {
+          "check": "Admission date consistent across documents",
+          "passed": true,
+          "detail": "claim_form: 2026-10-23, discharge_summary: 2026-10-23, hospital_bill: 2026-10-23"
+        },
+        {
+          "check": "Discharge date consistent across documents",
+          "passed": true,
+          "detail": "claim_form: 2026-10-28, discharge_summary: 2026-10-28, hospital_bill: 2026-10-28"
+        },
+        {
+          "check": "Claim submitted within 30 days of discharge",
+          "passed": true,
+          "detail": "5 days"
+        },
+        {
+          "check": "PDF forensic check - claim_form",
+          "passed": true,
+          "detail": "clean"
+        },
+        {
+          "check": "PDF forensic check - discharge_summary",
+          "passed": true,
+          "detail": "clean"
+        },
+        {
+          "check": "PDF forensic check - hospital_bill",
+          "passed": false,
+          "detail": "PDF produced/edited with image-editing software ('photoshop'); PDF modified 5 day(s) after creation (28-Oct-2026 -> 02-Nov-2026)"
+        }
+      ],
+      "passed": 11,
+      "total": 15
+    },
+    "decision": {
+      "fraud_score": 97.5,
+      "risk_band": "HIGH",
+      "risk_label": "High Fraud Risk",
+      "status": "SIU_INVESTIGATION",
+      "recommendation": "Hold payment. Refer to Special Investigation Unit (SIU) for field verification. Coverage issues: Initial waiting period: illness claim 25 days after inception (< 30 days)",
+      "rule_score": 99.6,
+      "ml_score": 95.0,
+      "anomaly_score": 100.0,
+      "weights": {
+        "rules": 0.55,
+        "ml": 0.45
+      },
+      "critical_override": true,
+      "triggered_categories": [
+        {
+          "category": "DOCUMENT_ISSUES",
+          "label": "Document Issues",
+          "score": 81.6,
+          "findings": 4,
+          "max_severity": "CRITICAL"
+        },
+        {
+          "category": "HOSPITAL_RISK",
+          "label": "Hospital Pattern Risk",
+          "score": 55.2,
+          "findings": 4,
+          "max_severity": "HIGH"
+        },
+        {
+          "category": "TREATMENT_DURATION",
+          "label": "Treatment Duration Abnormality",
+          "score": 49.5,
+          "findings": 3,
+          "max_severity": "HIGH"
+        },
+        {
+          "category": "BILL_AMOUNT",
+          "label": "Bill Amount",
+          "score": 40.0,
+          "findings": 1,
+          "max_severity": "HIGH"
+        },
+        {
+          "category": "SINGLE_ITEM",
+          "label": "Single Item Charge",
+          "score": 40.0,
+          "findings": 1,
+          "max_severity": "HIGH"
+        },
+        {
+          "category": "DIAGNOSIS_MISMATCH",
+          "label": "Diagnosis Mismatch",
+          "score": 40.0,
+          "findings": 1,
+          "max_severity": "HIGH"
+        },
+        {
+          "category": "SUSPICIOUS_TIMING",
+          "label": "Suspicious Timing (new policy)",
+          "score": 40.0,
+          "findings": 1,
+          "max_severity": "HIGH"
+        },
+        {
+          "category": "OVERCHARGING",
+          "label": "Room Rent / Procedure Overcharging",
+          "score": 30.6,
+          "findings": 2,
+          "max_severity": "MEDIUM"
+        }
+      ],
+      "suspicious_reasons": [
+        "Possible document tampering in hospital_bill.pdf: PDF produced/edited with image-editing software ('photoshop'); PDF modified 5 day(s) after creation (28-Oct-2026 -> 02-Nov-2026)",
+        "Bill does not tally: grand total \u20b91,20,000 but line items add up to \u20b91,23,300 (\u20b93,300 less than the items)",
+        "Total bill \u20b91,20,000 is 4.9x the typical maximum \u20b924,500 for viral fever at a small clinic",
+        "5 item(s) charged above benchmark: Nursing charges \u20b92,500 (benchmark <= \u20b91,575); Physician consultation \u20b92,000 (benchmark <= \u20b91,750); MRI Brain (plain) \u20b918,500 (benchmark <= \u20b910,500); CT Scan Chest \u20b99,500 (benchmark <= \u20b96,125); Upper GI Endoscopy \u20b912,400 (benchmark <= \u20b97,875)",
+        "Treatment does not match diagnosis: MRI Brain (plain), CT Scan Chest, Upper GI Endoscopy (\u20b940,400) not clinically indicated for viral fever",
+        "Length of stay 5 days exceeds the typical 0-3 days for viral fever",
+        "Hospitalised only 25 days after buying the policy (initial 30-day waiting period)",
+        "Shree Sai Clinic & Nursing Home is on the fraud watchlist: 3 SIU-confirmed cases of inflated bills in 2025; diagnostics billed without an in-house MRI/CT facility.",
+        "12-bed clinic billing like a premium hospital (\u20b91,20,000; advanced diagnostics billed: MRI Brain (plain), CT Scan Chest, Upper GI Endoscopy)",
+        "Hospital bill has no seal / authorised signature",
+        "Treating doctor's medical council registration number is missing (Dr. R. Mahesh)",
+        "Deluxe Room Rent at \u20b99,000/day exceeds \u20b97,000/day benchmark for a small clinic"
+      ],
+      "coverage": {
+        "admissible": false,
+        "issues": [
+          "Initial waiting period: illness claim 25 days after inception (< 30 days)"
+        ],
+        "days_since_inception": 25,
+        "accident": false,
+        "sum_insured": 200000,
+        "available_si": 200000
+      }
+    },
+    "ml": {
+      "fraud_probability": 0.9505,
+      "ml_score": 95.0,
+      "anomaly_score": 100.0,
+      "top_drivers": [
+        {
+          "feature": "bill_ratio",
+          "label": "Bill vs typical cost",
+          "value": 4.9,
+          "weight": 5.608
+        },
+        {
+          "feature": "max_item_ratio",
+          "label": "Highest item vs tariff",
+          "value": 2.2,
+          "weight": 0.534
+        },
+        {
+          "feature": "hospital_risk",
+          "label": "Provider risk index",
+          "value": 0.82,
+          "weight": 0.306
+        },
+        {
+          "feature": "room_rent_ratio",
+          "label": "Room rent vs benchmark",
+          "value": 1.29,
+          "weight": 0.127
+        },
+        {
+          "feature": "days_since_inception_log",
+          "label": "Policy age",
+          "value": 3.258,
+          "weight": 0.082
+        }
+      ],
+      "features": {
+        "bill_ratio": 4.9,
+        "max_item_ratio": 2.2,
+        "room_rent_ratio": 1.29,
+        "duplicate_items": 1.0,
+        "los_ratio": 1.67,
+        "unrelated_item_count": 3.0,
+        "opd_manageable": 1.0,
+        "dx_mismatch": 0.0,
+        "hospital_risk": 0.82,
+        "hospital_network": 0.0,
+        "hospital_small_clinic": 1.0,
+        "days_since_inception_log": 3.2581,
+        "undeclared_ped": 0.0,
+        "prior_claims_12m": 0.0,
+        "registry_duplicate": 0.0,
+        "doc_issue_count": 4.0,
+        "claim_amount_log": 11.6953,
+        "is_reimbursement": 1.0,
+        "patient_age": 34.0
+      },
+      "model_version": "gbm-v1",
+      "model_metrics": {
+        "roc_auc": 0.9217,
+        "pr_auc": 0.8245,
+        "precision@0.5": 0.8927,
+        "recall@0.5": 0.7795,
+        "rows": 8000
+      }
+    },
+    "settlement": null,
+    "siu": {
+      "case_id": "SIU-CLM-2026-1004",
+      "priority": "P1 - Critical",
+      "due_by": "2026-11-16",
+      "payment_hold": true,
+      "exposure": 120000.0,
+      "tasks": [
+        {
+          "task": "Call the hospital to confirm admission, treating doctor and bill number",
+          "status": "OPEN"
+        },
+        {
+          "task": "Verify Dr. registration (not provided) with the State Medical Council",
+          "status": "OPEN"
+        },
+        {
+          "task": "Verify document authenticity with hospital records department; obtain original signed & sealed copies",
+          "status": "OPEN"
+        },
+        {
+          "task": "Field visit to hospital: verify bed count, ICU/diagnostic facilities, in-patient register for admission dates",
+          "status": "OPEN"
+        },
+        {
+          "task": "Check nursing notes & vitals charts for the full stay to confirm need for hospitalisation",
+          "status": "OPEN"
+        },
+        {
+          "task": "Obtain itemised indoor case papers and compare with treatment actually given",
+          "status": "OPEN"
+        },
+        {
+          "task": "Collect original pharmacy & diagnostic invoices; verify rates against hospital tariff card",
+          "status": "OPEN"
+        },
+        {
+          "task": "Medical officer to review clinical justification; obtain MRI/CT/endoscopy films and reports with timestamps",
+          "status": "OPEN"
+        },
+        {
+          "task": "Verify prior medical history with family physician / pharmacy records (pre-policy consultations)",
+          "status": "OPEN"
+        },
+        {
+          "task": "Reconcile room-days and charges with hospital admission/discharge register",
+          "status": "OPEN"
+        },
+        {
+          "task": "Interview patient / family on symptoms, admission and payments made",
+          "status": "OPEN"
+        },
+        {
+          "task": "Compare signatures on claim form, bill and discharge summary",
+          "status": "OPEN"
+        }
+      ],
+      "evidence": [
+        {
+          "severity": "CRITICAL",
+          "category": "Document Issues",
+          "reason": "Possible document tampering in hospital_bill.pdf: PDF produced/edited with image-editing software ('photoshop'); PDF modified 5 day(s) after creation (28-Oct-2026 -> 02-Nov-2026)"
+        },
+        {
+          "severity": "HIGH",
+          "category": "Document Issues",
+          "reason": "Bill does not tally: grand total \u20b91,20,000 but line items add up to \u20b91,23,300 (\u20b93,300 less than the items)"
+        },
+        {
+          "severity": "HIGH",
+          "category": "Bill Amount",
+          "reason": "Total bill \u20b91,20,000 is 4.9x the typical maximum \u20b924,500 for viral fever at a small clinic"
+        },
+        {
+          "severity": "HIGH",
+          "category": "Single Item Charge",
+          "reason": "5 item(s) charged above benchmark: Nursing charges \u20b92,500 (benchmark <= \u20b91,575); Physician consultation \u20b92,000 (benchmark <= \u20b91,750); MRI Brain (plain) \u20b918,500 (benchmark <= \u20b910,500); CT Scan Chest \u20b99,500 (benchmark <= \u20b96,125); Upper GI Endoscopy \u20b912,400 (benchmark <= \u20b97,875)"
+        },
+        {
+          "severity": "HIGH",
+          "category": "Diagnosis Mismatch",
+          "reason": "Treatment does not match diagnosis: MRI Brain (plain), CT Scan Chest, Upper GI Endoscopy (\u20b940,400) not clinically indicated for viral fever"
+        },
+        {
+          "severity": "HIGH",
+          "category": "Treatment Duration Abnormality",
+          "reason": "Length of stay 5 days exceeds the typical 0-3 days for viral fever"
+        },
+        {
+          "severity": "HIGH",
+          "category": "Suspicious Timing (new policy)",
+          "reason": "Hospitalised only 25 days after buying the policy (initial 30-day waiting period)"
+        },
+        {
+          "severity": "HIGH",
+          "category": "Hospital Pattern Risk",
+          "reason": "Shree Sai Clinic & Nursing Home is on the fraud watchlist: 3 SIU-confirmed cases of inflated bills in 2025; diagnostics billed without an in-house MRI/CT facility."
+        }
+      ]
+    },
+    "doc_request": null,
+    "agent_trace": [
+      {
+        "node": "intake",
+        "agent": "Claim Intake Agent",
+        "role": "Registers the claim, assigns a run id and collects input documents",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.886",
+        "duration_ms": 0.14,
+        "findings": 0,
+        "summary": "Registered claim CLM-2026-1004 with 3 document(s)."
+      },
+      {
+        "node": "classify",
+        "agent": "Document Classifier Agent",
+        "role": "Reads every file (PDF/TXT/JSON/image) and identifies the document type",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.887",
+        "duration_ms": 52.8,
+        "findings": 0,
+        "summary": "Identified 3 document type(s): claim_form, discharge_summary, hospital_bill."
+      },
+      {
+        "node": "extract",
+        "agent": "Data Extraction Agent",
+        "role": "Extracts structured fields & bill line items and builds one consolidated claim record",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.940",
+        "duration_ms": 1.6,
+        "findings": 0,
+        "summary": "Extracted 33 claim fields and 9 bill line items (billed \u20b91,20,000, claimed \u20b91,20,000)."
+      },
+      {
+        "node": "validate",
+        "agent": "Document Validation Agent",
+        "role": "Checks completeness, cross-document consistency, bill arithmetic & PDF forensics",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.942",
+        "duration_ms": 0.26,
+        "findings": 4,
+        "summary": "11/15 validation checks passed; 4 document issue(s)."
+      },
+      {
+        "node": "knowledge",
+        "agent": "Knowledge Retrieval Agent",
+        "role": "Looks up policy, insured member, provider registry, clinical KB and claim history",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.943",
+        "duration_ms": 0.45,
+        "findings": 0,
+        "summary": "policy found; member verified; hospital HSP-TG-0450; diagnosis -> viral fever (icd10); 0 past claim(s); 0 registry hit(s)."
+      },
+      {
+        "node": "billing",
+        "agent": "Billing Audit Agent",
+        "role": "Bill amount vs benchmark, single-item rates, room rent and duplicate charges",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.945",
+        "duration_ms": 0.18,
+        "findings": 4,
+        "summary": "Bill \u20b91,20,000 ratio 4.9x typical; 5 overpriced item(s); 1 duplicate(s)."
+      },
+      {
+        "node": "history",
+        "agent": "Claim History Agent",
+        "role": "Claim frequency, repeated procedures, duplicate bills & multi-insurer claims",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.946",
+        "duration_ms": 0.19,
+        "findings": 0,
+        "summary": "0 claim(s) in last 12 months; 0 registry hit(s)."
+      },
+      {
+        "node": "medical",
+        "agent": "Medical Coherence Agent",
+        "role": "Diagnosis vs treatment consistency, clinically unrelated tests and length-of-stay",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.946",
+        "duration_ms": 0.28,
+        "findings": 4,
+        "summary": "Diagnosis 'viral fever' (R50.9); 3 unrelated item(s); LOS 5 vs typical 0-3."
+      },
+      {
+        "node": "policy",
+        "agent": "Policy & Coverage Agent",
+        "role": "Waiting periods, policy validity, sum-insured enhancement and pre-existing disease disclosure",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.947",
+        "duration_ms": 0.11,
+        "findings": 1,
+        "summary": "1 coverage issue(s); policy 25 days old; 1 timing/disclosure finding(s)."
+      },
+      {
+        "node": "provider",
+        "agent": "Provider Risk Agent",
+        "role": "Hospital blacklist / watchlist, provider risk index, claim spikes, network status",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.947",
+        "duration_ms": 0.14,
+        "findings": 4,
+        "summary": "Shree Sai Clinic & Nursing Home (small_clinic, non-network, risk 0.82); 4 finding(s)."
+      },
+      {
+        "node": "ml_scoring",
+        "agent": "ML Risk Scoring Agent",
+        "role": "Gradient-boosting fraud probability + Isolation-Forest anomaly score on 19 engineered features",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.948",
+        "duration_ms": 15.49,
+        "findings": 0,
+        "summary": "Fraud probability 0.95 (anomaly 100/100); drivers: Bill vs typical cost, Highest item vs tariff, Provider risk index."
+      },
+      {
+        "node": "decision",
+        "agent": "Fraud Risk Decision Agent",
+        "role": "Fuses rule findings + ML score into the 0-100 fraud score, risk band and routing decision",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.964",
+        "duration_ms": 0.08,
+        "findings": 0,
+        "summary": "Fraud score 97.5 (High Fraud Risk) = 0.55x rules 99.6 + 0.45x ML 95.0 [critical override] -> SIU_INVESTIGATION."
+      },
+      {
+        "node": "siu",
+        "agent": "SIU Investigation Agent",
+        "role": "Builds a prioritised investigation plan & evidence pack for high-risk claims",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.965",
+        "duration_ms": 0.05,
+        "findings": 0,
+        "summary": "Opened P1 - Critical SIU case with 12 task(s); payment of \u20b91,20,000 on hold."
+      },
+      {
+        "node": "report",
+        "agent": "Report Agent",
+        "role": "Compiles the explainable decision report, narrative and audit record",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.965",
+        "duration_ms": 4.72,
+        "findings": 0,
+        "summary": "Report ready: status SIU_INVESTIGATION, score 97.5, payable -."
+      }
+    ],
+    "errors": [],
+    "narrative": "Claim CLM-2026-1004: Kiran Kumar, Pyrexia of unknown origin at Shree Sai Clinic & Nursing Home (5 day stay), claimed \u20b91,20,000. Fraud score 97.5/100 (High Fraud Risk); rule engine 99.6, ML model 95.0. Categories triggered: Document Issues, Hospital Pattern Risk, Treatment Duration Abnormality, Bill Amount. Key concerns: Possible document tampering in hospital_bill.pdf: PDF produced/edited with image-editing software ('photoshop'); PDF modified 5 day(s) after creation (28-Oct-2026 -> 02-Nov-2026) | Bill does not tally: grand total \u20b91,20,000 but line items add up to \u20b91,23,300 (\u20b93,300 less than the items) | Total bill \u20b91,20,000 is 4.9x the typical maximum \u20b924,500 for viral fever at a small clinic. Decision: SIU INVESTIGATION - Hold payment. Refer to Special Investigation Unit (SIU) for field verification. Coverage issues: Initial waiting period: illness claim 25 days after inception (< 30 days)",
+    "narrative_source": "template",
+    "output_text": "Fraud Score: 98 (High Risk)\nSuspicious Reasons:\n- Possible document tampering in hospital_bill.pdf: PDF produced/edited with image-editing software ('photoshop'); PDF modified 5 day(s) after creation (28-Oct-2026 -> 02-Nov-2026)\n- Bill does not tally: grand total \u20b91,20,000 but line items add up to \u20b91,23,300 (\u20b93,300 less than the items)\n- Total bill \u20b91,20,000 is 4.9x the typical maximum \u20b924,500 for viral fever at a small clinic\n- 5 item(s) charged above benchmark: Nursing charges \u20b92,500 (benchmark <= \u20b91,575); Physician consultation \u20b92,000 (benchmark <= \u20b91,750); MRI Brain (plain) \u20b918,500 (benchmark <= \u20b910,500); CT Scan Chest \u20b99,500 (benchmark <= \u20b96,125); Upper GI Endoscopy \u20b912,400 (benchmark <= \u20b97,875)\n- Treatment does not match diagnosis: MRI Brain (plain), CT Scan Chest, Upper GI Endoscopy (\u20b940,400) not clinically indicated for viral fever\n- Length of stay 5 days exceeds the typical 0-3 days for viral fever\n- Hospitalised only 25 days after buying the policy (initial 30-day waiting period)\n- Shree Sai Clinic & Nursing Home is on the fraud watchlist: 3 SIU-confirmed cases of inflated bills in 2025; diagnostics billed without an in-house MRI/CT facility.\n- 12-bed clinic billing like a premium hospital (\u20b91,20,000; advanced diagnostics billed: MRI Brain (plain), CT Scan Chest, Upper GI Endoscopy)\n- Hospital bill has no seal / authorised signature\n- Treating doctor's medical council registration number is missing (Dr. R. Mahesh)\n- Deluxe Room Rent at \u20b99,000/day exceeds \u20b97,000/day benchmark for a small clinic\nTriggered Categories:\n- Document Issues\n- Hospital Pattern Risk\n- Treatment Duration Abnormality\n- Bill Amount\n- Single Item Charge\n- Diagnosis Mismatch\n- Suspicious Timing (new policy)\n- Room Rent / Procedure Overcharging\nDecision: SIU INVESTIGATION",
+    "engine": "langgraph"
+  },
+  {
+    "run_id": "RUN-20261111-052433-AD4599",
+    "claim_id": "CLM-2026-1005",
+    "processed_at": "2026-11-11T05:24:34",
+    "status": "HUMAN_REVIEW",
+    "fraud_score": 33.3,
+    "risk_band": "MEDIUM",
+    "risk_label": "Suspicious",
+    "recommendation": "Route to a senior claims assessor / medical officer for manual review before settlement. Coverage issues: Undeclared pre-existing condition(s) (diabetes, hypertension) within 36-month PED window - refer to underwriting",
+    "suspicious_reasons": [
+      "Discharge summary records diabetes, hypertension for 6 years, but none was declared at proposal; policy is only 245 days old (possible non-disclosure)"
+    ],
+    "triggered_categories": [
+      {
+        "category": "SUSPICIOUS_TIMING",
+        "label": "Suspicious Timing (new policy)",
+        "score": 43.0,
+        "findings": 2,
+        "max_severity": "HIGH"
+      }
+    ],
+    "findings": [
+      {
+        "code": "UNDECLARED_PED",
+        "category": "SUSPICIOUS_TIMING",
+        "category_label": "Suspicious Timing (new policy)",
+        "severity": "HIGH",
+        "points": 40,
+        "reason": "Discharge summary records diabetes, hypertension for 6 years, but none was declared at proposal; policy is only 245 days old (possible non-disclosure)",
+        "evidence": {
+          "conditions": [
+            "diabetes",
+            "hypertension"
+          ],
+          "declared": []
+        },
+        "agent": "Policy & Coverage Agent"
+      },
+      {
+        "code": "FIRST_YEAR_CLAIM",
+        "category": "SUSPICIOUS_TIMING",
+        "category_label": "Suspicious Timing (new policy)",
+        "severity": "LOW",
+        "points": 10,
+        "reason": "High-value claim in the first policy year (245 days after inception)",
+        "evidence": {},
+        "agent": "Policy & Coverage Agent"
+      }
+    ],
+    "claim_summary": {
+      "patient_name": "Lakshmi Prasad",
+      "patient_age": 58,
+      "gender": "Male",
+      "policy_number": "POL-HS-260145",
+      "plan": "Senior Care Plus",
+      "hospital_name": "CityCare Super Speciality Hospital",
+      "hospital_id": "HSP-KA-0207",
+      "hospital_tier": "premium",
+      "network": true,
+      "diagnosis": "Coronary Artery Disease - NSTEMI, Single vessel disease (LAD)",
+      "icd10": "I25.10",
+      "admission_date": "2026-11-01",
+      "discharge_date": "2026-11-05",
+      "los_days": 4,
+      "claim_type": "Cashless",
+      "claimed_amount": 362400.0,
+      "billed_total": 362400.0,
+      "bill_no": "CCSH/IP/2026/35920",
+      "treating_doctor": "Dr. Harish Gowda, DM (Cardiology)"
+    },
+    "line_items": [
+      {
+        "sno": 1,
+        "description": "Registration & Admission charges",
+        "category": "MISC",
+        "qty": 1,
+        "rate": 500.0,
+        "amount": 500.0
+      },
+      {
+        "sno": 2,
+        "description": "CCU / ICU charges",
+        "category": "ICU",
+        "qty": 2,
+        "rate": 22000.0,
+        "amount": 44000.0
+      },
+      {
+        "sno": 3,
+        "description": "Private Room Rent",
+        "category": "ROOM",
+        "qty": 2,
+        "rate": 9000.0,
+        "amount": 18000.0
+      },
+      {
+        "sno": 4,
+        "description": "Nursing charges",
+        "category": "NURSING",
+        "qty": 4,
+        "rate": 1800.0,
+        "amount": 7200.0
+      },
+      {
+        "sno": 5,
+        "description": "Cardiologist consultation",
+        "category": "CONSULT",
+        "qty": 8,
+        "rate": 2000.0,
+        "amount": 16000.0
+      },
+      {
+        "sno": 6,
+        "description": "ECG",
+        "category": "LAB",
+        "qty": 3,
+        "rate": 600.0,
+        "amount": 1800.0
+      },
+      {
+        "sno": 7,
+        "description": "2D Echo",
+        "category": "RADIOLOGY",
+        "qty": 1,
+        "rate": 3200.0,
+        "amount": 3200.0
+      },
+      {
+        "sno": 8,
+        "description": "Troponin I",
+        "category": "LAB",
+        "qty": 2,
+        "rate": 1500.0,
+        "amount": 3000.0
+      },
+      {
+        "sno": 9,
+        "description": "Coronary Angiography",
+        "category": "PROCEDURE",
+        "qty": 1,
+        "rate": 22000.0,
+        "amount": 22000.0
+      },
+      {
+        "sno": 10,
+        "description": "PTCA - Angioplasty procedure",
+        "category": "PROCEDURE",
+        "qty": 1,
+        "rate": 110000.0,
+        "amount": 110000.0
+      },
+      {
+        "sno": 11,
+        "description": "Drug Eluting Stent",
+        "category": "IMPLANT",
+        "qty": 1,
+        "rate": 36000.0,
+        "amount": 36000.0
+      },
+      {
+        "sno": 12,
+        "description": "Cath lab charges",
+        "category": "OT",
+        "qty": 1,
+        "rate": 45000.0,
+        "amount": 45000.0
+      },
+      {
+        "sno": 13,
+        "description": "Pharmacy - medicines",
+        "category": "PHARMACY",
+        "qty": 1,
+        "rate": 38700.0,
+        "amount": 38700.0
+      },
+      {
+        "sno": 14,
+        "description": "Cath lab consumables",
+        "category": "CONSUMABLE",
+        "qty": 1,
+        "rate": 17000.0,
+        "amount": 17000.0
+      }
+    ],
+    "documents": [
+      {
+        "doc_type": "claim_form",
+        "file": "claim_form.pdf",
+        "pages": 1,
+        "confidence": 1.0,
+        "forensic_flags": [],
+        "metadata": {
+          "producer": "ReportLab PDF Library - (opensource)",
+          "creator": "ClaimGuard Insurer Portal",
+          "created": "2026-11-11T04:35:52",
+          "modified": "2026-11-11T04:35:52"
+        }
+      },
+      {
+        "doc_type": "discharge_summary",
+        "file": "discharge_summary.pdf",
+        "pages": 1,
+        "confidence": 1.0,
+        "forensic_flags": [],
+        "metadata": {
+          "producer": "ReportLab PDF Library - (opensource)",
+          "creator": "HIMS Clinical Module v7.2",
+          "created": "2026-11-11T04:35:52",
+          "modified": "2026-11-11T04:35:52"
+        }
+      },
+      {
+        "doc_type": "hospital_bill",
+        "file": "hospital_bill.pdf",
+        "pages": 1,
+        "confidence": 1.0,
+        "forensic_flags": [],
+        "metadata": {
+          "producer": "ReportLab PDF Library - (opensource)",
+          "creator": "HIMS Billing Module v7.2",
+          "created": "2026-11-11T04:35:52",
+          "modified": "2026-11-11T04:35:52"
+        }
+      },
+      {
+        "doc_type": "prescription",
+        "file": "prescription.pdf",
+        "pages": 1,
+        "confidence": 1.0,
+        "forensic_flags": [],
+        "metadata": {
+          "producer": "ReportLab PDF Library - (opensource)",
+          "creator": "HIMS Clinical Module v7.2",
+          "created": "2026-11-11T04:35:52",
+          "modified": "2026-11-11T04:35:52"
+        }
+      }
+    ],
+    "unclassified_files": [],
+    "validation": {
+      "complete": true,
+      "blocking": false,
+      "missing_documents": [],
+      "missing_fields": [],
+      "checks": [
+        {
+          "check": "Mandatory documents present",
+          "passed": true,
+          "detail": "All present"
+        },
+        {
+          "check": "Mandatory fields extracted",
+          "passed": true,
+          "detail": "All extracted"
+        },
+        {
+          "check": "Bill total tallies with line items",
+          "passed": true,
+          "detail": "Grand total \u20b93,62,400 vs items \u20b93,62,400"
+        },
+        {
+          "check": "Claimed amount within bill amount",
+          "passed": true,
+          "detail": "Claimed \u20b93,62,400 vs billed \u20b93,62,400"
+        },
+        {
+          "check": "Hospital seal & signature on bill",
+          "passed": true,
+          "detail": "Present (Billing Manager)"
+        },
+        {
+          "check": "Seal & signature on discharge summary",
+          "passed": true,
+          "detail": "Present (Dr. Harish Gowda, DM (Cardiology))"
+        },
+        {
+          "check": "Treating doctor registration number",
+          "passed": true,
+          "detail": "KMC/2006/51290"
+        },
+        {
+          "check": "Hospital registration number present & consistent",
+          "passed": true,
+          "detail": "KA/BLR/KPME/2011/1187"
+        },
+        {
+          "check": "Patient name consistent across documents",
+          "passed": true,
+          "detail": "claim_form: Lakshmi Prasad | discharge_summary: Lakshmi Prasad | hospital_bill: Lakshmi Prasad | prescription: Lakshmi Prasad"
+        },
+        {
+          "check": "Admission date consistent across documents",
+          "passed": true,
+          "detail": "claim_form: 2026-11-01, discharge_summary: 2026-11-01, hospital_bill: 2026-11-01"
+        },
+        {
+          "check": "Discharge date consistent across documents",
+          "passed": true,
+          "detail": "claim_form: 2026-11-05, discharge_summary: 2026-11-05, hospital_bill: 2026-11-05"
+        },
+        {
+          "check": "Claim submitted within 30 days of discharge",
+          "passed": true,
+          "detail": "0 days"
+        },
+        {
+          "check": "PDF forensic check - claim_form",
+          "passed": true,
+          "detail": "clean"
+        },
+        {
+          "check": "PDF forensic check - discharge_summary",
+          "passed": true,
+          "detail": "clean"
+        },
+        {
+          "check": "PDF forensic check - hospital_bill",
+          "passed": true,
+          "detail": "clean"
+        },
+        {
+          "check": "PDF forensic check - prescription",
+          "passed": true,
+          "detail": "clean"
+        }
+      ],
+      "passed": 16,
+      "total": 16
+    },
+    "decision": {
+      "fraud_score": 33.3,
+      "risk_band": "MEDIUM",
+      "risk_label": "Suspicious",
+      "status": "HUMAN_REVIEW",
+      "recommendation": "Route to a senior claims assessor / medical officer for manual review before settlement. Coverage issues: Undeclared pre-existing condition(s) (diabetes, hypertension) within 36-month PED window - refer to underwriting",
+      "rule_score": 43.0,
+      "ml_score": 21.5,
+      "anomaly_score": 23.8,
+      "weights": {
+        "rules": 0.55,
+        "ml": 0.45
+      },
+      "critical_override": false,
+      "triggered_categories": [
+        {
+          "category": "SUSPICIOUS_TIMING",
+          "label": "Suspicious Timing (new policy)",
+          "score": 43.0,
+          "findings": 2,
+          "max_severity": "HIGH"
+        }
+      ],
+      "suspicious_reasons": [
+        "Discharge summary records diabetes, hypertension for 6 years, but none was declared at proposal; policy is only 245 days old (possible non-disclosure)"
+      ],
+      "coverage": {
+        "admissible": false,
+        "issues": [
+          "Undeclared pre-existing condition(s) (diabetes, hypertension) within 36-month PED window - refer to underwriting"
+        ],
+        "days_since_inception": 245,
+        "accident": false,
+        "sum_insured": 1000000,
+        "available_si": 1000000
+      }
+    },
+    "ml": {
+      "fraud_probability": 0.2153,
+      "ml_score": 21.5,
+      "anomaly_score": 23.8,
+      "top_drivers": [
+        {
+          "feature": "undeclared_ped",
+          "label": "Undeclared pre-existing disease",
+          "value": 1.0,
+          "weight": 0.05
+        }
+      ],
+      "features": {
+        "bill_ratio": 0.5,
+        "max_item_ratio": 0.62,
+        "room_rent_ratio": 0.8,
+        "duplicate_items": 0.0,
+        "los_ratio": 0.57,
+        "unrelated_item_count": 0.0,
+        "opd_manageable": 0.0,
+        "dx_mismatch": 0.0,
+        "hospital_risk": 0.05,
+        "hospital_network": 1.0,
+        "hospital_small_clinic": 0.0,
+        "days_since_inception_log": 5.5053,
+        "undeclared_ped": 1.0,
+        "prior_claims_12m": 0.0,
+        "registry_duplicate": 0.0,
+        "doc_issue_count": 0.0,
+        "claim_amount_log": 12.8005,
+        "is_reimbursement": 0.0,
+        "patient_age": 58.0
+      },
+      "model_version": "gbm-v1",
+      "model_metrics": {
+        "roc_auc": 0.9217,
+        "pr_auc": 0.8245,
+        "precision@0.5": 0.8927,
+        "recall@0.5": 0.7795,
+        "rows": 8000
+      }
+    },
+    "settlement": {
+      "payable": 361900.0,
+      "lines": [
+        {
+          "label": "Amount claimed",
+          "amount": 362400.0
+        },
+        {
+          "label": "Non-payable items (Registration & Admission charges)",
+          "amount": -500.0
+        },
+        {
+          "label": "Net payable",
+          "amount": 361900.0
+        }
+      ],
+      "status": "PROVISIONAL - pending human review",
+      "notes": [
+        "Amount is provisional; a reviewer must confirm before payment is released."
+      ],
+      "deductions": 500.0
+    },
+    "siu": null,
+    "doc_request": null,
+    "agent_trace": [
+      {
+        "node": "intake",
+        "agent": "Claim Intake Agent",
+        "role": "Registers the claim, assigns a run id and collects input documents",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.972",
+        "duration_ms": 0.16,
+        "findings": 0,
+        "summary": "Registered claim CLM-2026-1005 with 4 document(s)."
+      },
+      {
+        "node": "classify",
+        "agent": "Document Classifier Agent",
+        "role": "Reads every file (PDF/TXT/JSON/image) and identifies the document type",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:33.973",
+        "duration_ms": 68.03,
+        "findings": 0,
+        "summary": "Identified 4 document type(s): claim_form, discharge_summary, hospital_bill, prescription."
+      },
+      {
+        "node": "extract",
+        "agent": "Data Extraction Agent",
+        "role": "Extracts structured fields & bill line items and builds one consolidated claim record",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:34.042",
+        "duration_ms": 2.09,
+        "findings": 0,
+        "summary": "Extracted 35 claim fields and 14 bill line items (billed \u20b93,62,400, claimed \u20b93,62,400)."
+      },
+      {
+        "node": "validate",
+        "agent": "Document Validation Agent",
+        "role": "Checks completeness, cross-document consistency, bill arithmetic & PDF forensics",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:34.044",
+        "duration_ms": 0.17,
+        "findings": 0,
+        "summary": "16/16 validation checks passed; 0 document issue(s)."
+      },
+      {
+        "node": "knowledge",
+        "agent": "Knowledge Retrieval Agent",
+        "role": "Looks up policy, insured member, provider registry, clinical KB and claim history",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:34.045",
+        "duration_ms": 0.43,
+        "findings": 0,
+        "summary": "policy found; member verified; hospital HSP-KA-0207; diagnosis -> coronary artery disease (icd10); 0 past claim(s); 0 registry hit(s)."
+      },
+      {
+        "node": "billing",
+        "agent": "Billing Audit Agent",
+        "role": "Bill amount vs benchmark, single-item rates, room rent and duplicate charges",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:34.046",
+        "duration_ms": 0.23,
+        "findings": 0,
+        "summary": "Bill \u20b93,62,400 ratio 0.5x typical; 0 overpriced item(s); 0 duplicate(s)."
+      },
+      {
+        "node": "history",
+        "agent": "Claim History Agent",
+        "role": "Claim frequency, repeated procedures, duplicate bills & multi-insurer claims",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:34.048",
+        "duration_ms": 0.24,
+        "findings": 0,
+        "summary": "0 claim(s) in last 12 months; 0 registry hit(s)."
+      },
+      {
+        "node": "medical",
+        "agent": "Medical Coherence Agent",
+        "role": "Diagnosis vs treatment consistency, clinically unrelated tests and length-of-stay",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:34.047",
+        "duration_ms": 0.59,
+        "findings": 0,
+        "summary": "Diagnosis 'coronary artery disease' (I25.10); 0 unrelated item(s); LOS 4 vs typical 3-7."
+      },
+      {
+        "node": "policy",
+        "agent": "Policy & Coverage Agent",
+        "role": "Waiting periods, policy validity, sum-insured enhancement and pre-existing disease disclosure",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:34.048",
+        "duration_ms": 0.13,
+        "findings": 2,
+        "summary": "1 coverage issue(s); policy 245 days old; 2 timing/disclosure finding(s)."
+      },
+      {
+        "node": "provider",
+        "agent": "Provider Risk Agent",
+        "role": "Hospital blacklist / watchlist, provider risk index, claim spikes, network status",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:34.048",
+        "duration_ms": 0.03,
+        "findings": 0,
+        "summary": "CityCare Super Speciality Hospital (premium, network, risk 0.05); 0 finding(s)."
+      },
+      {
+        "node": "ml_scoring",
+        "agent": "ML Risk Scoring Agent",
+        "role": "Gradient-boosting fraud probability + Isolation-Forest anomaly score on 19 engineered features",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:34.049",
+        "duration_ms": 14.46,
+        "findings": 0,
+        "summary": "Fraud probability 0.22 (anomaly 24/100); drivers: Undeclared pre-existing disease."
+      },
+      {
+        "node": "decision",
+        "agent": "Fraud Risk Decision Agent",
+        "role": "Fuses rule findings + ML score into the 0-100 fraud score, risk band and routing decision",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:34.064",
+        "duration_ms": 0.06,
+        "findings": 0,
+        "summary": "Fraud score 33.3 (Suspicious) = 0.55x rules 43.0 + 0.45x ML 21.5 -> HUMAN_REVIEW."
+      },
+      {
+        "node": "settlement",
+        "agent": "Settlement Agent",
+        "role": "Computes admissible amount: non-payables, room-rent proportionate deduction, co-pay, sum insured",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:34.065",
+        "duration_ms": 0.05,
+        "findings": 0,
+        "summary": "PROVISIONAL - pending human review: net payable \u20b93,61,900 of \u20b93,62,400 claimed."
+      },
+      {
+        "node": "report",
+        "agent": "Report Agent",
+        "role": "Compiles the explainable decision report, narrative and audit record",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:34.065",
+        "duration_ms": 3.35,
+        "findings": 0,
+        "summary": "Report ready: status HUMAN_REVIEW, score 33.3, payable \u20b93,61,900."
+      }
+    ],
+    "errors": [],
+    "narrative": "Claim CLM-2026-1005: Lakshmi Prasad, Coronary Artery Disease - NSTEMI, Single vessel disease (LAD) at CityCare Super Speciality Hospital (4 day stay), claimed \u20b93,62,400. Fraud score 33.3/100 (Suspicious); rule engine 43.0, ML model 21.5. Categories triggered: Suspicious Timing (new policy). Key concerns: Discharge summary records diabetes, hypertension for 6 years, but none was declared at proposal; policy is only 245 days old (possible non-disclosure). Decision: HUMAN REVIEW - Route to a senior claims assessor / medical officer for manual review before settlement. Coverage issues: Undeclared pre-existing condition(s) (diabetes, hypertension) within 36-month PED window - refer to underwriting",
+    "narrative_source": "template",
+    "output_text": "Fraud Score: 33 (Medium Risk - Suspicious)\nSuspicious Reasons:\n- Discharge summary records diabetes, hypertension for 6 years, but none was declared at proposal; policy is only 245 days old (possible non-disclosure)\nTriggered Categories:\n- Suspicious Timing (new policy)\nDecision: HUMAN REVIEW",
+    "engine": "langgraph"
+  },
+  {
+    "run_id": "RUN-20261111-052434-8D7736",
+    "claim_id": "CLM-2026-1006",
+    "processed_at": "2026-11-11T05:24:34",
+    "status": "PENDING_DOCUMENTS",
+    "fraud_score": null,
+    "risk_band": null,
+    "risk_label": "Not scored",
+    "recommendation": "Request missing documents from claimant.",
+    "suspicious_reasons": [],
+    "triggered_categories": [],
+    "findings": [
+      {
+        "code": "DOC_MISSING",
+        "category": "DOCUMENT_ISSUES",
+        "category_label": "Document Issues",
+        "severity": "MEDIUM",
+        "points": 22,
+        "reason": "Mandatory document missing: Discharge summary signed by the treating doctor",
+        "evidence": {
+          "document": "discharge_summary"
+        },
+        "agent": "Document Validation Agent"
+      },
+      {
+        "code": "BILL_NO_SEAL",
+        "category": "DOCUMENT_ISSUES",
+        "category_label": "Document Issues",
+        "severity": "MEDIUM",
+        "points": 22,
+        "reason": "Hospital bill has no seal / authorised signature",
+        "evidence": {},
+        "agent": "Document Validation Agent"
+      }
+    ],
+    "claim_summary": {
+      "patient_name": "Rahul Verma",
+      "patient_age": 29,
+      "gender": "Male",
+      "policy_number": "POL-HS-230612",
+      "plan": null,
+      "hospital_name": "Apex Ortho & Trauma Centre",
+      "hospital_id": null,
+      "hospital_tier": null,
+      "network": null,
+      "diagnosis": "Fracture of right distal radius (road traffic accident)",
+      "icd10": null,
+      "admission_date": "2026-10-30",
+      "discharge_date": "2026-11-01",
+      "los_days": 2,
+      "claim_type": "Reimbursement",
+      "claimed_amount": 92200.0,
+      "billed_total": 92200.0,
+      "bill_no": "AOTC/2026/7712",
+      "treating_doctor": null
+    },
+    "line_items": [
+      {
+        "sno": 1,
+        "description": "Registration & Admission charges",
+        "category": "MISC",
+        "qty": 1,
+        "rate": 500.0,
+        "amount": 500.0
+      },
+      {
+        "sno": 2,
+        "description": "Semi Private Room Rent",
+        "category": "ROOM",
+        "qty": 2,
+        "rate": 3800.0,
+        "amount": 7600.0
+      },
+      {
+        "sno": 3,
+        "description": "Nursing charges",
+        "category": "NURSING",
+        "qty": 2,
+        "rate": 1000.0,
+        "amount": 2000.0
+      },
+      {
+        "sno": 4,
+        "description": "Orthopaedic consultation",
+        "category": "CONSULT",
+        "qty": 3,
+        "rate": 1200.0,
+        "amount": 3600.0
+      },
+      {
+        "sno": 5,
+        "description": "X-Ray Right Wrist AP/Lateral",
+        "category": "RADIOLOGY",
+        "qty": 2,
+        "rate": 650.0,
+        "amount": 1300.0
+      },
+      {
+        "sno": 6,
+        "description": "ORIF with plating - Surgeon fee",
+        "category": "PROCEDURE",
+        "qty": 1,
+        "rate": 30000.0,
+        "amount": 30000.0
+      },
+      {
+        "sno": 7,
+        "description": "OT charges",
+        "category": "OT",
+        "qty": 1,
+        "rate": 15000.0,
+        "amount": 15000.0
+      },
+      {
+        "sno": 8,
+        "description": "Anaesthesia charges",
+        "category": "PROCEDURE",
+        "qty": 1,
+        "rate": 9000.0,
+        "amount": 9000.0
+      },
+      {
+        "sno": 9,
+        "description": "Locking plate & screws (implant)",
+        "category": "IMPLANT",
+        "qty": 1,
+        "rate": 14500.0,
+        "amount": 14500.0
+      },
+      {
+        "sno": 10,
+        "description": "Pharmacy - medicines",
+        "category": "PHARMACY",
+        "qty": 1,
+        "rate": 6200.0,
+        "amount": 6200.0
+      },
+      {
+        "sno": 11,
+        "description": "Surgical consumables",
+        "category": "CONSUMABLE",
+        "qty": 1,
+        "rate": 2500.0,
+        "amount": 2500.0
+      }
+    ],
+    "documents": [
+      {
+        "doc_type": "claim_form",
+        "file": "claim_form.pdf",
+        "pages": 1,
+        "confidence": 1.0,
+        "forensic_flags": [],
+        "metadata": {
+          "producer": "ReportLab PDF Library - (opensource)",
+          "creator": "ClaimGuard Insurer Portal",
+          "created": "2026-11-11T04:35:52",
+          "modified": "2026-11-11T04:35:52"
+        }
+      },
+      {
+        "doc_type": "hospital_bill",
+        "file": "hospital_bill.pdf",
+        "pages": 1,
+        "confidence": 1.0,
+        "forensic_flags": [],
+        "metadata": {
+          "producer": "ReportLab PDF Library - (opensource)",
+          "creator": "HIMS Billing Module v7.2",
+          "created": "2026-11-11T04:35:52",
+          "modified": "2026-11-11T04:35:52"
+        }
+      }
+    ],
+    "unclassified_files": [],
+    "validation": {
+      "complete": false,
+      "blocking": true,
+      "missing_documents": [
+        "discharge_summary"
+      ],
+      "missing_fields": [],
+      "checks": [
+        {
+          "check": "Mandatory documents present",
+          "passed": false,
+          "detail": "Missing: discharge_summary"
+        },
+        {
+          "check": "Mandatory fields extracted",
+          "passed": true,
+          "detail": "All extracted"
+        },
+        {
+          "check": "Bill total tallies with line items",
+          "passed": true,
+          "detail": "Grand total \u20b992,200 vs items \u20b992,200"
+        },
+        {
+          "check": "Claimed amount within bill amount",
+          "passed": true,
+          "detail": "Claimed \u20b992,200 vs billed \u20b992,200"
+        },
+        {
+          "check": "Hospital seal & signature on bill",
+          "passed": false,
+          "detail": "Not available"
+        },
+        {
+          "check": "Hospital registration number present & consistent",
+          "passed": true,
+          "detail": "TS/HYD/CE/2017/0688"
+        },
+        {
+          "check": "Patient name consistent across documents",
+          "passed": true,
+          "detail": "claim_form: Rahul Verma | hospital_bill: Rahul Verma"
+        },
+        {
+          "check": "Admission date consistent across documents",
+          "passed": true,
+          "detail": "claim_form: 2026-10-30, hospital_bill: 2026-10-30"
+        },
+        {
+          "check": "Discharge date consistent across documents",
+          "passed": true,
+          "detail": "claim_form: 2026-11-01, hospital_bill: 2026-11-01"
+        },
+        {
+          "check": "Claim submitted within 30 days of discharge",
+          "passed": true,
+          "detail": "5 days"
+        },
+        {
+          "check": "PDF forensic check - claim_form",
+          "passed": true,
+          "detail": "clean"
+        },
+        {
+          "check": "PDF forensic check - hospital_bill",
+          "passed": true,
+          "detail": "clean"
+        }
+      ],
+      "passed": 10,
+      "total": 12
+    },
+    "decision": null,
+    "ml": null,
+    "settlement": null,
+    "siu": null,
+    "doc_request": {
+      "status": "PENDING_DOCUMENTS",
+      "required": [
+        "Discharge summary signed by the treating doctor",
+        "Re-submit: Hospital bill has no seal / authorised signature"
+      ],
+      "letter": "Dear Rahul Verma,\n\nWe have received your claim CLM-2026-1006 for treatment at Apex Ortho & Trauma Centre. To continue processing, please submit the following within 15 days:\n  1. Discharge summary signed by the treating doctor\n  2. Re-submit: Hospital bill has no seal / authorised signature\n\nYour claim will be processed as soon as the documents are received.\n\nClaims Team",
+      "due_in_days": 15
+    },
+    "agent_trace": [
+      {
+        "node": "intake",
+        "agent": "Claim Intake Agent",
+        "role": "Registers the claim, assigns a run id and collects input documents",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:34.071",
+        "duration_ms": 0.14,
+        "findings": 0,
+        "summary": "Registered claim CLM-2026-1006 with 2 document(s)."
+      },
+      {
+        "node": "classify",
+        "agent": "Document Classifier Agent",
+        "role": "Reads every file (PDF/TXT/JSON/image) and identifies the document type",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:34.071",
+        "duration_ms": 33.48,
+        "findings": 0,
+        "summary": "Identified 2 document type(s): claim_form, hospital_bill."
+      },
+      {
+        "node": "extract",
+        "agent": "Data Extraction Agent",
+        "role": "Extracts structured fields & bill line items and builds one consolidated claim record",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:34.105",
+        "duration_ms": 1.2,
+        "findings": 0,
+        "summary": "Extracted 27 claim fields and 11 bill line items (billed \u20b992,200, claimed \u20b992,200)."
+      },
+      {
+        "node": "validate",
+        "agent": "Document Validation Agent",
+        "role": "Checks completeness, cross-document consistency, bill arithmetic & PDF forensics",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:34.107",
+        "duration_ms": 0.17,
+        "findings": 2,
+        "summary": "10/12 validation checks passed; BLOCKING - missing discharge_summary; 2 document issue(s)."
+      },
+      {
+        "node": "request_docs",
+        "agent": "Document Request Agent",
+        "role": "Pauses incomplete claims and drafts a deficiency letter to the claimant",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:34.107",
+        "duration_ms": 0.01,
+        "findings": 0,
+        "summary": "Claim paused - requested 2 item(s) from the claimant."
+      },
+      {
+        "node": "report",
+        "agent": "Report Agent",
+        "role": "Compiles the explainable decision report, narrative and audit record",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:34.108",
+        "duration_ms": 2.0,
+        "findings": 0,
+        "summary": "Report ready: status PENDING_DOCUMENTS, score n/a, payable -."
+      }
+    ],
+    "errors": [],
+    "narrative": "Claim CLM-2026-1006 for Rahul Verma at Apex Ortho & Trauma Centre cannot be assessed yet: 2 required item(s) are missing. The claim has been paused and a deficiency letter drafted. Fraud scoring will run automatically once documents are received.",
+    "narrative_source": "template",
+    "output_text": "Status: PENDING DOCUMENTS\nRequired:\n- Discharge summary signed by the treating doctor\n- Re-submit: Hospital bill has no seal / authorised signature",
+    "engine": "langgraph"
+  },
+  {
+    "run_id": "RUN-20261111-052434-740E94",
+    "claim_id": "CLM-2026-1007",
+    "processed_at": "2026-11-11T05:24:34",
+    "status": "SIU_INVESTIGATION",
+    "fraud_score": 74.0,
+    "risk_band": "HIGH",
+    "risk_label": "High Fraud Risk",
+    "recommendation": "Hold payment. Refer to Special Investigation Unit (SIU) for field verification.",
+    "suspicious_reasons": [
+      "Duplicate claim: hospital bill SMC/IP/2026/08812 was already claimed with Other Insurer (simulated registry) (policy OTH-HL-77821) on 2026-10-20 for \u20b927,850 - status SETTLED - FULL AMOUNT",
+      "Claim form declares no other health policy, but the industry registry shows another active policy"
+    ],
+    "triggered_categories": [
+      {
+        "category": "CLAIM_HISTORY",
+        "label": "Patient Claim History",
+        "score": 80.0,
+        "findings": 2,
+        "max_severity": "CRITICAL"
+      }
+    ],
+    "findings": [
+      {
+        "code": "DUPLICATE_CLAIM",
+        "category": "CLAIM_HISTORY",
+        "category_label": "Patient Claim History",
+        "severity": "CRITICAL",
+        "points": 75,
+        "reason": "Duplicate claim: hospital bill SMC/IP/2026/08812 was already claimed with Other Insurer (simulated registry) (policy OTH-HL-77821) on 2026-10-20 for \u20b927,850 - status SETTLED - FULL AMOUNT",
+        "evidence": {
+          "insurer": "Other Insurer (simulated registry)",
+          "policy_number": "OTH-HL-77821",
+          "patient_name": "Priya Nair",
+          "patient_dob": "1990-05-14",
+          "hospital_id": "HSP-KL-0120",
+          "bill_no": "SMC/IP/2026/08812",
+          "claim_date": "2026-10-20",
+          "amount": 27850,
+          "status": "SETTLED - FULL AMOUNT",
+          "match_on": "bill_no"
+        },
+        "agent": "Claim History Agent"
+      },
+      {
+        "code": "UNDISCLOSED_POLICY",
+        "category": "CLAIM_HISTORY",
+        "category_label": "Patient Claim History",
+        "severity": "HIGH",
+        "points": 40,
+        "reason": "Claim form declares no other health policy, but the industry registry shows another active policy",
+        "evidence": {},
+        "agent": "Claim History Agent"
+      }
+    ],
+    "claim_summary": {
+      "patient_name": "Priya Nair",
+      "patient_age": 36,
+      "gender": "Female",
+      "policy_number": "POL-HS-240330",
+      "plan": "Family Health Shield - Gold",
+      "hospital_name": "Seaside Medical Centre",
+      "hospital_id": "HSP-KL-0120",
+      "hospital_tier": "mid",
+      "network": true,
+      "diagnosis": "Acute Gastroenteritis with moderate dehydration",
+      "icd10": "A09",
+      "admission_date": "2026-10-09",
+      "discharge_date": "2026-10-11",
+      "los_days": 2,
+      "claim_type": "Reimbursement",
+      "claimed_amount": 27850.0,
+      "billed_total": 27850.0,
+      "bill_no": "SMC/IP/2026/08812",
+      "treating_doctor": "Dr. Anitha Thomas, MD"
+    },
+    "line_items": [
+      {
+        "sno": 1,
+        "description": "Registration & Admission charges",
+        "category": "MISC",
+        "qty": 1,
+        "rate": 250.0,
+        "amount": 250.0
+      },
+      {
+        "sno": 2,
+        "description": "Semi Private Room Rent",
+        "category": "ROOM",
+        "qty": 2,
+        "rate": 3500.0,
+        "amount": 7000.0
+      },
+      {
+        "sno": 3,
+        "description": "Nursing charges",
+        "category": "NURSING",
+        "qty": 2,
+        "rate": 900.0,
+        "amount": 1800.0
+      },
+      {
+        "sno": 4,
+        "description": "Physician consultation",
+        "category": "CONSULT",
+        "qty": 3,
+        "rate": 900.0,
+        "amount": 2700.0
+      },
+      {
+        "sno": 5,
+        "description": "Complete Blood Count (CBC)",
+        "category": "LAB",
+        "qty": 1,
+        "rate": 450.0,
+        "amount": 450.0
+      },
+      {
+        "sno": 6,
+        "description": "Serum Electrolytes",
+        "category": "LAB",
+        "qty": 2,
+        "rate": 750.0,
+        "amount": 1500.0
+      },
+      {
+        "sno": 7,
+        "description": "Stool routine examination",
+        "category": "LAB",
+        "qty": 1,
+        "rate": 300.0,
+        "amount": 300.0
+      },
+      {
+        "sno": 8,
+        "description": "Renal Function Test (KFT)",
+        "category": "LAB",
+        "qty": 1,
+        "rate": 950.0,
+        "amount": 950.0
+      },
+      {
+        "sno": 9,
+        "description": "IV Fluids - Ringer Lactate",
+        "category": "PHARMACY",
+        "qty": 10,
+        "rate": 130.0,
+        "amount": 1300.0
+      },
+      {
+        "sno": 10,
+        "description": "Inj. Ondansetron / antibiotics",
+        "category": "PHARMACY",
+        "qty": 1,
+        "rate": 3200.0,
+        "amount": 3200.0
+      },
+      {
+        "sno": 11,
+        "description": "Pharmacy - medicines",
+        "category": "PHARMACY",
+        "qty": 1,
+        "rate": 6700.0,
+        "amount": 6700.0
+      },
+      {
+        "sno": 12,
+        "description": "Ultrasound Abdomen",
+        "category": "RADIOLOGY",
+        "qty": 1,
+        "rate": 1700.0,
+        "amount": 1700.0
+      }
+    ],
+    "documents": [
+      {
+        "doc_type": "claim_form",
+        "file": "claim_form.pdf",
+        "pages": 1,
+        "confidence": 1.0,
+        "forensic_flags": [],
+        "metadata": {
+          "producer": "ReportLab PDF Library - (opensource)",
+          "creator": "ClaimGuard Insurer Portal",
+          "created": "2026-11-11T04:35:52",
+          "modified": "2026-11-11T04:35:52"
+        }
+      },
+      {
+        "doc_type": "discharge_summary",
+        "file": "discharge_summary.pdf",
+        "pages": 1,
+        "confidence": 1.0,
+        "forensic_flags": [],
+        "metadata": {
+          "producer": "ReportLab PDF Library - (opensource)",
+          "creator": "HIMS Clinical Module v7.2",
+          "created": "2026-11-11T04:35:52",
+          "modified": "2026-11-11T04:35:52"
+        }
+      },
+      {
+        "doc_type": "hospital_bill",
+        "file": "hospital_bill.pdf",
+        "pages": 1,
+        "confidence": 1.0,
+        "forensic_flags": [],
+        "metadata": {
+          "producer": "ReportLab PDF Library - (opensource)",
+          "creator": "HIMS Billing Module v7.2",
+          "created": "2026-11-11T04:35:52",
+          "modified": "2026-11-11T04:35:52"
+        }
+      }
+    ],
+    "unclassified_files": [],
+    "validation": {
+      "complete": true,
+      "blocking": false,
+      "missing_documents": [],
+      "missing_fields": [],
+      "checks": [
+        {
+          "check": "Mandatory documents present",
+          "passed": true,
+          "detail": "All present"
+        },
+        {
+          "check": "Mandatory fields extracted",
+          "passed": true,
+          "detail": "All extracted"
+        },
+        {
+          "check": "Bill total tallies with line items",
+          "passed": true,
+          "detail": "Grand total \u20b927,850 vs items \u20b927,850"
+        },
+        {
+          "check": "Claimed amount within bill amount",
+          "passed": true,
+          "detail": "Claimed \u20b927,850 vs billed \u20b927,850"
+        },
+        {
+          "check": "Hospital seal & signature on bill",
+          "passed": true,
+          "detail": "Present (Billing Manager)"
+        },
+        {
+          "check": "Seal & signature on discharge summary",
+          "passed": true,
+          "detail": "Present (Dr. Anitha Thomas, MD)"
+        },
+        {
+          "check": "Treating doctor registration number",
+          "passed": true,
+          "detail": "TCMC/2011/39004"
+        },
+        {
+          "check": "Hospital registration number present & consistent",
+          "passed": true,
+          "detail": "KL/EKM/CE/2014/0555"
+        },
+        {
+          "check": "Patient name consistent across documents",
+          "passed": true,
+          "detail": "claim_form: Priya Nair | discharge_summary: Priya Nair | hospital_bill: Priya Nair"
+        },
+        {
+          "check": "Admission date consistent across documents",
+          "passed": true,
+          "detail": "claim_form: 2026-10-09, discharge_summary: 2026-10-09, hospital_bill: 2026-10-09"
+        },
+        {
+          "check": "Discharge date consistent across documents",
+          "passed": true,
+          "detail": "claim_form: 2026-10-11, discharge_summary: 2026-10-11, hospital_bill: 2026-10-11"
+        },
+        {
+          "check": "Claim submitted within 30 days of discharge",
+          "passed": true,
+          "detail": "25 days"
+        },
+        {
+          "check": "PDF forensic check - claim_form",
+          "passed": true,
+          "detail": "clean"
+        },
+        {
+          "check": "PDF forensic check - discharge_summary",
+          "passed": true,
+          "detail": "clean"
+        },
+        {
+          "check": "PDF forensic check - hospital_bill",
+          "passed": true,
+          "detail": "clean"
+        }
+      ],
+      "passed": 15,
+      "total": 15
+    },
+    "decision": {
+      "fraud_score": 74.0,
+      "risk_band": "HIGH",
+      "risk_label": "High Fraud Risk",
+      "status": "SIU_INVESTIGATION",
+      "recommendation": "Hold payment. Refer to Special Investigation Unit (SIU) for field verification.",
+      "rule_score": 80.0,
+      "ml_score": 55.8,
+      "anomaly_score": 0.0,
+      "weights": {
+        "rules": 0.55,
+        "ml": 0.45
+      },
+      "critical_override": true,
+      "triggered_categories": [
+        {
+          "category": "CLAIM_HISTORY",
+          "label": "Patient Claim History",
+          "score": 80.0,
+          "findings": 2,
+          "max_severity": "CRITICAL"
+        }
+      ],
+      "suspicious_reasons": [
+        "Duplicate claim: hospital bill SMC/IP/2026/08812 was already claimed with Other Insurer (simulated registry) (policy OTH-HL-77821) on 2026-10-20 for \u20b927,850 - status SETTLED - FULL AMOUNT",
+        "Claim form declares no other health policy, but the industry registry shows another active policy"
+      ],
+      "coverage": {
+        "admissible": true,
+        "issues": [],
+        "days_since_inception": 981,
+        "accident": false,
+        "sum_insured": 500000,
+        "available_si": 500000
+      }
+    },
+    "ml": {
+      "fraud_probability": 0.5582,
+      "ml_score": 55.8,
+      "anomaly_score": 0.0,
+      "top_drivers": [
+        {
+          "feature": "registry_duplicate",
+          "label": "Duplicate in industry registry",
+          "value": 1.0,
+          "weight": 0.052
+        },
+        {
+          "feature": "bill_ratio",
+          "label": "Bill vs typical cost",
+          "value": 0.62,
+          "weight": 0.047
+        }
+      ],
+      "features": {
+        "bill_ratio": 0.62,
+        "max_item_ratio": 0.73,
+        "room_rent_ratio": 0.78,
+        "duplicate_items": 0.0,
+        "los_ratio": 0.5,
+        "unrelated_item_count": 0.0,
+        "opd_manageable": 0.0,
+        "dx_mismatch": 0.0,
+        "hospital_risk": 0.12,
+        "hospital_network": 1.0,
+        "hospital_small_clinic": 0.0,
+        "days_since_inception_log": 6.8896,
+        "undeclared_ped": 0.0,
+        "prior_claims_12m": 0.0,
+        "registry_duplicate": 1.0,
+        "doc_issue_count": 0.0,
+        "claim_amount_log": 10.2346,
+        "is_reimbursement": 1.0,
+        "patient_age": 36.0
+      },
+      "model_version": "gbm-v1",
+      "model_metrics": {
+        "roc_auc": 0.9217,
+        "pr_auc": 0.8245,
+        "precision@0.5": 0.8927,
+        "recall@0.5": 0.7795,
+        "rows": 8000
+      }
+    },
+    "settlement": null,
+    "siu": {
+      "case_id": "SIU-CLM-2026-1007",
+      "priority": "P1 - Critical",
+      "due_by": "2026-11-16",
+      "payment_hold": true,
+      "exposure": 27850.0,
+      "tasks": [
+        {
+          "task": "Call the hospital to confirm admission, treating doctor and bill number",
+          "status": "OPEN"
+        },
+        {
+          "task": "Verify Dr. registration (TCMC/2011/39004) with the State Medical Council",
+          "status": "OPEN"
+        },
+        {
+          "task": "Cross-check previous claims and industry registry; request settlement letter from other insurer",
+          "status": "OPEN"
+        },
+        {
+          "task": "Interview patient / family on symptoms, admission and payments made",
+          "status": "OPEN"
+        },
+        {
+          "task": "Compare signatures on claim form, bill and discharge summary",
+          "status": "OPEN"
+        }
+      ],
+      "evidence": [
+        {
+          "severity": "CRITICAL",
+          "category": "Patient Claim History",
+          "reason": "Duplicate claim: hospital bill SMC/IP/2026/08812 was already claimed with Other Insurer (simulated registry) (policy OTH-HL-77821) on 2026-10-20 for \u20b927,850 - status SETTLED - FULL AMOUNT"
+        },
+        {
+          "severity": "HIGH",
+          "category": "Patient Claim History",
+          "reason": "Claim form declares no other health policy, but the industry registry shows another active policy"
+        }
+      ]
+    },
+    "doc_request": null,
+    "agent_trace": [
+      {
+        "node": "intake",
+        "agent": "Claim Intake Agent",
+        "role": "Registers the claim, assigns a run id and collects input documents",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:34.111",
+        "duration_ms": 0.13,
+        "findings": 0,
+        "summary": "Registered claim CLM-2026-1007 with 3 document(s)."
+      },
+      {
+        "node": "classify",
+        "agent": "Document Classifier Agent",
+        "role": "Reads every file (PDF/TXT/JSON/image) and identifies the document type",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:34.112",
+        "duration_ms": 184.64,
+        "findings": 0,
+        "summary": "Identified 3 document type(s): claim_form, discharge_summary, hospital_bill."
+      },
+      {
+        "node": "extract",
+        "agent": "Data Extraction Agent",
+        "role": "Extracts structured fields & bill line items and builds one consolidated claim record",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:34.297",
+        "duration_ms": 1.48,
+        "findings": 0,
+        "summary": "Extracted 34 claim fields and 12 bill line items (billed \u20b927,850, claimed \u20b927,850)."
+      },
+      {
+        "node": "validate",
+        "agent": "Document Validation Agent",
+        "role": "Checks completeness, cross-document consistency, bill arithmetic & PDF forensics",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:34.299",
+        "duration_ms": 0.17,
+        "findings": 0,
+        "summary": "15/15 validation checks passed; 0 document issue(s)."
+      },
+      {
+        "node": "knowledge",
+        "agent": "Knowledge Retrieval Agent",
+        "role": "Looks up policy, insured member, provider registry, clinical KB and claim history",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:34.299",
+        "duration_ms": 0.42,
+        "findings": 0,
+        "summary": "policy found; member verified; hospital HSP-KL-0120; diagnosis -> acute gastroenteritis (icd10); 0 past claim(s); 1 registry hit(s)."
+      },
+      {
+        "node": "billing",
+        "agent": "Billing Audit Agent",
+        "role": "Bill amount vs benchmark, single-item rates, room rent and duplicate charges",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:34.301",
+        "duration_ms": 0.18,
+        "findings": 0,
+        "summary": "Bill \u20b927,850 ratio 0.62x typical; 0 overpriced item(s); 0 duplicate(s)."
+      },
+      {
+        "node": "history",
+        "agent": "Claim History Agent",
+        "role": "Claim frequency, repeated procedures, duplicate bills & multi-insurer claims",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:34.302",
+        "duration_ms": 0.22,
+        "findings": 2,
+        "summary": "0 claim(s) in last 12 months; 1 registry hit(s)."
+      },
+      {
+        "node": "medical",
+        "agent": "Medical Coherence Agent",
+        "role": "Diagnosis vs treatment consistency, clinically unrelated tests and length-of-stay",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:34.301",
+        "duration_ms": 0.42,
+        "findings": 0,
+        "summary": "Diagnosis 'acute gastroenteritis' (A09); 0 unrelated item(s); LOS 2 vs typical 1-4."
+      },
+      {
+        "node": "policy",
+        "agent": "Policy & Coverage Agent",
+        "role": "Waiting periods, policy validity, sum-insured enhancement and pre-existing disease disclosure",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:34.303",
+        "duration_ms": 0.11,
+        "findings": 0,
+        "summary": "Admissible; policy 981 days old; 0 timing/disclosure finding(s)."
+      },
+      {
+        "node": "provider",
+        "agent": "Provider Risk Agent",
+        "role": "Hospital blacklist / watchlist, provider risk index, claim spikes, network status",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:34.303",
+        "duration_ms": 0.04,
+        "findings": 0,
+        "summary": "Seaside Medical Centre (mid, network, risk 0.12); 0 finding(s)."
+      },
+      {
+        "node": "ml_scoring",
+        "agent": "ML Risk Scoring Agent",
+        "role": "Gradient-boosting fraud probability + Isolation-Forest anomaly score on 19 engineered features",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:34.304",
+        "duration_ms": 15.45,
+        "findings": 0,
+        "summary": "Fraud probability 0.56 (anomaly 0/100); drivers: Duplicate in industry registry, Bill vs typical cost."
+      },
+      {
+        "node": "decision",
+        "agent": "Fraud Risk Decision Agent",
+        "role": "Fuses rule findings + ML score into the 0-100 fraud score, risk band and routing decision",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:34.320",
+        "duration_ms": 0.05,
+        "findings": 0,
+        "summary": "Fraud score 74.0 (High Fraud Risk) = 0.55x rules 80.0 + 0.45x ML 55.8 [critical override] -> SIU_INVESTIGATION."
+      },
+      {
+        "node": "siu",
+        "agent": "SIU Investigation Agent",
+        "role": "Builds a prioritised investigation plan & evidence pack for high-risk claims",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:34.320",
+        "duration_ms": 0.03,
+        "findings": 0,
+        "summary": "Opened P1 - Critical SIU case with 5 task(s); payment of \u20b927,850 on hold."
+      },
+      {
+        "node": "report",
+        "agent": "Report Agent",
+        "role": "Compiles the explainable decision report, narrative and audit record",
+        "status": "completed",
+        "started_at": "2026-11-11T05:24:34.320",
+        "duration_ms": 3.31,
+        "findings": 0,
+        "summary": "Report ready: status SIU_INVESTIGATION, score 74.0, payable -."
+      }
+    ],
+    "errors": [],
+    "narrative": "Claim CLM-2026-1007: Priya Nair, Acute Gastroenteritis with moderate dehydration at Seaside Medical Centre (2 day stay), claimed \u20b927,850. Fraud score 74.0/100 (High Fraud Risk); rule engine 80.0, ML model 55.8. Categories triggered: Patient Claim History. Key concerns: Duplicate claim: hospital bill SMC/IP/2026/08812 was already claimed with Other Insurer (simulated registry) (policy OTH-HL-77821) on 2026-10-20 for \u20b927,850 - status SETTLED - FULL AMOUNT | Claim form declares no other health policy, but the industry registry shows another active policy. Decision: SIU INVESTIGATION - Hold payment. Refer to Special Investigation Unit (SIU) for field verification.",
+    "narrative_source": "template",
+    "output_text": "Fraud Score: 74 (High Risk)\nSuspicious Reasons:\n- Duplicate claim: hospital bill SMC/IP/2026/08812 was already claimed with Other Insurer (simulated registry) (policy OTH-HL-77821) on 2026-10-20 for \u20b927,850 - status SETTLED - FULL AMOUNT\n- Claim form declares no other health policy, but the industry registry shows another active policy\nTriggered Categories:\n- Patient Claim History\nDecision: SIU INVESTIGATION",
+    "engine": "langgraph"
+  }
+]

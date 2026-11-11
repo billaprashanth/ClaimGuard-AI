@@ -1,0 +1,4 @@
+# Optional extras - the project runs fully without them.
+anthropic>=0.40.0     # LLM_PROVIDER=anthropic -> Claude writes the investigator case note
+pytesseract>=0.3.10   # OCR for scanned PNG/JPG claim documents (also needs the Tesseract binary)
+Pillow>=10.0.0

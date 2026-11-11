@@ -1,0 +1,328 @@
+{
+  "run_id": "RUN-20261111-052434-8D7736",
+  "claim_id": "CLM-2026-1006",
+  "processed_at": "2026-11-11T05:24:34",
+  "status": "PENDING_DOCUMENTS",
+  "fraud_score": null,
+  "risk_band": null,
+  "risk_label": "Not scored",
+  "recommendation": "Request missing documents from claimant.",
+  "suspicious_reasons": [],
+  "triggered_categories": [],
+  "findings": [
+    {
+      "code": "DOC_MISSING",
+      "category": "DOCUMENT_ISSUES",
+      "category_label": "Document Issues",
+      "severity": "MEDIUM",
+      "points": 22,
+      "reason": "Mandatory document missing: Discharge summary signed by the treating doctor",
+      "evidence": {
+        "document": "discharge_summary"
+      },
+      "agent": "Document Validation Agent"
+    },
+    {
+      "code": "BILL_NO_SEAL",
+      "category": "DOCUMENT_ISSUES",
+      "category_label": "Document Issues",
+      "severity": "MEDIUM",
+      "points": 22,
+      "reason": "Hospital bill has no seal / authorised signature",
+      "evidence": {},
+      "agent": "Document Validation Agent"
+    }
+  ],
+  "claim_summary": {
+    "patient_name": "Rahul Verma",
+    "patient_age": 29,
+    "gender": "Male",
+    "policy_number": "POL-HS-230612",
+    "plan": null,
+    "hospital_name": "Apex Ortho & Trauma Centre",
+    "hospital_id": null,
+    "hospital_tier": null,
+    "network": null,
+    "diagnosis": "Fracture of right distal radius (road traffic accident)",
+    "icd10": null,
+    "admission_date": "2026-10-30",
+    "discharge_date": "2026-11-01",
+    "los_days": 2,
+    "claim_type": "Reimbursement",
+    "claimed_amount": 92200.0,
+    "billed_total": 92200.0,
+    "bill_no": "AOTC/2026/7712",
+    "treating_doctor": null
+  },
+  "line_items": [
+    {
+      "sno": 1,
+      "description": "Registration & Admission charges",
+      "category": "MISC",
+      "qty": 1,
+      "rate": 500.0,
+      "amount": 500.0
+    },
+    {
+      "sno": 2,
+      "description": "Semi Private Room Rent",
+      "category": "ROOM",
+      "qty": 2,
+      "rate": 3800.0,
+      "amount": 7600.0
+    },
+    {
+      "sno": 3,
+      "description": "Nursing charges",
+      "category": "NURSING",
+      "qty": 2,
+      "rate": 1000.0,
+      "amount": 2000.0
+    },
+    {
+      "sno": 4,
+      "description": "Orthopaedic consultation",
+      "category": "CONSULT",
+      "qty": 3,
+      "rate": 1200.0,
+      "amount": 3600.0
+    },
+    {
+      "sno": 5,
+      "description": "X-Ray Right Wrist AP/Lateral",
+      "category": "RADIOLOGY",
+      "qty": 2,
+      "rate": 650.0,
+      "amount": 1300.0
+    },
+    {
+      "sno": 6,
+      "description": "ORIF with plating - Surgeon fee",
+      "category": "PROCEDURE",
+      "qty": 1,
+      "rate": 30000.0,
+      "amount": 30000.0
+    },
+    {
+      "sno": 7,
+      "description": "OT charges",
+      "category": "OT",
+      "qty": 1,
+      "rate": 15000.0,
+      "amount": 15000.0
+    },
+    {
+      "sno": 8,
+      "description": "Anaesthesia charges",
+      "category": "PROCEDURE",
+      "qty": 1,
+      "rate": 9000.0,
+      "amount": 9000.0
+    },
+    {
+      "sno": 9,
+      "description": "Locking plate & screws (implant)",
+      "category": "IMPLANT",
+      "qty": 1,
+      "rate": 14500.0,
+      "amount": 14500.0
+    },
+    {
+      "sno": 10,
+      "description": "Pharmacy - medicines",
+      "category": "PHARMACY",
+      "qty": 1,
+      "rate": 6200.0,
+      "amount": 6200.0
+    },
+    {
+      "sno": 11,
+      "description": "Surgical consumables",
+      "category": "CONSUMABLE",
+      "qty": 1,
+      "rate": 2500.0,
+      "amount": 2500.0
+    }
+  ],
+  "documents": [
+    {
+      "doc_type": "claim_form",
+      "file": "claim_form.pdf",
+      "pages": 1,
+      "confidence": 1.0,
+      "forensic_flags": [],
+      "metadata": {
+        "producer": "ReportLab PDF Library - (opensource)",
+        "creator": "ClaimGuard Insurer Portal",
+        "created": "2026-11-11T04:35:52",
+        "modified": "2026-11-11T04:35:52"
+      }
+    },
+    {
+      "doc_type": "hospital_bill",
+      "file": "hospital_bill.pdf",
+      "pages": 1,
+      "confidence": 1.0,
+      "forensic_flags": [],
+      "metadata": {
+        "producer": "ReportLab PDF Library - (opensource)",
+        "creator": "HIMS Billing Module v7.2",
+        "created": "2026-11-11T04:35:52",
+        "modified": "2026-11-11T04:35:52"
+      }
+    }
+  ],
+  "unclassified_files": [],
+  "validation": {
+    "complete": false,
+    "blocking": true,
+    "missing_documents": [
+      "discharge_summary"
+    ],
+    "missing_fields": [],
+    "checks": [
+      {
+        "check": "Mandatory documents present",
+        "passed": false,
+        "detail": "Missing: discharge_summary"
+      },
+      {
+        "check": "Mandatory fields extracted",
+        "passed": true,
+        "detail": "All extracted"
+      },
+      {
+        "check": "Bill total tallies with line items",
+        "passed": true,
+        "detail": "Grand total \u20b992,200 vs items \u20b992,200"
+      },
+      {
+        "check": "Claimed amount within bill amount",
+        "passed": true,
+        "detail": "Claimed \u20b992,200 vs billed \u20b992,200"
+      },
+      {
+        "check": "Hospital seal & signature on bill",
+        "passed": false,
+        "detail": "Not available"
+      },
+      {
+        "check": "Hospital registration number present & consistent",
+        "passed": true,
+        "detail": "TS/HYD/CE/2017/0688"
+      },
+      {
+        "check": "Patient name consistent across documents",
+        "passed": true,
+        "detail": "claim_form: Rahul Verma | hospital_bill: Rahul Verma"
+      },
+      {
+        "check": "Admission date consistent across documents",
+        "passed": true,
+        "detail": "claim_form: 2026-10-30, hospital_bill: 2026-10-30"
+      },
+      {
+        "check": "Discharge date consistent across documents",
+        "passed": true,
+        "detail": "claim_form: 2026-11-01, hospital_bill: 2026-11-01"
+      },
+      {
+        "check": "Claim submitted within 30 days of discharge",
+        "passed": true,
+        "detail": "5 days"
+      },
+      {
+        "check": "PDF forensic check - claim_form",
+        "passed": true,
+        "detail": "clean"
+      },
+      {
+        "check": "PDF forensic check - hospital_bill",
+        "passed": true,
+        "detail": "clean"
+      }
+    ],
+    "passed": 10,
+    "total": 12
+  },
+  "decision": null,
+  "ml": null,
+  "settlement": null,
+  "siu": null,
+  "doc_request": {
+    "status": "PENDING_DOCUMENTS",
+    "required": [
+      "Discharge summary signed by the treating doctor",
+      "Re-submit: Hospital bill has no seal / authorised signature"
+    ],
+    "letter": "Dear Rahul Verma,\n\nWe have received your claim CLM-2026-1006 for treatment at Apex Ortho & Trauma Centre. To continue processing, please submit the following within 15 days:\n  1. Discharge summary signed by the treating doctor\n  2. Re-submit: Hospital bill has no seal / authorised signature\n\nYour claim will be processed as soon as the documents are received.\n\nClaims Team",
+    "due_in_days": 15
+  },
+  "agent_trace": [
+    {
+      "node": "intake",
+      "agent": "Claim Intake Agent",
+      "role": "Registers the claim, assigns a run id and collects input documents",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:34.071",
+      "duration_ms": 0.14,
+      "findings": 0,
+      "summary": "Registered claim CLM-2026-1006 with 2 document(s)."
+    },
+    {
+      "node": "classify",
+      "agent": "Document Classifier Agent",
+      "role": "Reads every file (PDF/TXT/JSON/image) and identifies the document type",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:34.071",
+      "duration_ms": 33.48,
+      "findings": 0,
+      "summary": "Identified 2 document type(s): claim_form, hospital_bill."
+    },
+    {
+      "node": "extract",
+      "agent": "Data Extraction Agent",
+      "role": "Extracts structured fields & bill line items and builds one consolidated claim record",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:34.105",
+      "duration_ms": 1.2,
+      "findings": 0,
+      "summary": "Extracted 27 claim fields and 11 bill line items (billed \u20b992,200, claimed \u20b992,200)."
+    },
+    {
+      "node": "validate",
+      "agent": "Document Validation Agent",
+      "role": "Checks completeness, cross-document consistency, bill arithmetic & PDF forensics",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:34.107",
+      "duration_ms": 0.17,
+      "findings": 2,
+      "summary": "10/12 validation checks passed; BLOCKING - missing discharge_summary; 2 document issue(s)."
+    },
+    {
+      "node": "request_docs",
+      "agent": "Document Request Agent",
+      "role": "Pauses incomplete claims and drafts a deficiency letter to the claimant",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:34.107",
+      "duration_ms": 0.01,
+      "findings": 0,
+      "summary": "Claim paused - requested 2 item(s) from the claimant."
+    },
+    {
+      "node": "report",
+      "agent": "Report Agent",
+      "role": "Compiles the explainable decision report, narrative and audit record",
+      "status": "completed",
+      "started_at": "2026-11-11T05:24:34.108",
+      "duration_ms": 2.0,
+      "findings": 0,
+      "summary": "Report ready: status PENDING_DOCUMENTS, score n/a, payable -."
+    }
+  ],
+  "errors": [],
+  "narrative": "Claim CLM-2026-1006 for Rahul Verma at Apex Ortho & Trauma Centre cannot be assessed yet: 2 required item(s) are missing. The claim has been paused and a deficiency letter drafted. Fraud scoring will run automatically once documents are received.",
+  "narrative_source": "template",
+  "output_text": "Status: PENDING DOCUMENTS\nRequired:\n- Discharge summary signed by the treating doctor\n- Re-submit: Hospital bill has no seal / authorised signature",
+  "engine": "langgraph"
+}

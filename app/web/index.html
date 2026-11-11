@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ClaimGuard AI: medical claim fraud workbench</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&family=Zilla+Slab:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="brand">
+    <svg class="logo" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 3 34 8v11c0 9-6 15.5-14 18C12 34.5 6 28 6 19V8z" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M13 20.5l5 5 9-11" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <div>
+      <div class="brand-name">ClaimGuard AI</div>
+      <div class="brand-sub">Health claim validation &amp; fraud detection, run by a team of agents</div>
+    </div>
+  </div>
+  <nav class="tabs" aria-label="Sections">
+    <a href="#assess" data-view="assess">Assess a claim</a>
+    <a href="#register" data-view="register">Claims register</a>
+    <a href="#how" data-view="how">How it works</a>
+    <a href="#model" data-view="model">Risk model</a>
+  </nav>
+</header>
+<div id="static-banner" class="static-banner" hidden>
+  Showcase mode: these are the stored results of running the real pipeline on the seven sample claims. To upload your own documents, run the app (<code>uvicorn app.api:app</code>).
+</div>
+
+<main>
+  <!-- ============================== ASSESS ============================== -->
+  <section id="view-assess" class="view">
+    <aside class="rail">
+      <h2 class="rail-title">Claim packages</h2>
+      <p class="rail-hint">Pick a sample case file, or upload your own documents.</p>
+      <ul id="sample-list" class="sample-list"></ul>
+      <form id="upload-form" class="upload">
+        <label for="upload-input" class="drop" id="drop">
+          <strong>Upload claim documents</strong>
+          <span>Claim form, hospital bill, discharge summary (PDF, TXT, JSON). Up to 10 files.</span>
+          <span id="upload-names" class="upload-names"></span>
+        </label>
+        <input id="upload-input" type="file" name="files" multiple accept=".pdf,.txt,.json,.md,.png,.jpg,.jpeg">
+        <button type="submit" class="btn btn-secondary" id="upload-btn" disabled>Run agents on upload</button>
+      </form>
+    </aside>
+
+    <div class="casefile" id="casefile">
+      <div class="empty" id="empty-state">
+        <h1>Open a case file to begin</h1>
+        <p>Choose one of the seven sample claims on the left and run the agents. Sixteen agents read the documents, check them against the policy, the provider registry and clinical benchmarks, score the fraud risk and decide what happens next.</p>
+      </div>
+
+      <div id="selected" hidden>
+        <div class="file-head">
+          <div>
+            <div class="file-id" id="sel-id"></div>
+            <h1 id="sel-title"></h1>
+            <p class="file-expect" id="sel-expected"></p>
+          </div>
+          <button class="btn" id="run-btn">Run agents</button>
+        </div>
+        <div class="docs-strip" id="sel-docs"></div>
+      </div>
+
+      <div id="running" class="running" hidden>
+        <div class="spinner" aria-hidden="true"></div><span>Agents are working on the claim…</span>
+      </div>
+      <div id="error" class="error" role="alert" hidden></div>
+
+      <article id="result" hidden>
+        <section class="verdict">
+          <div class="verdict-main">
+            <dl class="facts" id="facts"></dl>
+          </div>
+          <div class="verdict-side">
+            <div class="stamp" id="stamp"></div>
+            <div class="score-line"><span class="score-num" id="score-num"></span><span class="score-of">/ 100 fraud score</span></div>
+            <div class="ruler" id="ruler" aria-hidden="true">
+              <div class="zone z-low"></div><div class="zone z-med"></div><div class="zone z-high"></div>
+              <div class="needle" id="needle"></div>
+            </div>
+            <div class="ruler-ticks"><span>0</span><span style="left:30%">30</span><span style="left:65%">65</span><span style="left:100%">100</span></div>
+            <p class="score-split" id="score-split"></p>
+          </div>
+        </section>
+
+        <p class="recommendation" id="recommendation"></p>
+
+        <div class="grid2">
+          <section class="panel">
+            <h2>Why this score</h2>
+            <div id="categories" class="categories"></div>
+            <ol id="findings" class="findings"></ol>
+          </section>
+          <section class="panel">
+            <h2>Agent run</h2>
+            <p class="panel-sub" id="engine-note"></p>
+            <ol id="timeline" class="timeline"></ol>
+          </section>
+        </div>
+
+        <div class="grid2">
+          <section class="panel" id="outcome-panel">
+            <h2 id="outcome-title">Outcome</h2>
+            <div id="outcome"></div>
+          </section>
+          <section class="panel">
+            <h2>Output for the claims system</h2>
+            <pre id="output-text" class="output-text"></pre>
+            <div class="row-actions">
+              <button class="btn btn-small btn-secondary" id="copy-btn">Copy output</button>
+              <a class="btn btn-small btn-secondary" id="report-link" target="_blank" rel="noopener">Open printable report</a>
+              <button class="btn btn-small btn-secondary" id="json-btn">Download JSON</button>
+            </div>
+            <h3>Case note</h3>
+            <p id="narrative" class="narrative"></p>
+          </section>
+        </div>
+
+        <section class="panel">
+          <h2>Documents and checks</h2>
+          <div class="grid2 tight">
+            <div>
+              <h3>Validation checklist</h3>
+              <ul id="checks" class="checks"></ul>
+            </div>
+            <div>
+              <h3>Machine-learning view</h3>
+              <div id="ml"></div>
+            </div>
+          </div>
+          <h3>Hospital bill as extracted</h3>
+          <div class="table-scroll"><table class="items" id="items"></table></div>
+        </section>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============================== REGISTER ============================== -->
+  <section id="view-register" class="view" hidden>
+    <div class="page">
+      <h1>Claims register</h1>
+      <p class="lede">Every run is written to the audit database with its full decision record.</p>
+      <div id="reg-stats" class="reg-stats"></div>
+      <div class="table-scroll"><table class="register" id="register"></table></div>
+    </div>
+  </section>
+
+  <!-- ============================== HOW ============================== -->
+  <section id="view-how" class="view" hidden>
+    <div class="page">
+      <h1>How a claim moves through the agents</h1>
+      <p class="lede">The workflow is a LangGraph <code>StateGraph</code>. Five analyst agents run in parallel, an ML agent waits for all of them, and conditional edges send each claim to the right outcome.</p>
+      <div class="diagram" id="diagram"></div>
+      <h2>The agents</h2>
+      <table class="register" id="agents-table"></table>
+      <h2>Fraud score</h2>
+      <p id="formula" class="formula"></p>
+      <h2>The nine fraud categories</h2>
+      <ul class="cat-list" id="cat-list"></ul>
+    </div>
+  </section>
+
+  <!-- ============================== MODEL ============================== -->
+  <section id="view-model" class="view" hidden>
+    <div class="page">
+      <h1>Risk model</h1>
+      <p class="lede">A gradient-boosting classifier trained on historical claims, plus an isolation forest that measures how unusual a claim is compared with genuine ones. The model explains; the rules and people decide.</p>
+      <div id="model-metrics" class="reg-stats"></div>
+      <h2>What the model pays attention to</h2>
+      <div id="importance" class="importance"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">Built with Python, LangGraph, scikit-learn and FastAPI. Sample documents, people and hospitals are fictional.</footer>
+<script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "claim_id": "CLM-2026-1004",
+  "title": "Fraud - Fever billed at Rs 1.2 lakh with MRI/CT/Endoscopy, edited bill",
+  "expected": "HIGH risk -> SIU investigation",
+  "hospital_id": "HSP-TG-0450",
+  "patient": "Kiran Kumar",
+  "diagnosis": "Viral Fever",
+  "claimed_amount": "Rs. 1,20,000.00",
+  "files": [
+    "claim_form.pdf",
+    "discharge_summary.pdf",
+    "hospital_bill.pdf"
+  ]
+}

@@ -1,0 +1,14 @@
+Fraud Score: 49 (Medium Risk - Suspicious)
+Suspicious Reasons:
+- 2 previous claims in the last 12 months, all at the same hospital (Greenvalley Hospital): 2026-03-02 Acute gastroenteritis ₹32,000, 2026-07-15 Viral fever ₹28,500
+- Length of stay 7 days exceeds the typical 3-6 days for typhoid fever
+- Clinical notes show recovery by day 4 but patient was kept 3 more day(s)
+- Claim 40 days after sum insured was enhanced from ₹3,00,000 to ₹5,00,000 at renewal
+- Provider risk index 0.38 for Greenvalley Hospital
+- Claim volume from Greenvalley Hospital is 2.0x its 90-day baseline (96 vs 48)
+Triggered Categories:
+- Hospital Pattern Risk
+- Treatment Duration Abnormality
+- Patient Claim History
+- Suspicious Timing (new policy)
+Decision: HUMAN REVIEW

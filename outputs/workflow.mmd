@@ -1,0 +1,40 @@
+flowchart TD
+  START([Start]) --> intake
+  intake["Claim Intake Agent"]
+  classify["Document Classifier Agent"]
+  extract["Data Extraction Agent"]
+  validate["Document Validation Agent"]
+  request_docs["Document Request Agent"]
+  knowledge["Knowledge Retrieval Agent"]
+  policy["Policy & Coverage Agent"]
+  medical["Medical Coherence Agent"]
+  billing["Billing Audit Agent"]
+  provider["Provider Risk Agent"]
+  history["Claim History Agent"]
+  ml_scoring["ML Risk Scoring Agent"]
+  decision["Fraud Risk Decision Agent"]
+  settlement["Settlement Agent"]
+  siu["SIU Investigation Agent"]
+  report["Report Agent"]
+  intake --> classify
+  classify --> extract
+  extract --> validate
+  request_docs --> report
+  settlement --> report
+  siu --> report
+  ml_scoring --> decision
+  report --> END([End])
+  knowledge --> policy
+  knowledge --> medical
+  knowledge --> billing
+  knowledge --> provider
+  knowledge --> history
+  policy --> ml_scoring
+  medical --> ml_scoring
+  billing --> ml_scoring
+  provider --> ml_scoring
+  history --> ml_scoring
+  validate -- complete --> knowledge
+  validate -- missing docs --> request_docs
+  decision -- HIGH risk --> siu
+  decision -- LOW / MEDIUM --> settlement

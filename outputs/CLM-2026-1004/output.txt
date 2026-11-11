@@ -1,0 +1,24 @@
+Fraud Score: 98 (High Risk)
+Suspicious Reasons:
+- Possible document tampering in hospital_bill.pdf: PDF produced/edited with image-editing software ('photoshop'); PDF modified 5 day(s) after creation (28-Oct-2026 -> 02-Nov-2026)
+- Bill does not tally: grand total ₹1,20,000 but line items add up to ₹1,23,300 (₹3,300 less than the items)
+- Total bill ₹1,20,000 is 4.9x the typical maximum ₹24,500 for viral fever at a small clinic
+- 5 item(s) charged above benchmark: Nursing charges ₹2,500 (benchmark <= ₹1,575); Physician consultation ₹2,000 (benchmark <= ₹1,750); MRI Brain (plain) ₹18,500 (benchmark <= ₹10,500); CT Scan Chest ₹9,500 (benchmark <= ₹6,125); Upper GI Endoscopy ₹12,400 (benchmark <= ₹7,875)
+- Treatment does not match diagnosis: MRI Brain (plain), CT Scan Chest, Upper GI Endoscopy (₹40,400) not clinically indicated for viral fever
+- Length of stay 5 days exceeds the typical 0-3 days for viral fever
+- Hospitalised only 25 days after buying the policy (initial 30-day waiting period)
+- Shree Sai Clinic & Nursing Home is on the fraud watchlist: 3 SIU-confirmed cases of inflated bills in 2025; diagnostics billed without an in-house MRI/CT facility.
+- 12-bed clinic billing like a premium hospital (₹1,20,000; advanced diagnostics billed: MRI Brain (plain), CT Scan Chest, Upper GI Endoscopy)
+- Hospital bill has no seal / authorised signature
+- Treating doctor's medical council registration number is missing (Dr. R. Mahesh)
+- Deluxe Room Rent at ₹9,000/day exceeds ₹7,000/day benchmark for a small clinic
+Triggered Categories:
+- Document Issues
+- Hospital Pattern Risk
+- Treatment Duration Abnormality
+- Bill Amount
+- Single Item Charge
+- Diagnosis Mismatch
+- Suspicious Timing (new policy)
+- Room Rent / Procedure Overcharging
+Decision: SIU INVESTIGATION

@@ -1,0 +1,103 @@
+[
+  {
+    "claim_id": "CLM-2026-1001",
+    "title": "Genuine - Dengue fever at network hospital",
+    "expected": "LOW risk -> auto-approve",
+    "hospital_id": "HSP-TG-0101",
+    "patient": "Anil Kumar",
+    "diagnosis": "Dengue Fever",
+    "claimed_amount": "Rs. 38,450.00",
+    "files": [
+      "claim_form.pdf",
+      "discharge_summary.pdf",
+      "hospital_bill.pdf",
+      "prescription.pdf"
+    ]
+  },
+  {
+    "claim_id": "CLM-2026-1002",
+    "title": "Genuine - Laparoscopic appendectomy (room-rent above cap)",
+    "expected": "LOW risk -> approve with proportionate deduction",
+    "hospital_id": "HSP-KA-0207",
+    "patient": "Arjun Sharma",
+    "diagnosis": "Acute Appendicitis",
+    "claimed_amount": "Rs. 1,28,300.00",
+    "files": [
+      "claim_form.pdf",
+      "discharge_summary.pdf",
+      "hospital_bill.pdf",
+      "prescription.pdf"
+    ]
+  },
+  {
+    "claim_id": "CLM-2026-1003",
+    "title": "Suspicious - Typhoid, prolonged stay, repeat claimant at a spiking hospital",
+    "expected": "MEDIUM risk -> human review",
+    "hospital_id": "HSP-TG-0333",
+    "patient": "Suresh Babu",
+    "diagnosis": "Typhoid Fever",
+    "claimed_amount": "Rs. 56,050.00",
+    "files": [
+      "claim_form.pdf",
+      "discharge_summary.pdf",
+      "hospital_bill.pdf",
+      "prescription.pdf"
+    ]
+  },
+  {
+    "claim_id": "CLM-2026-1004",
+    "title": "Fraud - Fever billed at Rs 1.2 lakh with MRI/CT/Endoscopy, edited bill",
+    "expected": "HIGH risk -> SIU investigation",
+    "hospital_id": "HSP-TG-0450",
+    "patient": "Kiran Kumar",
+    "diagnosis": "Viral Fever",
+    "claimed_amount": "Rs. 1,20,000.00",
+    "files": [
+      "claim_form.pdf",
+      "discharge_summary.pdf",
+      "hospital_bill.pdf"
+    ]
+  },
+  {
+    "claim_id": "CLM-2026-1005",
+    "title": "Non-disclosure - Angioplasty 8 months after inception, undeclared diabetes & hypertension",
+    "expected": "MEDIUM/HIGH risk -> review for misrepresentation",
+    "hospital_id": "HSP-KA-0207",
+    "patient": "Lakshmi Prasad",
+    "diagnosis": "Coronary Artery Disease - NSTEMI",
+    "claimed_amount": "Rs. 3,62,400.00",
+    "files": [
+      "claim_form.pdf",
+      "discharge_summary.pdf",
+      "hospital_bill.pdf",
+      "prescription.pdf"
+    ]
+  },
+  {
+    "claim_id": "CLM-2026-1006",
+    "title": "Incomplete - Accident fracture, discharge summary missing, bill unsigned",
+    "expected": "Pending documents (claim paused)",
+    "hospital_id": "HSP-TG-0512",
+    "patient": "Rahul Verma",
+    "diagnosis": "Fracture of right distal radius (road traffic accident)",
+    "claimed_amount": "Rs. 92,200.00",
+    "files": [
+      "claim_form.pdf",
+      "hospital_bill.pdf"
+    ]
+  },
+  {
+    "claim_id": "CLM-2026-1007",
+    "title": "Duplicate - Same hospital bill already settled by another insurer",
+    "expected": "HIGH risk -> SIU (duplicate billing)",
+    "hospital_id": "HSP-KL-0120",
+    "patient": "Priya Nair",
+    "diagnosis": "Acute Gastroenteritis",
+    "claimed_amount": "Rs. 27,850.00",
+    "files": [
+      "claim_form.pdf",
+      "discharge_summary.pdf",
+      "hospital_bill.pdf"
+    ]
+  }
+]

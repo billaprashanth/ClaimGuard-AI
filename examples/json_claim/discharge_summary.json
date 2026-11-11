@@ -1,0 +1,18 @@
+{
+  "document_type": "discharge_summary",
+  "fields": {
+    "hospital_name": "Sunrise Multispeciality Hospital",
+    "hospital_reg_no": "TS/HYD/CE/2015/0412",
+    "patient_name": "Swathi Kumar",
+    "admission_date": "02-11-2026",
+    "discharge_date": "05-11-2026",
+    "diagnosis": "Malaria - Plasmodium vivax",
+    "icd10": "B54",
+    "treating_doctor": "Dr. Srinivas Rao, MD",
+    "doctor_reg_no": "TSMC/2009/14522",
+    "procedures": "None",
+    "past_history": "Nil significant.",
+    "clinical_course": "Fever with chills for 3 days. Smear positive for P. vivax. Treated with IV artesunate followed by oral ACT and primaquine. Afebrile from day 2.",
+    "seal_signature": "Present (Dr. Srinivas Rao)"
+  }
+}

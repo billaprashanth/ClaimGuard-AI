@@ -1,0 +1,47 @@
+{
+  "_meta": {
+    "description": "Indicative maximum reasonable unit rates (INR) for a mid-tier Indian hospital. Multiplied by the hospital tier factor. Demo values - replace with your package-rate / PPN tariff master.",
+    "currency": "INR"
+  },
+  "tier_multiplier": {
+    "premium": 1.6,
+    "mid": 1.0,
+    "small_clinic": 0.7
+  },
+  "room_rent_per_day": {
+    "general ward": 2500,
+    "semi private": 4500,
+    "private": 7000,
+    "deluxe": 10000,
+    "icu": 18000
+  },
+  "items": [
+    {"key": "mri", "label": "MRI scan", "patterns": ["mri"], "max_rate": 12000},
+    {"key": "ct", "label": "CT scan", "patterns": ["ct scan", "ct kub", "ct chest", "ct abdomen", "ct brain", "hrct"], "max_rate": 7000},
+    {"key": "endoscopy", "label": "Upper GI endoscopy", "patterns": ["endoscopy"], "max_rate": 9000},
+    {"key": "colonoscopy", "label": "Colonoscopy", "patterns": ["colonoscopy"], "max_rate": 12000},
+    {"key": "angiography", "label": "Coronary angiography", "patterns": ["angiography"], "max_rate": 25000},
+    {"key": "ptca", "label": "PTCA / angioplasty procedure", "patterns": ["ptca", "angioplasty"], "max_rate": 120000},
+    {"key": "stent", "label": "Drug eluting stent (NPPA capped)", "patterns": ["stent"], "max_rate": 40000},
+    {"key": "xray", "label": "X-ray", "patterns": ["x-ray", "xray"], "max_rate": 1500},
+    {"key": "usg", "label": "Ultrasound", "patterns": ["ultrasound", "usg"], "max_rate": 3000},
+    {"key": "echo", "label": "2D Echo", "patterns": ["2d echo", "echocardiogram"], "max_rate": 3500},
+    {"key": "ecg", "label": "ECG", "patterns": ["ecg"], "max_rate": 800},
+    {"key": "cbc", "label": "Complete blood count", "patterns": ["cbc", "complete blood"], "max_rate": 700},
+    {"key": "platelet", "label": "Platelet count", "patterns": ["platelet count"], "max_rate": 450},
+    {"key": "ns1", "label": "Dengue NS1 / serology", "patterns": ["ns1", "dengue igm", "dengue serology"], "max_rate": 1800},
+    {"key": "widal", "label": "Widal / Typhidot", "patterns": ["widal", "typhidot"], "max_rate": 800},
+    {"key": "lft", "label": "Liver function test", "patterns": ["lft", "liver function"], "max_rate": 1300},
+    {"key": "kft", "label": "Renal function test", "patterns": ["kft", "rft", "renal function"], "max_rate": 1300},
+    {"key": "culture", "label": "Blood culture", "patterns": ["blood culture"], "max_rate": 1800},
+    {"key": "troponin", "label": "Troponin", "patterns": ["troponin"], "max_rate": 2000},
+    {"key": "consult", "label": "Doctor consultation / visit", "patterns": ["consult", "doctor visit", "physician visit"], "max_rate": 2000},
+    {"key": "nursing", "label": "Nursing charges (per day)", "patterns": ["nursing"], "max_rate": 1800},
+    {"key": "ot", "label": "Operation theatre charges", "patterns": ["ot charges", "operation theatre"], "max_rate": 35000},
+    {"key": "surgeon", "label": "Surgeon fee", "patterns": ["surgeon"], "max_rate": 60000},
+    {"key": "anaesthesia", "label": "Anaesthesia charges", "patterns": ["anaesthe", "anesthe"], "max_rate": 20000},
+    {"key": "iv", "label": "IV fluids (per unit)", "patterns": ["iv fluid", "normal saline", "ringer"], "max_rate": 450},
+    {"key": "physio", "label": "Physiotherapy session", "patterns": ["physiotherapy"], "max_rate": 1200}
+  ],
+  "non_payable_patterns": ["gloves", "mask", "attendant", "toiletries", "diaper", "slippers", "admission kit", "food for attendant", "television", "telephone", "cotton", "comb", "baby food", "registration"]
+}
