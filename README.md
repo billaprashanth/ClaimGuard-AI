@@ -2,6 +2,17 @@
 
 **An agentic AI system that processes medical insurance claims, validates the claim documents and detects fraud.**
 
+### 🔴 Live demo: **[claimguard-ai-lyun.onrender.com](https://claimguard-ai-lyun.onrender.com)**
+
+| | Link |
+|---|---|
+| Web app | https://claimguard-ai-lyun.onrender.com |
+| API docs (Swagger) | https://claimguard-ai-lyun.onrender.com/docs |
+| Health check | https://claimguard-ai-lyun.onrender.com/api/health |
+| Source code | https://github.com/billaprashanth/ClaimGuard-AI |
+
+> Hosted on Render's free plan: the app sleeps when idle, so the first request after a quiet period can take about a minute to wake it up. Pick any of the 7 sample claims and click **Run agents**, or upload your own claim documents.
+
 Upload a claim (claim form, hospital bill, discharge summary). Sixteen agents, orchestrated as a **LangGraph `StateGraph`**, read the documents, check them against the policy, the provider registry, clinical benchmarks and claim history, compute an explainable **fraud score (0-100)**, and route the claim to *auto-approve*, *human review*, *SIU investigation*, *not admissible* or *documents pending*.
 
 | | |
@@ -176,9 +187,11 @@ ClaimGuard-AI/
 └── requirements.txt
 ```
 
-## 5. Hosting the live application
+## 5. Live deployment
 
-See `docs/DEPLOYMENT.md`. In short: push to GitHub, then on **Render** choose *New > Blueprint* and select the repo (`render.yaml` deploys the Docker image on the free plan). Your app is live at `https://claimguard-ai.onrender.com` (or similar). The static showcase (`outputs/showcase.html`) can also be published on GitHub Pages.
+**Production URL: https://claimguard-ai-lyun.onrender.com**
+
+The app is deployed on **Render** from this repository using the Blueprint in `render.yaml`, which builds the `Dockerfile` on the free plan. Every push to `main` redeploys automatically. To deploy your own copy: fork the repo, then on Render choose *New > Blueprint* and select it. Full steps are in `docs/DEPLOYMENT.md`. The static showcase (`outputs/showcase.html`) can also be published on GitHub Pages.
 
 ## 6. REST API
 
